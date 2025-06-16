@@ -6,7 +6,7 @@ export default defineConfig(({ mode }) => ({
   plugins: [react()],
   base: mode === 'production' ? '/quiz-app/' : '/', // Relative pentru build local, absolute pentru dev
   build: {
-    outDir: 'dist',
+    outDir: 'docs',
     assetsDir: 'assets',
     sourcemap: false, // Elimină source maps pentru producție
     minify: 'terser', // Utilizează terser pentru minificare mai bună
