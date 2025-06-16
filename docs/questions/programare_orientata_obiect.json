@@ -97,7 +97,7 @@
       "18",
       "19"
     ],
-    "correct_answer": 1
+    "correct_answer": 0
   },
   {
     "question": "Se consideră următoarea secvență de program C++:\nclass B{\nprivate:\n\tint x,y;\npublic:\n\tB(int a,int b){ x=a;y=b; }\n\tB(const B &a){ x=a.x; y=a.y;}\n};\nÎn care dintre următoarele situații se realizează copierea unui obiect într-altul:",
