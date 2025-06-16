@@ -270,7 +270,7 @@
     "correct_answer": 0
   },
   {
-    "question": "Fie programul C++:\n#include<iostream.h>\nclass c1{ int a;};",
+    "question": "Fie programul C++:\n#include<iostream.h>\nclass c1{ int a;};\nclass c2:public c1{\npublic:\nint b;\nvoid scrie_a( ) { cout<<a; }\n};\nint main(){\nc2 ob; ob.scrie_a();\nreturn 0;\n}\nSelectaţi afirmaţia corectă:",
     "answers": [
       "funcția scrie_a( ) nu are acces asupra unui membru privat;",
       "programul afișează valoarea lui a;",
