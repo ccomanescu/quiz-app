@@ -357,7 +357,7 @@
       "eXamen",
       "Examen"
     ],
-    "correct_answer": 3
+    "correct_answer": 1
   },
   {
     "question": "Secvența urătoare Java:\npublic class numar_44_nou {\n\tpublic static void main(String args[])\n\t{\n\t\tString sir1=\"Programare in Java\";\n\t\tString sir2 =sir1.substring(4,8);\n\t\tSystem.out.println(sir2.toUpperCase()); }\n}\nAfișează:",
