@@ -1,0 +1,512 @@
+[
+  {
+    "question": "Se dă următorul algoritm:\nfor i = 1, n\n poz[i] = 1\nendfor\nfor i = 1, n-1\nfor j = i+1, n\nif x[j] < x[i] then poz[i] = poz[i] + 1\n else poz[j] = poz[j] + 1\n endif\nendfor\nendfor\nȘtiind că datele de intrare sunt n = 7 și vectorul x = (9, 15, 23, 2, 5, 4, 8) care vor fi valorile vectorului poz la sfârșitul algoritmului?",
+    "answers": [
+      "(5, 6, 7, 1, 2, 3, 4)",
+      "(5, 6, 7, 1, 3, 2, 4)",
+      "(6, 5, 7, 1, 2, 3, 4)",
+      "(1, 2, 3, 4, 5, 6, 7)"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Se dă următoarea funcție recursivă\n1) int inaltime(NodArb *rad) \n2) // returneaza inaltimea unui arbore binar \n3) {\n4) if(rad == NULL) return 0;\n5) ...............................................................................................\n6) return 1 + max(inaltime(rad->stang), inaltime(rad->drept));\n7)\n8) }\nCe instrucțiuni trebuie scrise în linia de cod 5) pentru ca funcția să returneze înălțimea unui arbore binar?",
+    "answers": [
+      "instrucțiunea vidă",
+      "int inaltime =0;",
+      "else if(rad->stang == NULL && rad->drept == NULL) return 0;",
+      "else"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Se dă următoarea funcție\nint cautare(int x[], int first, int last, int value) \n{ int mid;\n if(first > last) return -1;\n mid = (first + last) / 2; \n if (x[mid] == value) return mid;\n if(x[mid] < value) return cautare(x, mid + 1, last, value);\n else return cautare(x, first, mid - 1, value); \n}\nDacă vectorul x = (2, 4, 5, 8, 9, 15, 23), care va fi rezultatul apelării funcției cautare (x, 2, 6, 8) ?",
+    "answers": [
+      "-1",
+      "2",
+      "3",
+      "1"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Parcurgerea în preordine a arborelui binar din Fig. 1 va afișa",
+    "answers": [
+      "10, 4, 1, 9, 21, 15, 28, 23",
+      "10, 4, 1, 9, 23, 21, 28, 15",
+      "1, 4, 9, 10, 15, 21, 23, 28",
+      "10, 4, 1, 9, 21, 15, 23, 28"
+    ],
+    "correct_answer": 3,
+    "image": "images/figura1.jpg"
+  },
+  {
+    "question": "Parcurgerea în inordine a arborelui binar din Fig. 1 va afișa",
+    "answers": [
+      "10, 4, 1, 9, 21, 15, 23, 28",
+      "1, 4, 9, 10, 15, 21, 23, 28",
+      "1, 4, 9, 10, 15, 21, 28, 23",
+      "1, 4, 9, 10, 21, 23, 28, 15"
+    ],
+    "correct_answer": 1,
+    "image": "images/figura1.jpg"
+  },
+  {
+    "question": "Parcurgerea în postordine a arborelui binar din Fig. 1 va afișa",
+    "answers": [
+      "1, 4, 9, 10, 15, 21, 23, 28",
+      "1, 4, 9, 10, 15, 21, 28, 23",
+      "1, 9, 4, 15, 28, 23, 21, 10",
+      "1, 9, 4, 15, 23, 28, 21, 10"
+    ],
+    "correct_answer": 2,
+    "image": "images/figura1.jpg"
+  },
+  {
+    "question": "Ce returnează următoarea funcție dacă rad este pointer la rădăcina unui arbore binar nenul?\nint fct(NodArb *rad) \n{\nif(rad == NULL) return 0;\nreturn 1 + fct(rad->stang) + fct(rad->drept);\n}",
+    "answers": [
+      "0",
+      "1",
+      "numărul de noduri terminale ale arborelui",
+      "numărul de noduri ale arborelui"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Ordinul de complexitate a algoritmului Bubblesort (metoda bulelor) este",
+    "answers": [
+      "O (n)",
+      "O(n2)",
+      "O(n log n)",
+      "O(n3)"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Cel mai rău caz pentru algoritmul de sortare rapidă este cazul în care",
+    "answers": [
+      "vectorul este deja sortat",
+      "vectorul nu este creat aleator",
+      "toate elementele vectorului sunt pare",
+      "vectorul conține și elemente negative"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Câte comparații se fac dacă se folosește algoritmul de căutare secvențială pentru căutarea elementului 9 în vectorul (8, 3, 5, 9, 11, 2)?",
+    "answers": [
+      "6",
+      "5",
+      "3",
+      "4"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Câte comparații se fac dacă se folosește algoritmul de căutare binară pentru căutarea elementului 19 în vectorul (1, 2, 3, 5, 8, 9, 19)?",
+    "answers": [
+      "6",
+      "5",
+      "3",
+      "O(log 7)"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Dacă se aplicăm metoda bulelor (bubblesort) pentru sortarea vectorului x = (9, 15, 23, 25, 4, 8, 5), cum se va modifica vectorul x după prima parcurgere a sa?",
+    "answers": [
+      "4, 5, 8, 9, 15, 23, 25",
+      "9, 15, 23, 4, 8, 5, 25",
+      "9, 4, 15, 5, 23, 8, 25",
+      "9, 15, 23, 25, 4, 5, 8"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Dacă se aplicăm metoda bulelor (bubblesort) pentru sortarea vectorului x = (9, 15, 23, 25, 4, 8, 5), cum se va modifica vectorul x după două parcurgeri ale sale?",
+    "answers": [
+      "4, 5, 8, 9, 15, 23, 25",
+      "9, 15, 4, 8, 5, 23, 25",
+      "9, 4, 15, 5, 23, 8, 25",
+      "9, 15, 23, 25, 4, 5, 8"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Dacă se aplicăm sortarea prin inserare pentru sortarea vectorului x = (9, 15, 23, 25, 4, 8, 5), care este primul element al vectorului a cărui analiză va implica efectuarea de modificări asupra vectorului?",
+    "answers": [
+      "15",
+      "23",
+      "25",
+      "4"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Care din următoarele afirmații sunt adevărate?",
+    "answers": [
+      "La aplicarea algoritmului de sortare rapidă elementul din mijloc este mutat pe prima poziție.",
+      "La aplicarea algoritmului de sortare rapidă elementul de pe prima poziție este mutat pe poziția din mijloc.",
+      "La aplicarea algoritmului de sortare rapidă se alege un element din listă, numit pivot și se rearanjează lista, prin interschimbări, inclusiv prin mutarea pivotului pe o altă poziție, astfel încât toate elementele mai mici decât pivotul să fie poziționate inaintea lui, iar toate elementele mai mari să fie poziționate după acesta.",
+      "La aplicarea algoritmului de sortare rapidă nu se alege niciun element pivot."
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Care din următoarele afirmații sunt adevărate?",
+    "answers": [
+      "Arborele din figura Fig. 3 este vid.",
+      "Arborele din figura Fig. 3 nu este un arbore binar.",
+      "Arborele din figura Fig. 3 este un arbore binar de căutare.",
+      "Arborele din figura Fig. 3 nu este un arbore binar de căutare."
+    ],
+    "correct_answer": 2,
+    "image": "images/figura1.jpg"
+  },
+  {
+    "question": "Parcurgerea in preordine a arborelui din Fig. 4 va afișa",
+    "answers": [
+      "/, +, 50, *, 25, 3, 8, -, 3",
+      "/, 50, +, *, 3, 25, 8, -, 3",
+      "50, +, 25, *, 3, 8, -, 3, /",
+      "/, +, 50, *, 25, 3, -, 8, 3"
+    ],
+    "correct_answer": 3,
+    "image": "images/figura4.png"
+  },
+  {
+    "question": "Parcurgerea in inordine a arborelui din Fig. 4 va afișa",
+    "answers": [
+      "/, +, 50, *, 25, 3, 8, -, 3",
+      "50, +, 25, *, 3, /, 8, -, 3",
+      "50, +, 25, *, 3, 8, -, 3, /",
+      "50, /, +, *, 25, 3, -, 8, 3"
+    ],
+    "correct_answer": 1,
+    "image": "images/figura4.png"
+  },
+  {
+    "question": "Parcurgerea in postordine a arborelui din Fig. 4 va afișa",
+    "answers": [
+      "50, 25, 3, *, +, 8, 3, -, /",
+      "/, 50, +, *, 3, 25, 8, -, 3",
+      "50, +, 25, *, 3, 8, -, 3, /",
+      "/, +, 50, *, 25, 3, -, 8, 3"
+    ],
+    "correct_answer": 0,
+    "image": "images/figura4.png"
+  },
+  {
+    "question": "Câte comparații se fac dacă se folosește algoritmul de căutare binară pentru căutarea elementului 12 în vectorul (2, 3, 6, 9, 10, 25)?",
+    "answers": [
+      "6",
+      "5",
+      "3",
+      "1"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "O listă liniară în care inserările în lista se fac pe la un capăt, iar ștergerile pe la celălalt capăt se numește",
+    "answers": [
+      "stivă",
+      "vector",
+      "coadă",
+      "arbore"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Care din următorii algoritmi au ordinul de complexitate O(n log n)?",
+    "answers": [
+      "Bubblesort (sortarea cu metoda bulelor)",
+      "sortarea prin selecție",
+      "sortarea prin inserare",
+      "Quicksort(sortarea rapidă)"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Cel mai rău caz pentru algoritmul de căutare secvențială este cazul în care",
+    "answers": [
+      "elementul căutat este la mijlocul listei",
+      "elementul căutat este pe prima poziție în listă",
+      "elementul căutat este pe ultima poziție în listă",
+      "vectorul este ordonat crescator"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Timpul de execuție al unui algoritm se măsoară în",
+    "answers": [
+      "numărul de kilocteți necesari",
+      "numărul de instrucțiuni ale algoritmului",
+      "numărul de operații cheie executate",
+      "numărul de milisecunde necesar executării"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Ordinul de complexitate a algoritmului de căutare binară este",
+    "answers": [
+      "O(n)",
+      "O(n2)",
+      "O(n log n)",
+      "O(log n)"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "O problemă se poate rezolva prin trei algoritmi, unul cu ordinul de complexitate O(n), altul cu ordinul O(log n) și al treilea cu ordinul O(n log n). Care este cel mai bun?",
+    "answers": [
+      "cel cu ordinul O(n)",
+      "cel cu ordinul O(log n)",
+      "cel cu ordinul O(n log n)",
+      "Toate sunt la fel"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Se dă următorul algoritm:\nfor i = 1, n -1\n index_min = i\n for j = i + 1, n\n if x[index_min] > x[j] then index_min = j\n endif\n endfor\n if i ≠ index_min then \n temp=x[i]\n x[i]=x[index_min]\n x[index_min]=temp\n endif\nendfor\nCare vor fi valorile vectorului x după terminarea pasului i = 3 știind că la intrare avem valorile n = 7 și vectorul x = (9, 15, 23, 2, 5, 4, 8)?",
+    "answers": [
+      "(2, 4, 5, 9, 15, 23, 8)",
+      "(2, 5, 9, 15, 23, 4, 8)",
+      "(2, 5, 9, 15, 4, 23, 8)",
+      "(2, 4, 5, 9, 23, 15, 8)"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Se dă următorul algoritm. Care vor fi valorile vectorului x după terminarea pasului i = 5, știind că la intrare avem valorile n = 7 și x = (9, 15, 23, 2, 5, 4, 8)?\nfor i = 2, n\nelem = x[i]\n j = i -1\nwhile j >= 1 and x[j] > x[i]\nj = j –1\n endwhile\npozitie = j +1\nfor j= i, pozitie+1, -1\nx[j] = x[j -1]\nendfor\nx[pozitie] = elem\nendfor",
+    "answers": [
+      "(2, 4, 5, 9, 15, 23, 8)",
+      "(2, 5, 9, 15, 23, 4, 8)",
+      "(2, 5, 9, 15, 4, 23, 8)",
+      "(2, 4, 5, 8, 9, 15, 23)"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Se consideră următoarea secvență de operații într-o stivă: push(2), push(10), push(8), pop(), push(9), push(6), pop(), pop(), push(7), push(3), pop(), pop(), pop(), pop(). În ce ordine vor fi scoase din stivă elementele? (push = inserare, pop = ștergere)",
+    "answers": [
+      "(2, 10, 8, 9, 6, 7, 3)",
+      "(3, 7, 6, 9, 8, 10, 2)",
+      "(8, 6, 9, 3, 7, 10, 2)",
+      "(6, 9, 3, 7, 8, 10, 2)"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Se consideră următoarea secvență de operații într-o coadă: enqueue(2), enqueue(10), enqueue(8), dequeue(), enqueue(9), enqueue(6), dequeue(), dequeue(), enqueue(7), enqueue(3), dequeue(), dequeue(),dequeue(), dequeue(). În ce ordine vor fi scoase din coadă elementele? (enqueue = inserare, dequeue = ștergere)",
+    "answers": [
+      "(2, 10, 8, 9, 6, 7, 3)",
+      "(3, 7, 6, 9, 8, 10, 2)",
+      "(8, 6, 9, 3, 7, 10, 2)",
+      "(6, 9, 3, 7, 8, 10, 2)"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Se consideră următoarea funcție care caută o valoare dată într-o listă înlănțuită. val este variabila a cărei valoare este căutată, iar head este un pointer la capul listei în care se face căutarea.\n1) NOD *cauta(NOD *head, int val)\n2) {\n3) NOD *iter = head; int gasit=0;\n4) while (....................)\n5) {\n6) if (iter -> info == val) gasit = 1;\n7) else iter = iter -> link;\n8) }\n9) if(gasit) return iter;\n10) else return NULL;\n11) }\nCum trebuie completată linia de cod 4 astfel încât funcția să ruleze corect și să returneze un pointer la nodul cu valoarea căutată sau NULL dacă valoarea nu a fost găsită în listă?",
+    "answers": [
+      "iter != NULL",
+      "!gasit",
+      "iter!=NULL && !gasit",
+      "gasit ==0"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Se consideră următoarea funcție care are drept variabilă de intrare un pointer la capul unei liste înlănțuite nevide. Ce face această funcție?\n1) NOD *fct(NOD *head)\n2) {\n3) if (head == NULL) return NULL;\n4) head = head -> link;\n5) return head;\n6) }",
+    "answers": [
+      "returnează NULL",
+      "returnează un pointer la capul listei",
+      "elimină primul nod al listei și returnează un pointer la noul cap al listei",
+      "returnează pointer la ultimul nod al listei"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Cel mai rău caz pentru algoritmul de sortare prin selecție este cazul în care",
+    "answers": [
+      "vectorul este ordonat descrescător",
+      "cel mai mare element al vectorului se află în prima poziție în vector",
+      "nu există un cel mai rău caz",
+      "vectorul este ordonat crescător"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Cel mai bun caz pentru algoritmul de sortare prin metoda bulelor (Bubblesort) este cazul în care",
+    "answers": [
+      "cel mai mic element al vectorului se află pe prima poziție în vector",
+      "cel mai mare element al vectorului se află în ultima poziție în vector",
+      "nu există un cel mai bun caz",
+      "vectorul este ordonat crescător"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Se consideră lista înlănțuită cu elemente numere întregi din Fig. 2:\nDată următoarea definiție a tipului de date ce corespunde unui nod al listei,\nstruct NOD\n{\n int info;\n NOD *link;\n};\nce va afișa următoarea funcție, dacă este apelată prin print(HEAD)?\nvoid print(NOD *head)\n{\n NOD *iter=head;\n while(iter!=NULL)\n { \n cout << iter->info<<\", \";\n iter=iter->link;\n }\n}",
+    "answers": [
+      "10, 2, 8, 5, 7, 3",
+      "3, 7, 5, 8, 2, 10",
+      "2, 8, 5, 7, 3",
+      "2, 8, 5, 7"
+    ],
+    "correct_answer": 0,
+    "image": "images/figura2.png"
+  },
+  {
+    "question": "Se consideră lista înlănțuită cu elemente numere întregi din Fig. 2.\nDată următoarea definiție a tipului de date ce corespunde unui nod al listei,\nstruct NOD\n{\n int info;\n NOD *link;\n};\nce va afișa următoarea funcție, dacă este apelată prin print(HEAD)?\nvoid print(NOD *head)\n{\n NOD *iter=head;\n while(iter->link !=NULL)\n { \n cout << iter->info<<\", \";\n iter=iter->link;\n }\n}",
+    "answers": [
+      "10, 2, 8, 5, 7, 3",
+      "10, 2, 8, 5, 7",
+      "2, 8, 5, 7, 3, 10",
+      "2, 8, 5, 7"
+    ],
+    "correct_answer": 1,
+    "image": "images/figura2.png"
+  },
+  {
+    "question": "Se consideră lista înlănțuită cu elemente numere întregi din Fig. 2.\nDată următoarea definiție a tipului de date ce corespunde unui nod al listei,\nstruct NOD\n{\n int info;\n NOD *link;\n};\nce va afișa următoarea funcție, dacă este apelată prin print(HEAD)?\nvoid print(NOD *head)\n{\n NOD *iter=head;\n while(iter->link !=NULL)\n { \n iter=iter->link;\n if ((iter-> info)%2) cout << iter->info<<\", \";\n }\n}",
+    "answers": [
+      "10, 2, 8, 5, 7, 3",
+      "10, 3, 7, 5, 8, 2",
+      "2, 8, 5, 7, 3",
+      "5, 7, 3"
+    ],
+    "correct_answer": 3,
+    "image": "images/figura2.png"
+  },
+  {
+    "question": "Se dă următoarea funcție\nvoid interclasare(int x[], int prim, int mijloc, int ultim, int C[])\n{\n// lista A: x[prim ..mijloc]\n// lista B: x[mijloc+1 ..ultim]\n// lista C: C[0.. ultim - prim]\nint iterA = prim, iterB = mijloc+1, iterC = 0;\nwhile (iterA <= mijloc && iterB <=ultim)\n if (x[iterA] < x[iterB]) \nC[iterC ++]= x[iterA ++];\n else C[iterC ++]= x[iterB ++];\n while (iterA <= mijloc)\nC[iterC ++]= x[iterA ++];\nwhile (iterB <= ultim) \nC[iterC ++]= x[iterB ++];\n}\nDacă vectorul x = (9, 15, 23, 25, 4, 5, 8), care va fi vectorul C la apelarea funcției interclasare (x, 0, 3, 6, C)?",
+    "answers": [
+      "4, 5, 8, 9, 15, 23, 25",
+      "0, 0, 0, 0, 0, 0, 0",
+      "9, 4, 15, 5, 23, 8, 25",
+      "9, 15, 23, 25, 4, 5, 8"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Se dă următoarea funcție, care apelează funcția interclasare descrisă la exercițiul 29.\nvoid mergesort(int x[], int prim, int ultim)\n{\n if (prim < ultim)\n {\n int mijloc = (prim + ultim)/2;\n mergesort(x, prim, mijloc);\n mergesort(x, mijloc + 1, ultim);\n int C[ultim - prim +1];\n interclasare(x, prim, mijloc, ultim, C);\n for (int i = prim; i <= ultim; i++)\n x[i]=C[i-prim];\n }\n}\nLa apelul funcției mergesort(x, 0, 6) unde vectorul x = (9, 15, 23, 2, 4, 5, 8), de câte ori va fi apelată funcția mergesort (incluzând apelul inițial)?",
+    "answers": [
+      "1",
+      "3",
+      "13",
+      "7"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Ordinul de complexitate a algoritmului de sortare prin inserare este",
+    "answers": [
+      "O (n)",
+      "O(n2)",
+      "O(n log n)",
+      "O(n3)"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Ordinul de complexitate a algoritmului de căutare secvențială este",
+    "answers": [
+      "O (n)",
+      "O(n2)",
+      "O(n log n)",
+      "O(log n)"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "O listă liniară în care inserările și ștergerile în lista se fac pe la un singur capăt se numește",
+    "answers": [
+      "stivă",
+      "vector",
+      "coadă",
+      "arbore"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Ordinul de complexitate a algoritmului de sortare prin selecție este",
+    "answers": [
+      "O (n)",
+      "O(n2)",
+      "O(n log n)",
+      "O(n3)"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Se dă următoarea funcție în care front și rear sunt variabile globale și reprezintă pointeri la nodurile unei liste liniare reprezentate simplu înlănțuit, front la primul nod al listei, iar rear pointer la ultimul nod.\nvoid fct(int a) \n{ \nnod *p = new nod; \nif (p != NULL) \n{ \np ->info = a; \np ->link = NULL; \nif(rear!=NULL) rear->link=p; \nelse front=p; \nrear = p; \n} \nelse cout << \"OVERFLOW\"<<endl; \n}\nCe face această funcție?",
+    "answers": [
+      "Inserează un nod la începutul listei.",
+      "Inserează un nod la sfârșitul listei.",
+      "Șterge nodul de la începutul listei.",
+      "Șterge nodul de la sfârșitul listei."
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Cel mai rău caz pentru algoritmul de sortare prin inserare este cazul în care",
+    "answers": [
+      "vectorul este deja sortat",
+      "vectorul conține elemente nule",
+      "vectorul este descrescător și se dorește sortarea lui în ordine crescătoare",
+      "vectorul conține și elemente negative"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Cel mai bun caz pentru algoritmul de sortare prin inserare este cazul în care",
+    "answers": [
+      "vectorul este deja sortat în ordinea dorită",
+      "vectorul nu este creat aleator",
+      "vectorul este descrescător și se dorește sortarea lui în ordine crescătoare",
+      "vectorul conține și elemente negative"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Numărul minim de comparații între elementele unui vector cu n elemente care este sortat cu algoritmul de sortare prin inserare este",
+    "answers": [
+      "n",
+      "n+1",
+      "n-1",
+      "log n"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Numărul minim de comparații între elementele unui vector cu n elemente care este sortat cu algoritmul de sortare prin metoda bulelor (Bubblesort) este",
+    "answers": [
+      "n-1",
+      "n+1",
+      "n",
+      "n log n"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Numărul maxim de comparații între elementele unui vector cu n elemente care este sortat cu algoritmul de sortare prin metoda bulelor (Bubblesort) este",
+    "answers": [
+      "n!",
+      "n(n+1)/2",
+      "n(n-1)/2",
+      "n log n"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Câte comparații se fac dacă se folosește algoritmul de căutare secvențială pentru căutarea elementului 12 în vectorul (2, 3, 6, 9, 10, 25)?",
+    "answers": [
+      "6",
+      "5",
+      "3",
+      "1"
+    ],
+    "correct_answer": 0
+  }
+]

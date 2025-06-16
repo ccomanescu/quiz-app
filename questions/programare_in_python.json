@@ -1,0 +1,502 @@
+[
+  {
+    "question": "Care dintre următoarele colecții de date din limbajul Python este imutabilă?",
+    "answers": [
+      "listă",
+      "tuplu",
+      "mulțime",
+      "dicționar"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Pentru ca instrucțiunea Python del t[1:4] să nu producă o eroare în momentul executării sale, variabila t trebuie să fie inițializată prin:",
+    "answers": [
+      "t = (1, 2, 3, 4, 5)",
+      "t = \"12345\"",
+      "t = {1, 2, 3, 4, 5}",
+      "t = [1, 2, 3, 4, 5]"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Pentru ca instrucțiunea Python t[1]=7 să nu producă o eroare în momentul executării sale, variabila t trebuie să fie inițializată prin:",
+    "answers": [
+      "t = (1, 2, 3, 4, 5)",
+      "t = []",
+      "t = {1, 2, 3, 4, 5}",
+      "t = {1:1, 2:2}"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Care dintre următoarele expresii logice scrise în limbajul Python este adevărată dacă şi numai dacă numărul natural memorat în variabila 𝑥 este par și nu aparţine intervalului (10,20]?",
+    "answers": [
+      "x <= 10 or x > 20 and x % 2 == 0",
+      "x <= 10 or x > 20 or x % 2 == 0",
+      "x <= 10 and x > 20 and x % 2 == 0",
+      "x < 10 or x >= 20 and x % 2 == 0"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Considerăm următoarele 5 expresii scrise în limbajul Python: (a+b)/2==m, (a+b)//2==m, a+b==2*m, (b-a)/2==m–a și a//2==m-b//2. Câte dintre ele sunt adevărate dacă şi numai dacă numărul real 𝑚 este egal cu media aritmetică a numerelor întregi 𝑎 și 𝑏?",
+    "answers": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Care este valoarea expresiei 2024//7/5*100/5//7, scrisă în limbajul Python?",
+    "answers": [
+      "165.22448979591840",
+      "162.85714285714286",
+      "162.0",
+      "165.0"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Care este valoarea expresiei 2**4*4**2//4**4*2**2, scrisă în limbajul Python?",
+    "answers": [
+      "4",
+      "64",
+      "0",
+      "8192"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Se consideră următoarea secvenţă de instrucțiuni Python:\nt, a, b = 0, 2025, 9\nwhile a > b:\n\ta, t = a-b, t+1\nprint(t, a)\nCe valori vor fi afișate pe ecran după executarea secvenței de mai sus?",
+    "answers": [
+      "225 9",
+      "224 0",
+      "225 0",
+      "224 9"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Care dintre următoarele secvenţe de instrucţiuni Python nu afişează valoarea 4210?",
+    "answers": [
+      "s = 0\nfor i in range(4210):\n\ts += 1\nprint(s)",
+      "s = 4201\nwhile s <= 4210:\n\ts += 1\nprint(s)",
+      "s = 9\nfor i in range(4):\n\ts = s // 2\n\tprint(s, end=\"\")",
+      "L = [str(x*2) if x < 3 else '1' for x in range(4)]\nL.sort(reverse=True)\nprint(\"\".join(L))"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Considerăm următoarea secvenţă de instrucțiuni Python:\ns = 0\nwhile n > 0:\n\tif n % 10 > s:\n\t\ts = n % 10\n\telse:\n\t\tbreak\n\tn = n // 10\nelse:\n\ts = 10\nprint(s)\nCe valoare se va afişa după executarea secvenţei de mai sus pentru 𝑛 = 75321?",
+    "answers": [
+      "1",
+      "5",
+      "7",
+      "10"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Considerăm următoarea secvenţă de instrucțiuni Python:\ns = 0\nwhile n > 0:\n\tif n % 10 > s:\n\t\ts = n % 10\n\telse:\n\t\tbreak\n\tn = n // 10\nelse:\n\ts = 10\nprint(s)\nCe valoare se va afişa după executarea secvenţei de mai sus pentru 𝑛 = 75521?",
+    "answers": [
+      "1",
+      "5",
+      "7",
+      "10"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Considerăm următoarea secvenţă de instrucțiuni Python:\nx, y, t = 0, 1, 10\nwhile t > 0:\n\tx, y, t = y, x+y, t-1\nprint(x, y)\nCe valori se vor afişa după executarea secvenţei de mai sus?",
+    "answers": [
+      "89 55",
+      "55 144",
+      "89 144",
+      "55 89"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Considerăm următorul program Python:\ndef f(L):\n\tL[0], L[1] = L[1], L[0]\n\tL = L[2:] + L[0:2]\nL = [1, 2, 3, 4, 5]\nf(L)\nprint(L)\nCe se va afişa pe ecran după executarea programului de mai sus?",
+    "answers": [
+      "[2, 1, 3, 4, 5]",
+      "[3, 4, 5, 2, 1]",
+      "[1, 2, 3, 4, 5]",
+      "[3, 4, 5, 2, 1, 3]"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Considerăm următorul program Python:\ndef f(L):\n\tL[0], L[1] = L[1], L[0]\n\tL = L[2:] + L[0:2]\n\treturn L\nL = [1, 2, 3, 4, 5]\nL = f(L)\nprint(L)\nCe valori se vor afişa pe ecran după executarea programului de mai sus?",
+    "answers": [
+      "[2, 1, 3, 4, 5]",
+      "[3, 4, 5, 2, 1]",
+      "[1, 2, 3, 4, 5]",
+      "[3, 4, 5, 2, 1, 3]"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Considerăm următorul program Python:\ndef f(L, x):\n\tx[0] = 0\n\tL += x\nL = [1, 2, 3, 4]\nx = ...\nf(L, x)\nprint(L)\nPentru ca programul să ruleze fără erori trebuie ca punctele de suspensie să nu fie înlocuite cu:",
+    "answers": [
+      "{5}",
+      "{1:1, 2:2}",
+      "[1, 2, 3]",
+      "[[[1]]]"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Considerăm următorul program Python:\ndef f(L, x):\n\tx[0] = 0\n\tL += x\nL = [0, 1, 2]\nx = ...\nf(L, x)\nprint(len(L))\nPentru ca programul să afișeze valoarea 5 trebuie ca punctele de suspensie să fie înlocuite cu:",
+    "answers": [
+      "{1:1, 2:2}",
+      "{0:[100, 200, 300], 1:[400, 500, 600, 700]}",
+      "[[[3], [4]]]",
+      "list({3, 3})"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Considerăm o listă nevidă 𝐿 ale cărei elemente sunt liste nevide de numere întregi (de exemplu, 𝐿 = [[10, 70, −100],[50],[1, 100, 70]). Care dintre următoarele expresii Python nu atribuie variabilei de tip întreg 𝑙𝑚𝑎𝑥 cel mai mare număr care apare în sublistele listei 𝐿 (pentru exemplul dat anterior acesta este 100)?",
+    "answers": [
+      "lmax = max(L)",
+      "lmax = max([max(r) for r in L])",
+      "lmax = max([sorted(r)[-1] for r in L])",
+      "lmax = max([x for r in L for x in r])"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Considerăm următoarea secvenţă de instrucțiuni Python:\ns = input()\nwhile len(s) > 0:\n\ts = s.replace(s[0], \"\")\nprint(s)\nPentru orice șir format doar din caractere ASCII introdus de la tastatură programul va afișa:",
+    "answers": [
+      "prima literă din șirul introdus de la tastatură",
+      "ultima literă din șirul introdus de la tastatură",
+      "șirul vid",
+      "șirul introdus de la tastatură fără prima literă"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Considerăm următoarea secvenţă de instrucțiuni Python:\ns = input()\nt = \"\"\nfor x in range(ord(\"a\"), ord(\"z\")+1):\n\tt += chr(x) * s.count(chr(x))\nprint(t)\nPentru orice șir format doar din litere mici ale alfabetului englez introdus de la tastatură secvența dată este echivalentă cu:",
+    "answers": [
+      "s = input()\nt = sum([x*s.count(chr(x)) for x in range(ord(\"a\"), ord(\"z\")+1)])\nprint(t)",
+      "s = input()\nt = \"\"\nfor x in set(sorted(set(s))):\n\tt += x * s.count(x)\nprint(t)",
+      "print(sorted(input()))",
+      "print(\"\".join(sorted(input())))"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Dacă s=\"restaurare\" și t=\"orchestrare\", atunci valoarea expresiei s.find(t[4:7]) + t.find(s[-4:-1]) este egală cu:",
+    "answers": [
+      "8",
+      "-2",
+      "0",
+      "6"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Fie 𝑠 un șir de caractere format din exact 10 litere mici din alfabetul englez și următoarele 4 expresii de tip logic, scrise în limbajul Python: s[:5]*2==s, s.index(s[5:])==0, s[:5]==s[5:] și s.startswith(s[5:])+s.endswith(s[:5])==2. Câte dintre cele 4 expresii sunt adevărate dacă și numai dacă șirul 𝑠 se poate obține prin concatenarea a două șiruri identice de lungime 5?",
+    "answers": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Fie 𝑡 un șir de caractere format din numere naturale nenule despărțite între ele prin spații și următoarele 4 expresii scrise în limbajul Python:\n• x=int(\"\".join(sorted(t.split())))\n• x=int(\"\".join(sorted(\"\".join(t.split()))))\n• x=int(\"\".join(sorted(\"\".join(t.split())))[::-1])\n• x=int(\"\".join(sorted(t)[::-1]))\nÎn câte dintre cele 4 expresii variabila 𝑥 va conține întotdeauna cel mai mare număr care se poate forma folosind toate cifrele tuturor numerelor din șirul 𝑡?",
+    "answers": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Considerăm următoarea secvenţă de instrucțiuni Python:\ns = \"abcd\" * 2\nL = list(s[:6])\nL += s[4:]\nL[3:] = L[7:]\ns = \"\".join(L)\nprint(s)\nCe se va afişa pe ecran după executarea secvenţei date?",
+    "answers": [
+      "abc",
+      "abcabcd",
+      "abcbcd",
+      "abcaabcabcd"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Considerăm următoarea secvenţă de instrucțiuni Python:\ns = \"abcd\" * 2\nL = list(s[:6])\nL += [s[4:]]\nL[3:] = L[7:]\ns = \"\".join(L)\nprint(s)\nCe se va afişa pe ecran după executarea secvenţei date?",
+    "answers": [
+      "abc",
+      "abcabcd",
+      "abcbcd",
+      "abcaabcabcd"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Care dintre următoarele secvențe de inițializare nu va produce o listă 𝐿 formată doar din numere naturale pare?",
+    "answers": [
+      "L = [x ** 2 for x in range(0, 21, 2)]",
+      "L = [x // 2 for x in range(0, 21, 4)]",
+      "L = [x // 2 for x in range(0, 21, 2)]",
+      "L = [x * 3 for x in range(20, 0, -2)]"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Considerăm următoarea secvenţă de instrucțiuni Python:\nt = set([x for x in range(0, 21, 2)] * 2)\nu = [x for x in range(0, 31, 3)] * 3\nt = t.intersection(u)\nt.update(tuple(u))\nprint(len(t))\nCe se va afişa pe ecran după executarea secvenţei date?",
+    "answers": [
+      "5",
+      "11",
+      "26",
+      "37"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Considerăm următoarele 4 funcții scrise în limbajul Python:\na) def sc1(n):\n\treturn sum([int(x) for x in str(n)])\nb) def sc2(n):\n\td = {int(x): str(n).count(x) for x in str(n)}\n\treturn sum([x * d[x] for x in d])\nc) def sc3(n):\n\ts = 0\n\twhile n >= 10:\n\t\ts += n // 10\n\t\tn %= 10\n\treturn s + n\nd) def sc4(n):\n\tL = [int(x) for x in str(n)]\n\twhile len(L) > 1:\n\t\tx = L.pop()\n\t\ty = L.pop()\n\t\tL.append(x+y)\n\treturn L[0]\nCâte dintre cele 4 funcții definite anterior furnizează suma cifrelor numărului natural 𝑛 transmis ca parametru?",
+    "answers": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Ce se va afișa după rularea programului Python de mai jos?\nL = [(1,2), (3,4), (5,6)]\nt = tuple()\nfor x in L:\n\tt += x\nprint(t)",
+    "answers": [
+      "((1,2), (3,4), (5,6))",
+      "((1, 3, 5), (2, 4, 6))",
+      "(9, 12)",
+      "(1, 2, 3, 4, 5, 6)"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Ce se va afișa după rularea programului Python de mai jos?\nL = [1]\nfor x in range(3):\n\tL = L + [L]\nprint(L)",
+    "answers": [
+      "[1, 1, 1]",
+      "[[1], [1], [1]]",
+      "[[[[1]]]]",
+      "[1, [1], [1, [1]], [1, [1], [1, [1]]]]"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Ce se va afișa după rularea programului Python de mai jos?\nL = [1]\nfor x in range(3):\n\tL = [L]\nprint(L)",
+    "answers": [
+      "[1, 1, 1]",
+      "[[1], [1], [1]]",
+      "[[[[1]]]]",
+      "[1, [1], [1, [1]], [1, [1], [1, [1]]]]"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Ce se va afișa după rularea programului Python de mai jos?\ndef test(L):\n\tL.sort()\n\tL.remove(L[0])\nL = [5, 1, 4, 3, 6, 5, 1, 1, 7]\nL = test(L)\nprint(L)",
+    "answers": [
+      "None",
+      "[1, 1, 3, 4, 5, 5, 6, 7]",
+      "[3, 4, 5, 5, 6, 7]",
+      "[5, 1, 4, 3, 6, 5, 1, 1, 7]"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Fie s și t două șiruri de caractere. Care este efectul instrucțiunii s, t = (t, s)[::-1]?",
+    "answers": [
+      "șirurile s și t nu vor fi modificate",
+      "șirurile s și t vor fi interschimbate",
+      "eroare, deoarece șirurile de caractere sunt imutabile",
+      "șirul s va fi înlocuit cu oglinditul șirului t, iar șirul t cu oglinditul șirului s (oglinditul unui șir se obține parcurgând șirul de la sfârșit spre început)"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Considerăm următorul program Python:\ns = \"101,Popescu,Ion,Mihai,9.50\"\nx, *y, z = s.split(\",\")\nprint(x, y, z, sep=\" -> \")\nCe se va afişa pe ecran după executarea programului dat?",
+    "answers": [
+      "101 -> 'PopescuIonMihai' -> 9.50",
+      "101 -> 'Popescu,Ion,Mihai' -> 9.50",
+      "101 -> ['Popescu', 'Ion', 'Mihai'] -> 9.50",
+      "101 -> 9.50"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Considerăm următorul program Python:\ns = \"Ana are mere si pere verzi\"\nt = \"\"\nwhile True:\n\tx, *y, z = s.split()\n\tt += \" \".join([x, z]) + \" \"\n\tif len(y) == 0:\n\t\tbreak\n\ts = \" \".join(y)\nprint(t)\nCe se va afişa pe ecran după executarea programului dat?",
+    "answers": [
+      "Ana are verzi mere si pere",
+      "Ana verzi are pere mere si",
+      "Ana verzi pere are si mere",
+      "Ana are si mere verzi pere"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Care dintre următoarele afirmații referitoare la un dicționar din limbajul Python este adevărată?",
+    "answers": [
+      "toate cheile unui dicționar trebuie să fie de același tip de date",
+      "cheile dintr-un dicționar pot fi de orice tip de date, inclusiv alte dicționare",
+      "dicționarele sunt imutabile",
+      "valorile dintr-un dicționar nu se accesează folosind indecșii lor"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Fie lista L = [10, [3.14, True, [20, \"test\", 2.71]], \"usor\"]. Care dintre următoarele expresii poate fi utilizată pentru a elimina cuvântul \"test\" din lista L?",
+    "answers": [
+      "L[1][2][1:2] = []",
+      "del L[1][2][2]",
+      "L[1][2].pop()",
+      "L[1][2][1] = \"\""
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Ce se va afișa după rularea programului Python de mai jos?\nd = {}\nfor i in range(2):\n\tfor j in range(3):\n\t\td[i], d[j] = j, i\nprint(d)",
+    "answers": [
+      "{0: 0, 1: 1, 2: 2}",
+      "{0: 1, 1: 2, 2: 1}",
+      "{0: 2, 1: 2, 2: 1}",
+      "{0: 2, 1: 2, 2: 2}"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Fie următoarea funcție scrisă în limbajul Python:\ndef f(x, y):\n\treturn x-y, x+y\nDacă a și b sunt două variabile de tip numeric, atunci după executarea secvenței de instrucțiuni\nt = f(a, b)\nprint(t[1]-t[0])\nîntotdeauna se va afișa:",
+    "answers": [
+      "dublul valorii numărului a",
+      "dublul valorii numărului b",
+      "șirul de caractere obținut prin alipirea diferenței și sumei numerelor a și b",
+      "o eroare, deoarece funcția returnează două valori care nu pot fi stocate într-o singură variabilă"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Care dintre următoarele structuri de date poate fi utilizată pentru cheile unui dicționar?",
+    "answers": [
+      "un tuplu de liste",
+      "o listă de tupluri",
+      "un tuplu de tupluri",
+      "o mulțime de tupluri"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Ce se va afișa după rularea programului Python de mai jos?\ndct = {}\ndct['1'] = (1, 2)\ndct['2'] = (2, 1)\nfor x in dct:\n\tprint(dct[x][1], end=\"\")",
+    "answers": [
+      "(1,2)",
+      "(2,1)",
+      "12",
+      "21"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Produsele dintr-un magazin online sunt caracterizate prin categorie, denumire, cantitate și preț unitar. De exemplu, un televizor se poate caracteriza prin următoarele informații: \"Audio-video\", \"Televizor Philips 32PHS6605/12\", 10, 1500 RON. Care dintre următoarele structuri de date din limbajul Python permite actualizarea eficientă a cantității și prețului unitar pentru un anumit produs?",
+    "answers": [
+      "o listă cu tupluri de forma (categorie, denumire, cantitate și preț unitar)",
+      "un dicționar cu intrări de forma categorie: {denumire: [cantitate, preț unitar]}",
+      "o listă cu șiruri de caractere de forma \"categorie, denumire, cantitate și preț unitar\"",
+      "un dicționar cu intrări de forma categorie: {denumire: (cantitate, preț unitar)}"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Considerăm următorul program Python:\nf = open(\"exemplu.txt\")\np = len(f.readline())\nq = len(f.readlines())\nr = len(f.read())\nf.close()\nprint(p + q + r)\nDacă fișierul text \"exemplu.txt\" are conținutul\nAna\nare\nmere\nsi\npere\nmulte!\natunci, după rularea programului de mai sus, se va afișa:",
+    "answers": [
+      "37",
+      "27",
+      "17",
+      "9"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Considerăm următorul program Python:\nf = open(\"exemplu.txt\")\ns = t = u = 0\nwhile True:\n\taux = f.readline()\n\tif not aux:\n\t\tbreak\n\tu += 1\n\ts += len(aux.split())\n\tt += sum([len(x) for x in aux.split()])\nf.close()\nprint(u, s, t)\nDacă fișierul text \"exemplu.txt\" are conținutul\nAna\nare mere verzi\nsi pere\nmulte!\natunci, după rularea programului de mai sus, se va afișa:",
+    "answers": [
+      "4 7 27",
+      "4 7 26",
+      "4 10 30",
+      "5 10 27"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Considerăm următorul program Python:\nf = open(\"numere.txt\")\nr = set()\nfor aux in f:\n\ts = sum([int(x) for x in aux.split()])\n\tr.add(s)\nprint(*sorted(r))\nf.close()\nDacă fișierul text \"numere.txt\" are conținutul\n20 -10 10\n10 10 10 20 10\n20 20 -20 30\n50\n50 -80 70 -20\natunci, după rularea programului de mai sus, se va afișa:",
+    "answers": [
+      "20 20 50 50 60",
+      "20 20 50 60",
+      "20 50 60",
+      "130"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Considerăm următorul program Python:\nf = open(\"numere.txt\")\nr = []\nfor aux in f:\n\tt = max([x for x in aux.split()])\n\tr.append(t)\nf.close()\naux = \"\".join(sorted(r))\nf = open(\"numere.txt\", \"a\")\nf.write(\"\\n\"+aux)\nf.close()\nDacă fișierul text \"numere.txt\" are conținutul\n20 70 1100\n500 60 100\n1000 7 500\natunci, după rularea programului de mai sus, ultima linie din fișierul numere.txt va fi:",
+    "answers": [
+      "50010001100",
+      "500 1000 1100",
+      "60770",
+      "1100"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Ce se va afișa pe ecran după executarea programului Python de mai jos?\ndef f(a=2, b=3):\n\treturn a + b\nprint(f(f(7)))",
+    "answers": [
+      "11",
+      "12",
+      "13",
+      "o eroare, deoarece apelul funcției f conține un singur parametru efectiv"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Ce se va afișa pe ecran după executarea programului Python de mai jos?\ndef f(a=10, b=20):\n\treturn a + b\nprint(f(f(30),f(50)))",
+    "answers": [
+      "60",
+      "80",
+      "100",
+      "120"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Fie următoarea funcție scrisă în limbajul Python:\ndef f(L):\n\tL = list(set(L))\n\tL.sort()\n\treturn L\nDacă T este o listă cu elemente de tip numeric, atunci după executarea secvenței de instrucțiuni\nr = f(T)\nprint(r, T)\nîntotdeauna se vor afișa:",
+    "answers": [
+      "valorile distincte (fără duplicate) din lista T în ordine crescătoare și apoi lista T inițială",
+      "valorile distincte (fără duplicate) din lista T în ordine crescătoare și apoi lista T inițială sortată crescător",
+      "valorile distincte (fără duplicate) din lista T într-o ordine oarecare și apoi lista T inițială sortată crescător",
+      "valorile distincte (fără duplicate) din lista T într-o ordine oarecare și apoi lista T inițială"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Ce se va afișa pe ecran după executarea programului de mai jos?\ndef f(lst):\n\tdel lst[lst[2]]\n\treturn lst\nL = [x * x for x in range(5)]\nprint(f(L))",
+    "answers": [
+      "[0, 1, 9, 16]",
+      "[0, 1, 4, 9]",
+      "[0, 1, 4, 16]",
+      "[1, 4, 9, 16]"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Fie următorul program scris în limbajul Python:\ndef f(x, y):\n\treturn x & y, x | y\nt = f(0b101101, 0b111000)\nprint(bin(t[1] ^ t[0]))\nDupă executarea programului de mai sus, pe ecran se va afișa:",
+    "answers": [
+      "0b10101",
+      "0b11100",
+      "0b101010",
+      "0b111101"
+    ],
+    "correct_answer": 0
+  }
+]

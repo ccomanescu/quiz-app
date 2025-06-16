@@ -1,0 +1,482 @@
+[
+  {
+    "question": "Cardurile bancare nu contin:",
+    "answers": [
+      "Numele emitentului, numarul cardului, perioada de valabilitate, numele posesorului-inscriptionate pe avers prin tiparire, gofrare sau gravare cu laser",
+      "Sigla emitentului, holograma de securitate, logo-ul organizatiei, pe avers",
+      "Suma de bani aflata in contul posesorului",
+      "Banda magnetica si/sau smart card"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Mecanismele de baza ale comertului electronic sunt:",
+    "answers": [
+      "C2C",
+      "B2C",
+      "B2B",
+      "toate"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Conform Legii comertului electronic din Romania, falsificarea instrumentelor de plata electronica se pedepseste cu:",
+    "answers": [
+      "in lege nu sunt prevazute sanctiuni",
+      "cu inchisoare de la 3 la 12 ani si interzicerea unor drepturi",
+      "cu amenda contraventionala sau inchisoare de la 1 la 2 ani",
+      "tentativa se pedepseste"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Proiectarea, implementarea si dezvoltarea unui site de comert electronic se poate face folosind aplicatia software:",
+    "answers": [
+      "Pay Pal",
+      "IBM BMP Suite",
+      "MOODLE",
+      "OsCommerce"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Care din urmatoarele enunturi referitoare la comertul electronic este fals:",
+    "answers": [
+      "eBay.com este cel mai mare magazin de comert electronic la nivel mondial",
+      "Skimming-ul si phishing-ul utilizate in fraude cu carduri bancare si furt de identitate reprezinta infractiuni criminale informatice",
+      "Protocolul SET (Secure Electronic Transaction) reprezinta un pachet de specificatii de securitate si de formate, dezvoltat de Visa si MasterCard, care permit utilizatorilor sa efectueze plati electronice cu cardurile bancare in Internet",
+      "E-commerce (comertul electronic) reprezinta o strategie moderna in ceea ce priveste modul de a face afaceri, cea mai importanta componenta a sa fiind E-business (alaceri electronice)"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Conform legislatiei nationale in vigoare, consumatorul are dreptul de a denunta unilateral contractul la distanta, fara penalitati si fara invocarea vreunui motiv in timp de:",
+    "answers": [
+      "30 de zile calendaristice de la semnare",
+      "15 zile lucratoare de la semnare",
+      "10 zile lucratoare de la semnare, daca comerciantul a specificat conditiile de denuntare unilaterala a contractului incheiat la distanta",
+      "90 de zile de la semnarea contractului incheiat la distanta"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Arhitectura Java Card nu contine nivelul:",
+    "answers": [
+      "Cardlet-uri (applet-uri), aplicatii care sunt incarcate in card printr-un incarcator standard (de exemplu, EZ Formatter)",
+      "Masina Virtuala Java, inclusa in card, care este un interpretor care translateaza codul Java in instructiuni ale microprocesorului",
+      "Sesiune de prezentare, nivel intermediar intre Cardlet-uri si Masina Virtuala Java",
+      "Sistemul de operare GPOS- General Purpose Operating System"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Sistemul electronic de transfer de fonduri (EFT-Electronic Found Transfer) reprezinta:",
+    "answers": [
+      "ansamblul dispozitivelor si procedeelor speciale care asigura deplasarea fluxurilor monetare de la platitor la beneficiar intr-un mediu exclusiv electronic",
+      "un protocol de comunicatie intre POS (Point Of Sales) si ATM (Automatic Teller Machine)",
+      "o instructiune comuna la nivel mondial pentru sistemele bancare",
+      "nici unul"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Operatiunile cu carduri bancare cuprind urmatoarele etape:",
+    "answers": [
+      "emiterea cardurilor",
+      "acceptarea cardurilor",
+      "distrugerea cardurilor",
+      "toate"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Dupa modul de stocare a caracteristicilor de securitate cardurile se impart in:",
+    "answers": [
+      "carduri cu banda magnetica - care contin pe 3 piste ce memoreaza informatii criptate despre utilizator, emitent, algoritmul de codare etc",
+      "carduri cu microprocesor – smart-carduri- avand stocate in chip datele de securitate si permitand functionarea ca portofel electronic",
+      "carduri de debit - care asigura utilizatorului achizitionarea de bunuri si servicii sau retrageri de numerar, cu conditia prezervarii unor fonduri intr-un cont de card, si efectuarea de cheltuieli in limita soldului disponibil",
+      "numai a) si b)"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Protocolul SET (Secure Electronic Transaction) asigură urmatoarele:",
+    "answers": [
+      "un canal securizat între toate părtile implicate într-o tranzactie",
+      "imbunătătirea secretului tranzactiilor; informatia este accesibilă părtilor unei tranzactii numai în măsura în care este necesar",
+      "autentificarea participantilor la tranzactii prin folosirea certificatelor digitale",
+      "toate"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "In domeniul educatiei de tip e-learning, parte componenta a e-business, se poate implementa si utiliza platforma opensource:",
+    "answers": [
+      "Zen Cart",
+      "OSCommerce",
+      "MOODLE",
+      "IBM WebSphere"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Care din urmatoarele enunturi este fals referitor la dezavantajele utilizarii e-commerce:",
+    "answers": [
+      "aspectele privind securitatea comertului electronic – cea mai complexa problema",
+      "acceptarea noilor modalitati de plata (bani electronici/digitali)",
+      "intermediarii pot fi eliminati din lantul de aprovizionare",
+      "existenta unui cadrul legal si normativ unitar la nivel global: cadrul fiscal, drepturile asupra proprietatii, protectia datelor consumatorului"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Care dintre urmatoarele enunturi reprezinta componente ale e-business:",
+    "answers": [
+      "CRM – Customer Relationship Management",
+      "SCM – Supply Chain Management",
+      "ERP – Enterprise Resource Planning",
+      "toate"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Un sistem electronic cu microplati permite efectuare de plati electronice cu valori de pana la:",
+    "answers": [
+      "1 euro",
+      "10 euro",
+      "100 euro",
+      "1000 euro"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Care din urmatoarele modele nu este specific pentru e-commerce:",
+    "answers": [
+      "Modelul Paul Timmers",
+      "Modelul David Kosiur",
+      "Modelul Willian Stallings",
+      "Modelul Michael Rappa"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Modelul David Kosiur prezinta cinci procese de baza care au loc in cadrul comertului electronic. Aceste procese sunt:",
+    "answers": [
+      "distribuirea informatiilor, lansarea comenzilor, plata, onorarea comenzilor, service-ul si asistenta",
+      "ofertarea, plata, onorarea comenzilor, service-ul si asistenta, postgarantie",
+      "stabilirea pretului, lansarea produselor, plata, distribuitia, receptia",
+      "distribuirea informatiilor, stabilirea pretului, livrarea, receptia, service-ul si asistenta"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Care din elementele enumerate nu este specific unui sistem de comert electronic:",
+    "answers": [
+      "serverele organizatiei care ofera servicii on-line accesibile prin Internet",
+      "clientii (persoane fizice sau juridice) care se conecteaza la server folosind diverse tipuri de dispozitive",
+      "conturile bancare ale participantilor la care sunt asociate carduri bancare (credit, debit)",
+      "tranzactiile - raportate la bunurile si serviciile cumparate"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "In cadrul unui sistem de comert electronic o protectie adecvata trebuie acordata consumatorului, protectie care se refera la mai multe aspecte. Care dintre aspectele enumerate este fals?",
+    "answers": [
+      "interzicerea publicitatii inselatoare",
+      "interzicerea promovarii produselor",
+      "reglementarea serviciilor financiare",
+      "reguli privind raspunderea referitoare la produsele necorespunzatoare"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Care din urmatoarele enunturi nu este un sistem de microplata electronica:",
+    "answers": [
+      "Cybercoin (proiect CyberCash)",
+      "Euro-MicroPayment (proiect UE)",
+      "Millicent (proiect Digital)",
+      "Micro-Payment (proiect Consortiul W3)"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Care din urmatoarele protocoale este specific este specific pentru tranzactiile electronice:",
+    "answers": [
+      "FTP",
+      "ARP",
+      "STP",
+      "iKP"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Conform protocolului 3KP toti participantii la o tranzactie electronica trebuie sa posede:",
+    "answers": [
+      "bani in cont pentru a face tranzactia",
+      "certificat digital cu cheia sa publica, precum si cheia privata",
+      "doar un certificat digital",
+      "canale de comunicatie securizate peste Internet"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Atacurile informatice de tip pharming vizeaza compromiterea:",
+    "answers": [
+      "serverelor de email",
+      "serverelor de DHCP",
+      "serverelor de Active Directory/Controler de domeniu",
+      "serverelor de DNS"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Un sistem electronic de plati poate fi definit ca un ansamblu de tranzactii generate de:",
+    "answers": [
+      "conversia banilor numerar in bani electronici si invers",
+      "verificarea conturilor bancare asociate cumparatorului sau vanzatorului",
+      "schimbul de mesaje criptate si semnate electronic intre participanti (vanzator, cumparator, banci)",
+      "operatiile bancare rezultate pe durata efectuarii tranzactiilor electronice"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Care dintre enunturile de mai jos nu constituie o infractiune cu carti de credit:",
+    "answers": [
+      "SKIMMING",
+      "PIMMING",
+      "PHARMING",
+      "PHISING"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Infrastructura de comunicatii a unei organizatii care realizeaza comert electronic trebuie sa contina urmatoarele doua elemente de baza:",
+    "answers": [
+      "e-commerce front-end",
+      "e-commerce back-end",
+      "componente middleware",
+      "toate"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Ce etape implica realizarea unui site Web de comert electronic:",
+    "answers": [
+      "analiza si planificarea site-ului",
+      "proiectarea si testarea site-ului",
+      "implementarea si promovarea",
+      "toate"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Care dintre enunturile de mai jos nu este un participant in tranzactiile de plata din protocoalele iKP:",
+    "answers": [
+      "verificator",
+      "cumparator",
+      "achizitor",
+      "vanzator"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Protocolul SET defineste o diversitate de tranzactii care folosesc concepte criptografice. Care dintre conceptele enumerate mai jos nu se foloseste in protocolul SET:",
+    "answers": [
+      "certificate digitale",
+      "SSL / TLS",
+      "semnatura duala",
+      "semnatura digitala"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Modelul unui sistem electronic de plati (Electronic Payment System-EPS) implica, in general, urmatoarele cel putin urmatoarele entitati care interactioneaza:",
+    "answers": [
+      "o banca B, un cumparator C si un vanzator V",
+      "o banca B, un procesator de carduri P, un cumparator C si un vanzator V",
+      "un procesator de carduri P, un cumparator C si un vanzator V",
+      "un cumparator C, o banca a lui C, un vanzator V si o banca a lui V"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Tranzactiile electronice reprezinta schimburile de mesaje, sub forma unor protocoale, care se desfasoara intre entitatile ce joaca diverse roluri implicate intr-un EPS. Care dintre enunturile de mai jos nu este o tranzactie tipica intr-un:",
+    "answers": [
+      "tranzactia de identificare a utilizatorilor",
+      "tranzactia de retragere",
+      "tranzactia de actualizare a platilor",
+      "tranzactia de clearing"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Un <scrip> din cadrul protocolului MilliCent are urmatoarele proprietati principalele:",
+    "answers": [
+      "are valoare doar pentru anumiti vanzatori",
+      "se poate cheltui o singura data",
+      "este rezistent la falsicare si greu de contrafacut",
+      "toate"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "In domeniul platilor prin card, transferul electronic de fonduri poate fi realizat cu ajutorul:",
+    "answers": [
+      "ghiseul automat de banca (ATM - Automatic Teller Machine)",
+      "puncte electronice de vanzare la comercianti (EFT POS-Point of Sale)",
+      "carduri bancare (cu banda magnetica sau smartcard)",
+      "toate"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "La fiecare noua tranzactie, portofelul electronic vWALLET implementat de firma VeriFone recunoaste urmatoarele tipuri de instrumente:",
+    "answers": [
+      "VISA, MasterCard",
+      "VISA, MasterCard, American Express, JCB",
+      "JCB",
+      "American Express"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Care dintre enunturile de mai jos nu reprezinta o norma in domeniul comertului electronic:",
+    "answers": [
+      "UNCITRAL",
+      "Directiva 31/2000/CE",
+      "Legea nr.1/2011",
+      "Legea 365/2002"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Una dintre afirmatiile de mai jos referitoare la aspectele critice si dezavantajele comertului electronic este falsa. Care este aceea?",
+    "answers": [
+      "aspectele privind securitatea comertului electronic – cea mai complexa problema",
+      "acceptarea noilor modalitati de plata (bani electronici/digitali)",
+      "stocurile pot fi minimizate sau chiar eliminate prin procese de productie \"Just-In-Time\"",
+      "cadrul legal si normativ: cadrul fiscal, drepturile asupra proprietatii, protectia datelor consumatorului"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "In raport cu sursa de acoperire a cheltuielilor cardurile se impart in:",
+    "answers": [
+      "carduri cu banda magnetica - care contin pe 3 piste ce memoreaza informatii criptate despre utilizator, emitent, algoritmul de codare etc.",
+      "carduri de credit - care asigura utilizatorului achizitionarea de bunuri si servicii sau retrageri de numerar, pe baza unei linii de credit acordate posesorului de card",
+      "carduri de debit - care asigura utilizatorului achizitionarea de bunuri si servicii sau retrageri de numerar, cu conditia prezervarii unor fonduri intr-un cont de card, si efectuarea de cheltuieli in limita soldului disponibil",
+      "numai b) si c)"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Cardurile cu microprocesor se impart in urmatoarele categorii:",
+    "answers": [
+      "carduri cu contact (contact-card)",
+      "carduri cu memorie (memory-card)",
+      "carduri fara contact (contactless-card)",
+      "numai a) si c)"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Care din următoarele enunturi nu reprezintă un tip de organizatie de comert electronic:",
+    "answers": [
+      "organizatii de tip brick-and-mortar",
+      "organizatii de tip click-and-brick sau click-and-mortar",
+      "organizatii de tip click-and-click",
+      "organizatii de tip virtual business"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Conform OG 34/2006, achizitiile publice în România se derulează pe platforma online:",
+    "answers": [
+      "SEAP",
+      "SETI",
+      "ANISP",
+      "ORDA"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Tranzactiile electronice din punctul de vedere al comertului electronic prezintă următoarele cerinte:",
+    "answers": [
+      "cerinte privind legislatia aplicabilă",
+      "cerinte privind standardele acceptate",
+      "cerinte privind securitatea tranzactiilor",
+      "toate"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Utilizarea cardurilor bancare la retragerea de numerar dintr-un ATM presupune autentificarea cu:",
+    "answers": [
+      "un factor sau A (ce am? sau ce stiu?)",
+      "doi factori sau AA (ce am ? si ce stiu?)",
+      "trei factori sau AAA (ce am ? si ce stiu? si cine sunt?)",
+      "patru factori sau AAAA (ce am ? si ce stiu? si cine sunt? si unde sunt?)"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Principalele amenintari asupra tranzactiilor din comertul electronic sunt:",
+    "answers": [
+      "Interceptarea informatiilor referitoare la plata (de exemplu numarul cardului de credit si a numărului CVV)",
+      "Interceptarea parolelor sau a altor informatii de acces ale sistemului (de exemplu, PIN)",
+      "Modificarea datelor unei tranzactii inaintea livrarii",
+      "toate"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Un sistem electronic de plati (Electronic Payment System-EPS) poate fi definit ca un ansamblu de tranzactii generate de:",
+    "answers": [
+      "conversia banilor numerar (cash sau din cont) in bani electronici si invers",
+      "transferul banilor electronici intre utilizatorii care folosesc sistemul EPS",
+      "extragerea de bani din cont, efectuarea unei plati sau depunerea banilor electronici într-o banca",
+      "toate"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Care din urmatoarele roluri de mai jos nu este asociat unei Autorităti de Certificare (AC):",
+    "answers": [
+      "să emită si să revoce certificate digitale X.509 v3",
+      "să efectueze tranzactii de bani electronici",
+      "să autentifice cererile de chei publice ale utilizatorilor",
+      "să înlocuiască certificate digitale X.509 v3"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Un portofel electronic poate opera in următoarele moduri:",
+    "answers": [
+      "Inchis / Deschis - cand acelasi operator emite carduri si acceptă tranzactii sau când se face compensarea tranzactiilor între diferiti emitenti",
+      "Pre-platit/Pre-autorizat. Un portofel electronic pre-platit inglobeaza (sub forma electronica) bani reali, transferati dintr-un cont bancar sau dintr-un depozit de numerar. Un portofel electronic pre-autorizat inglobeaza valoarea (costul) unei cumparaturi, pe care operatorul portofelului o garanteaza (se bazeaza pe o linie de credit)",
+      "De unica folosinta / Reincarcabil",
+      "toate"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Indicatorul Major de Industrie – MII (Major Industry Identifier) pentru VISA si MasterCard au valorile:",
+    "answers": [
+      "2 si 3",
+      "3 si 4",
+      "4 si 5",
+      "5 si 6"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Un certificat digital emis de o Autoritate de Certificare nu contine:",
+    "answers": [
+      "cheia secreta a detinatorului",
+      "cheia publica a detinatorului",
+      "Autoritatea de Certificare care a emis certiificatul digital",
+      "algoritmii folositi (RSA cu MD5)"
+    ],
+    "correct_answer": 0
+  }
+]

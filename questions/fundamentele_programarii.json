@@ -1,0 +1,502 @@
+[
+  {
+    "question": "În care dintre variantele de mai jos se declară un tablou unidimensional (vector) 𝑥 în care se pot memora cel mult 100 de numere reale?",
+    "answers": [
+      "x=float[100];",
+      "double x[100];",
+      "floating x[100];",
+      "real x(100);"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Care dintre următoarele expresii logice este adevărată (are o valoare nenulă) dacă şi numai dacă numărul real memorat în variabila 𝑥 nu aparţine intervalului (0,5]?",
+    "answers": [
+      "(x<=0)||(x>5)",
+      "(x<=0)&&(x>5)",
+      "(x<0)||(x>=5)",
+      "(x<=0)&&(x>5)"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Care dintre următoarele expresii este adevărată (are o valoare nenulă) dacă şi numai dacă numărul întreg memorat în variabila 𝑥 aparţine intervalului (1,6]?",
+    "answers": [
+      "(x>=1)||(x<6)",
+      "(x>1)||(x<=6)",
+      "(x>1)&&(x<6)",
+      "(x>1)&&(x<=6)"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "După executarea instrucțiunii float x = 27/5*2/3*7; ce valoare va fi memorată în variabila 𝑥?",
+    "answers": [
+      "25.2",
+      "21.0",
+      "6.3",
+      "7.0"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "După executarea instrucțiunii float x = 55/17*5/8+48/5/8*15; ce valoare va fi memorată în variabila 𝑥?",
+    "answers": [
+      "17.022058",
+      "17.0",
+      "16.0",
+      "21.219914"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Se consideră următoarea secvenţă de instrucțiuni:\nint t=0,a=1234,b=10;\nwhile(a>=b) \n{\n\ta=a-b; \n\tt++; \n}\nprintf(\"%d %d\",t,a);\nCe valori vor fi afișate pe ecran după executarea secvenței de mai sus?",
+    "answers": [
+      "124 4",
+      "123 4",
+      "123 5",
+      "124 3"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Care dintre următoarele secvenţe de instrucţiuni afişează valoarea 654, ştiind că 𝑠 şi 𝑖 sunt două variabile de tip întreg?",
+    "answers": [
+      "s=0;\nfor(i=0;i<=654;i++) s++; \nprintf(\"%d\",s); ",
+      "s=651;\nwhile(s<=654) s++;\nprintf(\"%d\",s);",
+      "for(i=1;i<=3;i++) printf(\"%d\",7-i);",
+      "s=7;\nwhile(s>=1) printf(\"%d\",s-1);"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Care dintre următoarele secvenţe de instrucţiuni afişează valoarea 5432, ştiind că 𝑠 şi 𝑖 sunt două variabile de tip întreg?",
+    "answers": [
+      "s=0;\nfor(i=0;i<=5432;i++) s++; \nprintf(\"%d\",s); ",
+      "s=5421;\n while(s<=5432) s++;\n printf(\"%d\",s);",
+      "for(i=1;i<4;i++) printf(\"%d\",6-i);",
+      "s=6;\nwhile(s>=3) printf(\"%d\",--s);"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Considerăm următoarea secvenţă de instrucțiuni:\ns=0;\nwhile(n>0)\n{\n\tif(n%10>s) s=n%10;\n\telse s=10; \n\tn=n/10;\n}\nprintf(\"%d\",s);\nŞtiind că variabilele 𝑠 şi 𝑛 sunt de tip întreg, ce valoare se va afişa după executarea secvenţei de mai sus pentru 𝑛 = 93321?",
+    "answers": [
+      "9",
+      "10",
+      "15",
+      "1"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Care dintre următoarele secvenţe de instrucțiuni afişează câtul şi restul împărţirii numărului natural 𝑎 la numărul natural nenul 𝑏?",
+    "answers": [
+      "int t=0;\nwhile(a>=b) \n{\n\ta=a-b; \n\tt++; \n}\nprintf(\"%d %d\",t,a);",
+      "int t=0;\ndo\n{\n\ta=a-b; \n\tt++; \n}while(a>=b);\nprintf(\"%d %d\",t,a);",
+      "int t=0;\nwhile(a!=b) \n{\n\ta=a-b;\n\tt++; \n}\nprintf(\"%d %d\",t,b);",
+      "int t=0;\nwhile(a%b==0) \n{\n\ta=a-b;\n\tt++; \n}\nprintf(\"%d %d\",t,a);"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Considerăm următorul program:\n#include <stdio.h> \nvoid sch(int a, int *b)\n{ \n\tint aux; \n\taux = a; \n\ta = *b; \n\t*b = aux;\n}\nint main()\n{\n\tint x = 1,y = 2;\n\tsch(x,&y);\n\tprintf(\"%d\",x+y);\n\treturn 0;\n}\nCe valoare se va afişa pe ecran după executarea programului de mai sus?",
+    "answers": [
+      "2",
+      "1",
+      "4",
+      "3"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Considerăm următorul program:\n#include <stdio.h>\nvoid sch(char a, char *b)\n{ \n\tchar aux; \n\taux = a; \n\ta = *b; \n\t*b = aux;\n}\nint main()\n{\n\tchar x = '1',y = '2';\n\tsch(x,&y);\n\tprintf(\"%c,%c\",x,y);\n\treturn 0;\n}\nCe valori se vor afişa pe ecran după executarea programului de mai sus?",
+    "answers": [
+      "1,2",
+      "2,1",
+      "1,1",
+      "2,2"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Considerăm următorul program:\n#include <stdio.h>\nvoid sch(int *a, int b)\n{ \n\tint aux; \n\taux = *a; \n\t*a = b; \n\tb = aux;\n}\nint main()\n{\n\tint x = 1,y = 2;\n\tsch(&x,y);\n\tprintf(\"%d\",x*y);\n\treturn 0;\n}\nCe valoare se va afişa pe ecran după executarea programului de mai sus?",
+    "answers": [
+      "3",
+      "2",
+      "4",
+      "1"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Considerăm următorul program:\n#include<stdio.h>\nvoid f(int a,int *b)\n{\n\ta++;\n\t*b=a;\n\t(*b)++;\n}\nvoid g(int *a,int b)\n{\n\tb++;\n\t*a=b;\n\t(*a)++;\n}\nint main()\n{\n\tint x=4, y=-2;\n\tf(x,&y);\n\tg(&x,y);\n\tprintf(\"%d %d\",x,y);\n\treturn 0;\n}\nCe valori se vor afişa pe ecran după executarea programului de mai sus?",
+    "answers": [
+      "4 8",
+      "8 8",
+      "8 6",
+      "6 6"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Care dintre următoarele secvenţe de instrucţiuni atribuie variabilei de tip întreg 𝑚𝑎𝑥 cea mai mare valoare din tabloul 𝑎, format din 𝑛 numere întregi?",
+    "answers": [
+      "max=0;\nfor(i=0;i<n;i++) \nif(a[i]>max) max=a[i];",
+      "max=a[0];\nfor(i=0;i<n;i++) \nif(a[i]>a[i+1]) max=a[i];",
+      "max=a[0];\nfor(i=0;i<n;i++) \nif(a[i]>max) max=a[i];",
+      "max=0;\nfor(i=0;i<n;i++) \nif(a[i]<a[i+1]) max=a[i+1];"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Considerăm următoarea secvenţă de instrucțiuni:\nnp=0;\nfor(i=0;i<n;i++) \nif(…) np++;\nprintf(\"%d\",np);\nCu ce expresie dintre cele de mai jos trebuie înlocuite punctele de suspensie din secvenţa de instrucțiuni dată astfel încât aceasta să afişeze câte valori strict pozitive şi pare sunt în tabloul 𝑎, format din 𝑛 numere întregi?",
+    "answers": [
+      "(a[i]>0)&&(a[i]%2!=0)",
+      "(a[i]>0)&&(a[i]%2==0)",
+      "(a[i]>0)||(a[i]%2!=0)",
+      "(a[i]>=0)||(a[i]%2==0)"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Care este valoarea expresiei strlen(\"programare\")+strcmp(\"test\",\"test\")?",
+    "answers": [
+      "10",
+      "14",
+      "18",
+      "\"programaretesttest\""
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Considerăm următoarea secvenţă de instrucțiuni:\nchar s[100];\nstrcpy(s,\"\");\nstrcat(s,\"abcdefgh\");\nstrcpy(s+2,s+4);\nprintf(\"%s %d\" ,s,strlen(s));\nCe se va afişa pe ecran după executarea secvenţei date?",
+    "answers": [
+      "adefgh 6",
+      "abefgh 6",
+      "abfgh 5",
+      "abefgh 8"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Care din următoarele expresii de tip logic este adevărată (are o valoare nenulă) dacă şi numai dacă şirul de caractere 𝑠, de lungime 10, este obţinut prin concatenarea a două şiruri identice?",
+    "answers": [
+      "strcmp(s,s+5)==0",
+      "s==strstr(s,s+5)",
+      "s==s+5",
+      "strcmp(s,strcat(s,s+5))==0"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Considerăm următoarea secvenţă de instrucțiuni:\nchar s[]=\"abcdabcd\",c = 'c';\nchar *p = strchr(s,c);\nprintf(\"%d\",p - s);\nCe se va afişa pe ecran după executarea secvenţei date?",
+    "answers": [
+      "cdabcd",
+      "6",
+      "cd",
+      "2"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Considerăm următoarea secvenţă de instrucțiuni:\nchar s[20];\nstrcpy(s,\"abcdabcd\");\nstrncat(s,s+2,3);\nstrcpy(s,s+4);\nprintf(\"%d\",strlen(s));\nCe se va afişa pe ecran după executarea secvenţei date?",
+    "answers": [
+      "6",
+      "10",
+      "9",
+      "7"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Considerăm următoarea secvenţă de instrucțiuni:\nchar s[20];\nstrncpy(s,\"abcdabcd\",6);\ns[6]='\\0';\nstrcat(s,s+4);\nstrcpy(s+3,s+6);\nprintf(\"%s\",s);\nCe se va afişa pe ecran după executarea secvenţei date?",
+    "answers": [
+      "abcabab",
+      "abcdab",
+      "abcab",
+      "abcdabd"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Considerăm următoarele structuri:\ntypedef struct\n{\n\tint zi,luna,an;\n}Data;\ntypedef struct\n{\n\tchar nume[30];\n\tData data_nasterii;\n\tfloat media;\n}Student;\nȘtiind că variabila st este de tip Student, indicați instrucţiunea de mai jos prin care luna naşterii studentului respectiv primește valoarea 12:",
+    "answers": [
+      "st->data_nasterii->luna=12;",
+      "st.data_nasterii.luna=12;",
+      "data_nasterii.luna=12;",
+      "st.luna=12;"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Considerăm următoarele structuri:\ntypedef struct\n{\n\tint zi,luna,an;\n}Data;\ntypedef struct\n{\n\tchar nume[30];\n\tData *data_nasterii;\n\tfloat media;\n}Student;\nȘtiind că variabila st este de tip Student*, indicați instrucţiunea de mai jos prin care anul naşterii studentului respectiv primește valoarea 1990:",
+    "answers": [
+      "st->data_nasterii->an=1990;",
+      "st.data_nasterii.an=1990;",
+      "st.data_nasterii->an=1990;",
+      "st->data_nasterii.an=1990;"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Considerăm următoarele structuri:\ntypedef struct\n{\n\tint x,y;\n}Punct_2D;\ntypedef struct\n{\n\tPunct_2D p;\n\tint z;\n}Punct_3D;\nȘtiind că variabila a este de tip Punct_3D, fiind folosită pentru a stoca coordonatele unui punct în spațiu, indicați instrucţiunea de mai jos prin care toate cele 3 coordonate ale punctului a se iniţializează cu valoarea 0:",
+    "answers": [
+      "a.p.x = a.p.y = a.p.z = 0;",
+      "a.p.x = a.p.y = a.z = 0;",
+      "a.x = a.y = a.z = 0;",
+      "a.p = a.z = 0;"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Considerăm tipul de date Punct, capabil să memoreze abscisa şi ordonata unui punct din plan, şi tipul de date Segment, capabil să memoreze două puncte reprezentând extremităţile unui segment din plan, definite astfel:\ntypedef struct \n{\n\tfloat x,y;\n}Punct;\ntypedef struct \n{\n\tPunct A,B;\n}Segment;\nCare dintre următoarele expresii are o valoare nenulă dacă şi numai dacă variabila 𝑠 de tip Segment memorează informații despre un segment vertical (aflat pe axa Oy sau paralel cu axa Oy)?",
+    "answers": [
+      "s.A == s.B",
+      "s.x == s.y",
+      "A.x == B.x",
+      "s.A.x == s.B.x"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Considerăm tipul de date Punct, capabil să memoreze abscisa şi ordonata unui punct din plan, şi tipul de date Segment, capabil să memoreze două puncte reprezentând extremităţile unui segment din plan, definite astfel:\ntypedef struct \n{\n\tfloat x,y;\n}Punct;\ntypedef struct \n{\n\tPunct A,B;\n}Segment;\nCare dintre următoarele funcții returnează lungimea segmentului transmis prin intermediul parametrului s de tip Segment?",
+    "answers": [
+      "double f(Segment s)\n{\n\treturn pow(s.A.x–s.B.x,2)+pow(s.A.y–s.B.y,2);\n}",
+      "double f(Segment s)\n{\n\treturn sqrt((s.A.x–s.B.x)+(s.A.y–s.B.y));\n}",
+      "double f(Segment s)\n{\n\treturn s.B-s.A;\n}",
+      "double f(Segment s)\n{\n\treturn sqrt(pow(s.A.x–s.B.x,2)+pow(s.A.y–s.B.y,2));\n}"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Considerăm funcția int suma(int x,int y) care returnează suma numerelor întregi x și y, precum și funcția int prod(int x,int y) care returnează produsul numerelor întregi x și y. Știind că a, b și c sunt 3 variabile de tip întreg, care dintre expresiile de mai jos atribuie variabilei t de tip întreg valoarea expresiei (a+b)*(a+c)+b*c?",
+    "answers": [
+      "t = prod(suma(a,b),suma(a,c),prod(b,c));",
+      "t = suma(prod(suma(a,b),suma(a,c)),suma(b,c));",
+      "t = prod(suma(a,b),suma(a,c)+suma(b,c));",
+      "t = suma(prod(suma(a,b),suma(a,c)),prod(b,c));"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Considerăm funcția int suma(int x,int y) care returnează suma numerelor întregi x și y, precum și funcția int prod(int x,int y) care returnează produsul numerelor întregi x și y. Știind că a, b și c sunt 3 variabile de tip întreg, care dintre expresiile de mai jos atribuie variabilei t de tip întreg valoarea expresiei a*b+a*b*c?",
+    "answers": [
+      "t = suma(prod(a,b),prod(a,b+c));",
+      "t = suma(prod(a,b),prod(a,b,c));",
+      "t = suma(prod(a,b),prod(a,b,c));",
+      "t = prod(prod(a,b),suma(1,c));"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Care dintre următoarele funcții returnează suma cifrelor numărului natural n?",
+    "answers": [
+      "int f(int n)\n{\n\tint s=0;\n\twhile(n!=0)\n\t{\n\t\ts=s+n%10;\n\t\tn=n/10;\n\t}\n\treturn s;\n}",
+      "int f(int n)\n{\n\tint s=0;\n\twhile(n!=0)\n\t{\n\t\ts=s+n/10;\n\t\tn=n%10;\n\t}\n\treturn s;\n}",
+      "int f(int n)\n{\n\tint s=0;\n\twhile(n!=0)\n\t{\n\t\ts=s + n%10;\n\t\tn=n/10; \n\t}\n\t}\n}",
+      "int f(int n)\n{\n\tint s=0;\n\twhile(n!=0)\n\t{\n\t\ts=n%10;\n\t\tn=n/10;\n\t}\n\treturn s;\n}"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Care dintre următoarele funcții poate fi folosită într-un program pentru a citi de la tastatură un tablou unidimensional format din numere întregi?",
+    "answers": [
+      "void citire(int v[],int n)\n{\n\tscanf(\"%d\",&n);\n\tfor(int i=0;i<n;i++) scanf(\"%d\",&v[i]);\n}",
+      "void citire(int *v[],int *n)\n{\n\tscanf(\"%d\",n);\n\tfor(int i=0;i<*n;i++) scanf(\"%d\",&v[i]);\n}",
+      "void citire(int *v[],int *n)\n{\n\tscanf(\"%d\",&n);\n\tfor(int i=0;i<n;i++) scanf(\"%d\",&v[i]);\n}",
+      "void citire(int *v,int *n)\n{\n\tscanf(\"%d\",n);\n\tfor(int i=0;i<*n;i++) scanf(\"%d\",v+i);\n}"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Care dintre următoarele funcții nu returnează suma elementelor tabloului unidimensional de numere întregi transmis ca parametru?",
+    "answers": [
+      "int suma(int v[],int n)\n{\n\tint s=0,k=0;\n\twhile(k<n) s+=v[k++];\n\treturn s;\n}",
+      "int suma(int v[],int n)\n{\n\tint s=0,k=0;\n\twhile(k++<n) s+=v[k];\n\treturn s;\n}",
+      "int suma(int v[],int n)\n{\n\tint s,k;\n\tfor(k=s=0;k<n;s+=v[k++]);\n\treturn s;\n}",
+      "int suma(int v[],int n)\n{\n\tint s=0;\n\tfor(int k=n-1;k>=0;k--) s+=v[n-k-1];\n\treturn s;\n}"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Funcția minmax primește prin parametrul de intrare v un tablou unidimensional format din numere întregi, iar prin parametrul de intrare n primește numărul de elemente ale tabloului v. Funcția trebuie să întoarcă prin doi parametri de ieșire, min și max, valoarea minimă și, respectiv, valoarea maximă din tabloul v. Care dintre următoarele variante reprezintă un antet corect al funcției minmax?",
+    "answers": [
+      "void minmax(int v[],int n,int min,int max)",
+      "int minmax(int v[],int n,int min,int max)",
+      "void minmax(int v[],int n,int *min,int *max)",
+      "void minmax(int *v[],int *n,int *min,int *max)"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Fie v un tablou unidimensional format din 100 de numere reale de tip double și numărul natural k cuprins între 0 și 99. Care dintre următoarele expresii NU afișează adresa elementului v[k]?",
+    "answers": [
+      "printf(\"%p\\n\",v+k);",
+      "printf(\"%p\\n\",&v[99]+k-99);",
+      "printf(\"%p\\n\",v+k*sizeof(double));",
+      "printf(\"%p\\n\",&v[k]);"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Fie 𝑣 un tablou unidimensional format din 100 de numere reale de tip double și 𝑝 o variabilă de tip pointer către double în care este memorată adresa ultimului element al tabloului 𝑣 (double *p=&v[99];). Care dintre următoarele expresii nu afișează numărul de octeți pe care îi ocupă tabloul 𝑣 în memorie?",
+    "answers": [
+      "printf(\"%d\",(p-v+1)*sizeof(double));",
+      "printf(\"%d\",100*sizeof(double));",
+      "printf(\"%d\",p-v);",
+      "printf(\"%d\",sizeof(v));"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Care dintre următoarele secvențe de cod poate fi utilizată pentru a aloca dinamic un tablou unidimensional 𝑎 format din 100 de numere întregi?",
+    "answers": [
+      "int *a = (int *)malloc(100);",
+      "int *a = (int *)malloc(100*sizeof(int));",
+      "int *a = (int *)malloc(100, sizeof(int));",
+      "int *a = (int *)calloc(100*sizeof(int));"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Care dintre următoarele secvențe de cod poate fi utilizată pentru a aloca dinamic un tablou bidimensional 𝑎 format din 10 de linii și 20 de coloane de numere întregi?",
+    "answers": [
+      "int **a = (int **)malloc(10);\nfor(int i=0;i<10;i++)\n\ta[i]=(int *)malloc(20);",
+      "int **a = (int **)calloc(10*sizeof(int *),20*sizeof(int));",
+      "int *a = (int *)malloc(20*sizeof(int *));\nfor(int i=0;i<20;i++)\n\ta[i]=(int *)malloc(10*sizeof(int));",
+      "int **a = (int **)calloc(10,sizeof(int*));\nfor(int i=0;i<10;i++)\n\ta[i]=(int *)calloc(20,sizeof(int));"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Fie 𝑎 un tabloul bidimensional pătratic de dimensiune 𝑛. Care dintre următoarele secvențe de cod afișează elementele aflate pe diagonala principală a matricei 𝑎?",
+    "answers": [
+      "for(int i=0;i<n;i++)\n\tfor(int j=0;j<n;j++)\n\t\tif(i==j) printf(\"%d \",a[i][j]);",
+      "for(int i=0;i<n;i++) printf(\"%d \",a[i,i]);",
+      "for(int i=0;i<n;i++)\n\tfor(int j=0;j<n;j++)\n\t\tif(i+j==n-1) printf(\"%d \",a[i][j]);",
+      "for(int i=0;i<n;i++) printf(\"%d \",a[i][n-i-1]);"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Fie 𝑎 un tabloul bidimensional pătratic de dimensiune 𝑛. Care dintre următoarele secvențe de cod afișează elementele aflate pe diagonala secundară a matricei 𝑎?",
+    "answers": [
+      "for(int i=0;i<n;i++)\n\tfor(int j=0;j<n;j++)\n\t\tif(i==j) printf(\"%d \",a[i][j]);",
+      "for(int i=0;i<n;i++) printf(\"%d \",a[i][i]);",
+      "for(int i=0;i<n;i++)\n\tfor(int j=0;j<n;j++)\n\t\tif(i+j==n-1) printf(\"%d \",a[i][j]);",
+      "for(int i=0;i<n;i++) printf(\"%d \",a[i][n-i-1]);"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Fie 𝑛 un tabloul bidimensional pătratic de dimensiune n. Care dintre următoarele secvențe de\ncod afișează elementele triunghiului delimitat de prima coloană, diagonala principală și ultima\nlinie din matricea 𝑎?",
+    "answers": [
+      "for(int i=0;i<n;i++)\n\tfor(int j=0;j<n;j++)\n\t\tif(i>=j) printf(\"%d \",a[i][j]);",
+      "for(int i=0;i<n;i++)\n\tfor(int j=0;j<n;j++)\n\t\tif(i<j) printf(\"%d \",a[i][j]);",
+      "for(int i=0;i<n;i++)\n\tfor(int j=0;j<i;j++) printf(\"%d \",a[i][j]);",
+      "for(int i=0;i<n;i++)\n\tfor(int j=i;j<n;j++) printf(\"%d \",a[i][j]);"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Fie 𝑎 un tabloul bidimensional pătratic de dimensiune 𝑛. Care dintre următoarele secvențe de cod afișează elementele triunghiului delimitat de diagonala principală, ultima coloană și prima linie din matricea 𝑎?",
+    "answers": [
+      "for(int i=0;i<n;i++)\n\tfor(int j=0;j<n;j++)\n\t\tif(i>=j) printf(\"%d \",a[i][j]);",
+      "for(int i=0;i<n;i++)\n\tfor(int j=0;j<n;j++)\n\t\tif(i<j) printf(\"%d \",a[i][j]);",
+      "for(int i=0;i<n;i++)\n\tfor(int j=0;j<=i;j++) printf(\"%d \",a[i][j]);",
+      "for(int i=0;i<n;i++)\n\tfor(int j=i;j<n;j++) printf(\"%d \",a[i][j]);"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Fie 𝑎 un tabloul bidimensional pătratic de dimensiune 𝑛. Care dintre următoarele secvențe de cod afișează suma elementelor de pe fiecare linie a matricei 𝑎?",
+    "answers": [
+      "for(int i=0;i<n;i++)\n{\n\tint s=0;\n\tfor(int j=0;j<n;j++) \n\t{\n\t\ts=s+a[i][j];\n\t\tprintf(\"%d \",s);\n\t}\n}",
+      "int s=0;\nfor(int i=0;i<n;i++)\n{\n\tfor(int j=0;j<n;j++) \n\t{\n\t\ts=s+a[i][j];\n\t\tprintf(\"%d \",s);\n\t}\n}",
+      "int s=0;\nfor(int i=0;i<n;i++)\n{\n\tfor(int j=0;j<n;j++) s=s+a[i][j];\n\tprintf(\"%d \",s);\n}",
+      "for(int i=0;i<n;i++)\n{\n\tint s=0;\n\tfor(int j=0;j<n;j++) s=s+a[i][j];\n\tprintf(\"%d \",s);\n}"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Care dintre următoarele funcții returnează dimensiunea în octeți a unui fișier text a cărui cale este transmisă prin parametrul de intrare 𝑛𝑓?",
+    "answers": [
+      "int nb(char *nf)\n{\n\tFILE *f=fopen(nf,\"r\");\n\tfseek(f,0,SEEK_END);\n\tint n=ftell(f);\n\tfclose(f);\n\treturn n;\n}",
+      "int nb(char *nf)\n{\n\tchar c;\n\tFILE *f=fopen(nf,\"r\");\n\tint n=0; \n\twhile(fscanf(f,\"%c\",&c) == 1)\n\tn++;\n\tfclose(f);\n\treturn n;\n}",
+      "int nb(char *nf)\n{\n\tFILE *f=fopen(nf,\"r\");\n\tint n=sizeof(f);\n\tfclose(f);\n\treturn n;\n}",
+      "int nb(char *nf)\n{\n\tchar s[1001];\n\tFILE *f=fopen(nf,\"r\");\n\tint n=0;\n\twhile(fgets(s,1000,f))\n\tn++;\n\tfclose(f);\n\treturn n;\n}"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Care dintre următoarele funcții returnează numărul de linii dintr-un fișier text a cărui cale este transmisă prin parametrul de intrare 𝑛𝑓 (se presupune că fișierul nu conține linii vide)?",
+    "answers": [
+      "int nr(char *nf)\n{\n\tchar s[1001];\n\tFILE *f=fopen(nf,\"r\");\n\tint n=0;\n\twhile(fscanf(f,\"%s\",s)==1)\n\tn++;\n\tfclose(f);\n\treturn n;\n}",
+      "int nr(char *nf)\n{\n\tchar c;\n\tFILE *f=fopen(nf,\"r\");\n\tint n=0;\n\twhile(fscanf(f,\"%c\",&c)==1)\n\tif(c=='\\n') n++; \n\tfclose(f);\n\treturn n;\n}",
+      "int nr(char *nf)\n{\n\tFILE *f=fopen(nf,\"r\");\n\tint n=sizeof(f);\n\tfclose (f);\n\treturn n/sizeof(char *);\n}",
+      "int nr(char *nf)\n{\n\tchar s[1001];\n\tFILE *f=fopen(nf,\"r\");\n\tint n=0;\n\twhile(fgets(s,1000,f))\n\tn++;\n\tfclose (f);\n\treturn n;\n}"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Considerăm următorul program:\n#include<stdio.h>\n#include<string.h>\nint main()\n{\n\tFILE *f=fopen(\"test.txt\",\"r\");\n\tchar s[101],t[101];\n\twhile(fgets(s,100,f))\n\t\tstrcpy(t,s);\n\tprintf(\"%s\",t);\n\tfclose(f);\n\treturn 0;\n}\nȘtiind ca lungimea maximă a unei linii din fișierul text test.txt este de 100 de caractere, ce se va afișa după executarea programului de mai sus?",
+    "answers": [
+      "fiecare linie din fișier;",
+      "penultima linie din fișier;",
+      "ultimul caracter din fișier;",
+      "ultima linie din fișier."
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Considerăm următorul program:\n#include<stdio.h>\n#include<string.h>\nint main()\n{\n\tchar s[21],aux[11];\n\tstrcpy(s,\"\");\n\tfor(int i=1;i<=5;i++)\n\t{\n\t\tprintf(\"Sirul %d: \",i); \n\t\tgets(aux);\n\t\t…………………………………………………………\n\t}\n\tprintf(\"%s\",s);\n\treturn 0;\n}\nPresupunând că fiecare dintre cele 5 șiruri care vor fi citite de la tastatură vor fi formate din minim două caractere și maxim 10, stabiliți cu care dintre instrucțiunile de mai jos trebuie înlocuite spațiile punctate din program astfel încât acesta să afișeze șirul format din ultimele două caractere din fiecare dintre cele 5 șiruri citite:",
+    "answers": [
+      "strcat(s,aux+9);",
+      "strcat(s,aux[strlen(aux)-1]);",
+      "strncat(s,aux,strlen(aux)-1);",
+      "strcat(s,aux+strlen(aux)-2);"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Care dintre următoarele secvențe de cod afișează pe ecran șirul de numere 1 2 2 3 3 3 4 4 4 4 5 5 5 5 5?",
+    "answers": [
+      "for(int i=1;i<=5;i++) \nfor(int j=1;j<=5;j++)\nprintf(\"%d\",i);",
+      "for(int i=1;i<=5;i++) \nfor(int j=1;j<=i;j++)\nprintf(\"%d\",i);",
+      "for(int i=1;i<=5;i++) \nfor(int j=1;j<=i;j++)\nprintf(\"%d\",j);",
+      "for(int i=1;i<=4;i++) \nfor(int j=i+1;j<=5;j++)\nprintf(\"%d\",i);"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Stabiliți care dintre următoarele funcții întorc poziția primei valori strict pozitive din tabloul 𝑣 format din 𝑛 numere întregi sau -1 dacă tabloul nu conține nici un număr pozitiv:",
+    "answers": [
+      "int p(int v[],int n)\n{\n\tint i,x=-1;\n\tfor(i=0;i<n;i++)\n\tif(v[i]>0) x=i; \n\treturn x;\n}",
+      "int p(int v[],int n)\n{\n\tint x=0;\n\twhile(v[x]<=0) x++;\n\treturn x-1;\n}",
+      "int p(int v[],int n)\n{\n\tint i,x=-1;\n\tfor(i=0;i<n;i++)\n\tif((v[i]>0)&&(x<0)) x=i;\n\treturn x;\n}",
+      "int p(int v[],int n)\n{\n\tint i;\n\tfor(int i=0;i<n;i++)\n\tif (v[i]>0) return i;\n\telse return -1;\n}"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Considerăm următoarea secvență de cod:\nint a, b, p=1;\nscanf(\"%d %d\", &a, &b);\nwhile(p < a)\n\tp = p*2;\nwhile(p <= b)\n{\n\tprintf(\"%d\\n\", p);\n\tp = p*2;\n}\nDacă valorile introduse pentru variabilele a și b vor fi două numere naturale nenule cu proprietatea că a < b, atunci pe ecran se vor afișa:",
+    "answers": [
+      "toate puterile lui 2 din intervalul [a,b];",
+      "toate puterile lui 2 din intervalul (a,b];",
+      "toate numerele pare din intervalul [a,b];",
+      "toate numerele pare din intervalul (a,b];"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Considerăm următorul program:\n#include<stdio.h>\nvoid p(int v[],int *n)\n{ \n\tint i,j,g;\n\tdo\n\t{\n\t\tg=0;\n\t\tfor(i=0;i<*n;i++)\n\t\tif(v[i]<0)\n\t\t{\n\t\t\tfor(j=i;j<*n-1;j++) v[j]=v[j+1];\n\t\t\t(*n)--; \n\t\t\tg=1; \n\t\t}\n\t} \n\twhile(g);\n} \nint main()\n{\n\tint i,v[]={-1,2,-3,-4,5},n=5;\n\tp(v,&n);\n\tfor(i=0;i<n;i++) \n\tprintf(\"%d \",v[i]);\n\treturn 0;\n}\nCe valori vor fi afișate pe ecran după executarea programului de mai sus?",
+    "answers": [
+      "–1 -3 -4",
+      "2 5",
+      "–1 2 -3 -4",
+      "2 -3 -4 5"
+    ],
+    "correct_answer": 1
+  }
+]

@@ -1,0 +1,542 @@
+[
+  {
+    "question": "Fie următoarea clasă Java:\nclass C \n{\n\tint a;\n\tfloat x;\n\tboolean b;\n}\nStabiliţi care dintre următoarele linii de cod este corectă:",
+    "answers": [
+      "C ob = new C(1);",
+      "C ob = new C(1,1.0);",
+      "C ob = new C();",
+      "C ob = new C(1,1.0,true);"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Fie următorul program Java:\nclass C\n{\n\tpublic static int a=1;\n}\npublic class test \n{\n\tpublic static void main(String[] args) \n\t{\n\t\tC ob=new C();\n\t\tC.a++;\n\t\tob.a++;\n\t\tSystem.out.println(C.a);\n\t}\n}\nDupă executarea programului, va fi afişată valoarea:",
+    "answers": [
+      "3",
+      "2",
+      "1",
+      "nicio valoare, se obține o eroare la executare."
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Fie următorul program Java:\nclass C{public static int a=1;}\npublic class teste_grila \n{\n\tpublic static void main(String[] args) \n\t{\n\t\tC ob1=new C();\n\t\tC ob2=new C(); \n\t\tob1.a++;\n\t\tSystem.out.println(ob2.a);\n\t}\n}\nDupă executarea programului, va fi afişată valoarea:",
+    "answers": [
+      "0;",
+      "2;",
+      "1;",
+      "nicio valoare, se obține o eroare la executare."
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Un program Test scris în limbajul Java poate fi compilat folosind comanda:",
+    "answers": [
+      "javac Test",
+      "java Test.java",
+      "javac Test.class",
+      "javac Test.java"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Un program Test scris în limbajul Java şi compilat, poate fi rulat folosind comanda:",
+    "answers": [
+      "javac Test.java",
+      "java Test",
+      "java Test.class",
+      "java Test.java"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "În Java o clasă poate extinde:",
+    "answers": [
+      "cel mult o interfaţă",
+      "oricâte clase",
+      "cel mult o clasă",
+      "oricâte interfeţe"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "În Java o interfaţă poate extinde:",
+    "answers": [
+      "cel mult o interfață",
+      "oricâte interfeţe",
+      "cel mult o clasă",
+      "oricâte clase"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "În Java o clasă poate implementa:",
+    "answers": [
+      "o clasă",
+      "oricâte clase",
+      "o interfaţă",
+      "oricâte interfeţe"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Fie următorul program Java:\nclass A\n{\n\tpublic A() { System.out.print(\"A\"); } \n}\nclass B extends A\n{\n\tpublic B() { System.out.print(\"B\"); }\n}\nclass C extends B\n{\n\tpublic C() { System.out.println(\"C\"); }\n}\npublic class test \n{\n\tpublic static void main(String[] args) \n\t{\n\t\tC ob=new C();\n\t}\n}\nDupă executarea programului, se va afişa:",
+    "answers": [
+      "A B C",
+      "A",
+      "C B A",
+      "C"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Fie următorul program Java:\nclass A\n{\n\tpublic int x=1;\n\tpublic A() { x++; }\n}\nclass B extends A\n{\n\tpublic B() { x++; }\n}\nclass C extends B\n{\n\tpublic int x=1;\n\tpublic C() { x++; }\n}\npublic class test \n{\n\tpublic static void main(String[] args) \n\t{\n\t\tB b=new B();\n\t\tC c=new C(); \n\t\tSystem.out.println(b.x+\" \"+c.x);\n\t}\n}\nDupă executarea programului, se va afişa:",
+    "answers": [
+      "3 4",
+      "3 2",
+      "2 2",
+      "3 3"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Fie următorul program Java:\nclass A\n{\n\tint x=0;\n\tpublic A(int n) { x=n; }\n}\nclass B extends A\n{\n\tint x=1;\n\tpublic B(int n) { super(n); }\n}\npublic class test \n{\n\tpublic static void main(String[] args) \n\t{\n\t\tA a=new A(5);\n\t\tB b=new B(7);\n\t\tSystem.out.println(a.x+\" \"+b.x);\n\t}\n}\nDupă executarea programului, se va afişa:",
+    "answers": [
+      "05",
+      "51",
+      "57",
+      "01"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Fie următorul program Java:\nclass A{\n\tstatic void staticMethod() { \n\t\tSystem.out.println(\"Metoda statica\");\n\t}\n}\npublic class Test{\n\tpublic static void main(String[] args){ \n\t\tA a = null;\n\t\ta.staticMethod();\n\t}\n}\nDupă executarea programului, se va afişa:",
+    "answers": [
+      "programul afișează mesajul Metoda statica",
+      "se obține o eroare la compliare cauzată de faptul ca o metodă statică nu poate fi invocată folosind o referintă",
+      "se obține la executare excepția java.lang.NullPointerException",
+      "nu se poate apela o metoda membră statică pentru un obiect null"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Următorul program Java\nclass A\n{\n\tint x=10;\n\tstatic int y=20;\n}\nclass B extends A\n{\n\tint x=30;\n\tstatic int y=40;\n}\npublic class Test\n{\n\tpublic static void main(String[] args) {\n\t\tA ob = new B();\n\t\tSystem.out.println(ob.x+\" \"+ob.y);\n\t}\n}\nAfișează",
+    "answers": [
+      "10 20",
+      "30 40",
+      "30 20",
+      "eroare la executare"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Care dintre următoarele afirmații este adevărată pentru o metodă Java de tip final?",
+    "answers": [
+      "poate fi și suprascrisă și supraîncărcată",
+      "poate fi suprascrisă, dar nu poate fi supraîncărcată",
+      "nu poate fi nici suprascrisă și nici supraîncărcată",
+      "nu poate fi suprascrisă, dar poate fi supraîncărcată"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Următorul program Java:\npublic class Test {\n\tstatic void test(int a[]){\n\t\ta[0] = 100;\n\t\ta = new int[]{10,20,30,40,50};\n\t\ta[1] = 200;\n\t\tSystem.out.println(Arrays.toString(a));\n\t}\n\tpublic static void main(String[] args){\n\t\tint []v = {1,2,3,4,5,6,7};\n\t\ttest(v);\n\t\tSystem.out.println(Arrays.toString(v));\n\t}\n}\nAfișează",
+    "answers": [
+      "[10, 200, 30, 40, 50]\n[1 2, 3, 4, 5, 6, 7]",
+      "[10, 200, 30, 40, 50]\n[100, 2, 3, 4, 5, 6, 7]",
+      "[10, 20, 30, 40, 50]\n[100, 2, 3, 4, 5, 6, 7]",
+      "[10, 20, 30, 40, 50]\n[100, 2, 3, 4, 5, 6, 7]"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Considerăm următorul program Java:\nclass C\n{\n\tint a,b;\n\tpublic C(int x, int y){a=x; b=y;}\n\tvoid f()\n\t{\n\t\tif(a<b) { a++; b--; g(); }\n\t}\n\tvoid g() \n\t{\n\t\tif(b>=a) { a++; b--; f(); } \n\t}\n\tvoid afisare() { System.out.println(a+\" \"+b);}\n}\npublic class teste_grila\n{\n\tpublic static void main(String[] args) \n\t{\n\t\tC ob = new C(2,10);\n\t\tob.f(); ob.g();\n\t\tob.afisare();\n\t}\n}\nDupă executarea programului, pe ecran se va afişa:",
+    "answers": [
+      "57",
+      "6 6",
+      "2 10",
+      "7 5"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Considerăm următorul program Java:\nclass C\n{\n\tstatic int x = 0;\n\tstatic int f() { return (++x)*(x--); }\n}\npublic class teste_grila\n{\n\tpublic static void main(String[] args)\n\t{\n\t\tSystem.out.println(C.f()+\" \"+C.f()+\" \"+C.f());\n\t}\n}\nDupă executarea programului, pe ecran se va afişa:",
+    "answers": [
+      "1 1 1",
+      "1 2 3",
+      "1 2 6",
+      "0 0 0"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Considerăm următorul program Java:\nclass C\n{\n\tstatic int x=0;\n\tstatic void f()\n\t{\n\t\tx = (++x)*(x--);\n\t\tSystem.out.print(x+\" \");\n\t}\n}\npublic class teste_grila\n{\n\tpublic static void main(String[] args) \n\t{\n\t\tC.f();C.f();C.f();\n\t}\n}\nDupă executarea programului, pe ecran se va afişa:",
+    "answers": [
+      "0 0 0",
+      "1 4 25",
+      "1 -1 1",
+      "2 4 16"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Fie următorul program Java:\nclass Fir implements Runnable{\n\tint x;\n\tpublic Fir(int x){\n\t\tthis.x = x;\n\t}\n\tpublic void run(){\n\t\tfor (int i = 0; i < 10; i++) System.out.print(x);\n\t}\n\tpublic static void main(String args[]) throws \nInterruptedException{\n\t\tFir obj1 = new Fir(1);\n\t\tFir obj2 = new Fir(2);\n\t\tThread t1 = new Thread(obj1);\n\t\tThread t2 = new Thread(obj2);\n\t\tt1.start();\n\t\tt2.start();\n\t\tt2.join();\n\t\tSystem.out.print(3);\n\t}\n}\nDupă executarea programului, poate fi afişat un număr format din:",
+    "answers": [
+      "10 cifre egale cu 1, 10 cifre egale cu 2 și o cifră egală cu 3, cifrele fiind în orice ordine posibilă",
+      "10 cifre egale cu 1, 10 cifre egale cu 2 și o cifră egală cu 3, dar toate cifrele egale cu 2 se vor afla înaintea cifrei 3",
+      "10 cifre egale cu 1, 10 cifre egale cu 2 și o cifră egală cu 3, dar toate cifrele egale cu 1 sau 2 se vor afla înaintea cifrei 3",
+      "10 cifre egale cu 1, urmate de 10 cifre egale cu 2 și la sfârșit o cifră egală cu 3"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Considerăm următorul program Java:\nclass Sir{\n\tprivate String sir; \n\tpublic Sir(String sir){\n\t\tthis.sir = sir;\n\t}\n\tpublic void modificaSir(String sir){\n\t\tthis.sir = sir;\n\t}\n\tpublic void modificaSir(Sir sir){\n\t\tsir = new Sir(\"Mihai\");\n\t}\n\tpublic String getSir(){\n\t\treturn sir;\n\t}\n}\npublic class Test {\n\tpublic static void main(String[] args){\n\t\tSir s = new Sir(\"Ion\");\n\t\tSir t = new Sir(\"Alex\");\n\t\ts.modificaSir(\"Matei\");\n\t\tt.modificaSir(new Sir(\"Dan\"));\n\t\ts.modificaSir(t);\n\t\tSystem.out.println(s.getSir() + \" \" + t.getSir());\n\t}\n}\nDupă executarea programului, va fi afişată valoarea:",
+    "answers": [
+      "Matei Dan",
+      "Dan Dan",
+      "Matei Alex",
+      "Alex Dan"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "O subclasă Java a unei clase abstracte poate fi instanţiată numai dacă:",
+    "answers": [
+      "se foloseşte cuvantul cheie abstract;",
+      "suprascrie fiecare metodă declarată abstractă în superclasa sa şi furnizeaza implementări pentru toate acestea;",
+      "se foloseşte moştenirea multiplă;",
+      "subclasă abstractă nu poate fi instanţiată."
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Care este rolul declaraţiilor import într-o sursă Java?",
+    "answers": [
+      "Permite referireaclaselorfărăutilizareade prefixe;",
+      "Permite importul imaginilor folosite;",
+      "Elimină necesitatea declarării variabilelor;",
+      "Elimină apelurile directe ale funcţiilor fără clase."
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Considerăm următorul program Java:\nclass Calcul_1{\n\tvoid calcul(int a, int b){\n\t\tSystem.out.print(a + b + \" \");\n\t}\n}\nclass Calcul_2 extends Calcul_1{\n\tvoid calcul(int a, int b){\n\t\tSystem.out.print(a - b + \" \");\n\t}\n}\nclass Calcul_3 extends Calcul_2{\n\tvoid calcul(int a, int b){\n\t\tSystem.out.print(a * b + \" \");\n\t}\n}\npublic class Test{ \n\tpublic static void main(String[] args){\n\t\tCalcul_1 x = new Calcul_3();\n\t\tx.calcul(1, 2);\n\t\tCalcul_2 y = (Calcul_2) x;\n\t\ty.calcul(3, 4); \n\t\tCalcul_3 z = (Calcul_3) y;\n\t\tz.calcul(5, 6);\n\t}\n}\nDupă executarea programului, va fi afişată valoarea:",
+    "answers": [
+      "2 12 30",
+      "3 -1 30",
+      "3 7 11",
+      "2 7 11"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Ce se afisează dacă se execută următorul cod Java: \nString s = new String( \"Computer\" );\nif( s == \"Computer\" )\n\tSystem.out.println( \"Equal A\" );\nif( s.equals( \"Computer\" ) )\n\tSystem.out.println( \"Equal B\" );",
+    "answers": [
+      "Eroare la complilare, deoarece operatorul == nu se poate aplica pentru tipul String",
+      "Se afisează mesajul \"Equal A\"",
+      "Se afisează mesajul \"Equal B\"",
+      "Se afişează ambele mesaje, \"Equal A\" , repsectiv \"Equal B\""
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "În Java, metoda clone() a clasei Object",
+    "answers": [
+      "Creeaza un obiect nou al clasei folosind constructorul implicit",
+      "Creeaza şi returnează o copie a obiectului curent",
+      "Returneaza codul asociat constructorului implicit",
+      "Testează dacă obiectul specificat este o clonă a obiectului current"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Fie următorul program Java: \npublic class Asignare { \npublic static void main(String args[]){\n\tint a = 3;int b = (a = 2) * a;int c = b * (b = 5) ;\n\tSystem.out.println(\"a = \" + a + \", b = \" + b + \", c = \" + \n\tc);}}\nCe va afişa acesta la execuţie?",
+    "answers": [
+      "a = 2, b = 4, c = 20",
+      "a = 2, b = 5, c = 20",
+      "a = 2, b = 5, c = 25",
+      "a = 3, b = 6, c = 30"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Urmatorul subprogram Java:\nint as=3, bs=2, cs=4;\nSystem.out.print(((as < bs++) & (cs++ < bs)) + \" \");\nSystem.out.println(as + \" \" + bs + \" \" + cs);\nSystem.out.print(((as < bs++) && (os++ < bs++)) + \" \");\nSystem.out.println(as + \" \" + bs + \" \" + cs);\nAfişează :",
+    "answers": [
+      "Eroare la compilare: nu se poate aduna o valoare booleana cu un String;",
+      "Subprogramul se compilează şi la execuţie afisează :false 3 3 5 false 3 4 4",
+      "Subprogramul se compileaza şi la execuţie afisează:false 3 3 5 false 3 4 5",
+      "Subprogramul se compileaza şi la execuţie afisează false 3 3 5 false 3 5 6"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Considerăm următorul program Java: \npublic class test \n{ \npublic static void main(String args[]) \n{ \n\tint v[ ]={-2,4,-5,-6,0,2},suma=0,i; \n\tfor(i=0;i<5;i++) \n\t\tif(v[i]<-2) suma+=v[i]; \n\tSystem.out.println(suma); \n} \n} \nDupă executarea programului, pe ecran se va afişa: ",
+    "answers": [
+      "-7",
+      "0",
+      "-11",
+      "-13"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Secvenţa uramatoare Java:\npublic class test {\npublic static void main(String args[]){\n\tString sir = \"Programare in Java, C++ este usoara\" ;\n\tString atom[]= sir.split(\" \") ;\n\tSystem.out.println(atom.length) ; \n}}\nAfisează:",
+    "answers": [
+      "Eroare la compliare pentru ca nu se specifica numarul de elemente ale tabloului atom",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Secvenţa uramatoare Java:\npublic class test{\npublic static void main(String args[]){\n\tString sir = \"Programare in Java, C++ este usoara\" ;\n\tString atom[]= sir.split(\" \") ;\n\tSystem.out.println(atom[0].length()) ; \n}}\nAfisează:",
+    "answers": [
+      "Eroare la compliare pentru ca nu se specifica numarul de elemente ale tabloului atom",
+      "6",
+      "10",
+      "9"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Ce se va afişa la execuţia urmatorului program Java?\ninterface I1{\n\tfloat x=2.3f;\n}\npublic class Test implements I1{\n\tpublic static void main(String [] args){\n\t\tSystem.out.print(x+\" \");\n\t\tx=6.7f;\n\t\tSystem.out.print(x);\n\t}\n}",
+    "answers": [
+      "Va aparea eroare la compilare deoarece valoarea variabilei x nu se mai poatemodifica;",
+      "La execuţie se va afişa: 2.3f 6.7f;",
+      "La execuţie se va afişa: 2.3f 2.3f;",
+      "La execuţie se va afişa: 2.3 6.7;"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Urmatorul program Java:\nclass C1{\n\tint x=1;\n\tvoid f(int x){ \n\t\tthis.x=x;}\n\tint getX_C1(){\n\t\treturn x;}}\nclass C2 extends C1{\n\tfloat x=5.0f;\n\tint f(int x){\n\t\tsuper.f((int)x);}\n\tfloat getX_C2(){\n\t\treturn x;}}\npublic class Test{\n\tpublic static void main(String []args){\n\t\tC2 obiect = new C2();\n\t\tobiect.f(4);\n\t\tSystem.out.print(obiect.getX_C2() + \" \");\n\t\tSystem.out.println(obiect.getX_C1());}}\nAfişează:",
+    "answers": [
+      "Programul este corect şi va afişa la execuţie 5 4;",
+      "Programul este correct şi va afişa la execuţie 4.0 4;",
+      "Va aparea eroare la compilare deoarece în clasa C2 s-a suprascris gresit atributul x din clasa C1;",
+      "Va aparea eroare la compilare deoarece metoda suprascrisă f() din clasa C2 intoarce un tip diferit de void;"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "O subclasă Java a unei clase abstracte poate fi instanţiată numai dacă:",
+    "answers": [
+      "Se foloseşte cuvantul cheie abstract;",
+      "Suprascrie fiecare metodă declarată abstractă în superclasa sa, şi furnizeaza implementari pentru toate acestea;",
+      "Se foloseşte moştenirea multiplă;",
+      "O subclasă abstractă nu poate fi instanţiată;"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Urmatorul program Java:\nclass C1{\n\tint x=1;\n\tvoid f(int x){\n\t\tthis.x=x;}\n\tint getX_C1(){\n\t\treturn x;}}\nclass C2 extends C1{\n\tfloat x=5.0f;\n\tvoid f(int x){\n\t\tsuper.f((int)x);}\n\tfloat getX_C2(){\n\t\treturn x;}}\npublic class Test{\n\tpublic static void main(String []args){\n\t\tC2 obiect = new C2();\n\t\tobiect.f(4);\n\t\tSystem.out.print(obiect.getX_C2() + \" \"); \n\t\tSystem.out.println(obiect.getX_C1());}}\nAfişează:",
+    "answers": [
+      "Programul este corect şi va afişa la execuţie 5.0 4;",
+      "Programul este correct şi va afişa la execuţie 4.0 4;",
+      "Va aparea eroare la compilare deoarece în clasa C2 s-a suprascris gresit atributul x din clasa C1;",
+      "Programul este correct şi va afişa la execuţie 5.0 5;"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Tipurile referința în Java sunt:",
+    "answers": [
+      "tabloul, clasa, interfața",
+      "clasa, interfata",
+      "int, flout, double, char, String",
+      "String si null"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Secvența următoare: \npublic class numar_43_nou {\n\tpublic static void main(String args[])\n\t{\n\t\tString sir=\"Examen\";\n\t\tsir.toUpperCase();\n\t\tSystem.out.println(sir);\n\t}\n}\nAfișează:",
+    "answers": [
+      "EXAMEN",
+      "Examen",
+      "eXamen",
+      "Examen"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Secvența urătoare Java:\npublic class numar_44_nou {\n\tpublic static void main(String args[])\n\t{\n\t\tString sir1=\"Programare in Java\";\n\t\tString sir2 =sir1.substring(4,8);\n\t\tSystem.out.println(sir2.toUpperCase()); }\n}\nAfișează:",
+    "answers": [
+      "ogramare",
+      "rama",
+      "RAMA",
+      "Java"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Secvența urătoare Java:\npublic class Test {\n\tpublic static void main(String args[])\n\t{\n\t\tint numar = 1; \n\t\tfor (int x = 0; x < 4; x++) \n\t\t\tnumar = numar << 1; \n\t\tSystem.out.println(numar);}\n}\nAfișează:",
+    "answers": [
+      "16",
+      "32",
+      "8",
+      "3"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Secveţa uramatoare Java:\npublic class test {\npublic static void main(String args[]){\n\tString sir = \"Programare in Java, C++ este usoara\" ;\n\tString atom[]= sir.split(\"[ ,]\") ;\n\tSystem.out.println(atom.length) ; \n}}\nAfisează:",
+    "answers": [
+      "Eroare la compliare pentru ca nu se specifica numarul de elemente ale tabloului atom",
+      "2",
+      "6",
+      "5"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "O clasă Java declarată final",
+    "answers": [
+      "clasa nu poate fi instanțiată",
+      "orice cod exterior are acces la codul clasei",
+      "implementează o interfață",
+      "nu poate avea subclase"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Compoziția în limbajul Java reprezintă",
+    "answers": [
+      "relație de tip IS-A",
+      "relație de tip Can Do",
+      "relație de tip HAS-A.",
+      "Niciorelație"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Fie următorul program Java:\nclass Tablou{\n\tint[] met(int []a){\n\t\ta[0] = -a[0];\n\t\ta = new int[a.length];\n\t\ta[0] = 1;\n\t\treturn a;\n\t}\n}\npublic class Test{\n\tpublic static void main(String[] args){\n\t\tint a[] = {1,2,3,4,5};\n\t\tint b[] = new Tablou().met(a);\n\t\tint s = 0;\n\t\tfor(int i = 0; i < a.length; i++) s = s + a[i] + b[i];\n\t\tSystem.out.println(s);\n\t}\n}\nDupă executarea programului, va fi afişată valoarea:",
+    "answers": [
+      "30",
+      "14",
+      "28",
+      "15"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Considerăm următorul program Java:\nclass A{\n\tpublic int x = 1;\n\tpublic A() { x++; }\n}\nclass B extends A{\n\tpublic B() { x++; }\n}\nclass C extends B{\n\tpublic int x = 1;\n\tpublic C() { x++; }\n}\npublic class Test{\n\tpublic static void main(String[] args){\n\t\tB b = new B();\n\t\tC c = new C();\n\t\tSystem.out.println(b.x + \" \" + c.x);\n\t}\n}\nDupă executarea programului, va fi afişată valoarea:",
+    "answers": [
+      "3 3",
+      "3 4",
+      "2 2",
+      "3 2"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Considerăm următorul program Java:\nclass C1{\n\tint x = 1;\n\tint f(int x) { return this.x + x; }\n\tint f(int x, int y) { return this.x + y; }\n}\nclass C2 extends C1{\n\tint f(int x) { return this.x; }\n}\npublic class Test{\n\tpublic static void main(String[] args){\n\t\tC1 ob = new C2();\n\t\tSystem.out.println(ob.f(1) + ob.f(2,2));\n\t}\n}\nDupă executarea programului, va fi afişată valoarea:",
+    "answers": [
+      "3",
+      "6",
+      "5",
+      "4"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "După executarea secvenței de cod Java\nString s = \"Examen\", t = \"Examen\";\nif (s == t) System.out.print(\"A\");\nelse System.out.print(\"B\");\nif (s.equals(t)) System.out.print(\"C\");\nelse System.out.print(\"D\");\nse va afişa:",
+    "answers": [
+      "AD",
+      "BC",
+      "AC",
+      "BD"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Fie următorul program Java:\nclass A { public int x = 0; }\npublic class Test{\n\tpublic static A metoda() {\n\t\tA a = new A();\n\t\ttry{\n\t\t\ta.x += 1;\n\t\t\tthrow new NullPointerException();\n\t\t} catch(Exception e) { a.x += 2; }\n\t\tfinally { a.x += 3; }\n\t\treturn a;\n\t}\n\tpublic static void main(String[] args){\n\t\tA ob = metoda();\n\t\tSystem.out.println(ob.x);\n\t} \n}\nDupă executarea programului, se va afişa:",
+    "answers": [
+      "6",
+      "3",
+      "4",
+      "Eroare la rulare (excepție NullPointerException netratată)"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Precizați care dintre urmaătoarele afirmații sunt adevărate:\nI. o interfață poate să conțină câmpuri publice, statice și finale, respectiv metode statice si metode implicite cu implementare\nII. o înterfață poate fi instanțiată\nIII. o clasă poate implementa mai multe interfețe\nIV. mai multe clase pot implementa aceeași interfață",
+    "answers": [
+      "I, II, IV",
+      "I, III, IV",
+      "II, III, IV",
+      "I, II, III, IV"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Fie următorul program Java:\nclass A {\n\tpublic static String f(String x) { return x+\"A\"; }\n\tpublic String g(String x) { return x+\"B\"; }\n}\nclass B extends A {\n\tpublic static String f(String x) { return x+\"C\"; }\n\tpublic String g(String x) { return x+\"D\"; }\n}\npublic class Test {\n\tpublic static void main(String[] args) {\n\t\tA a = new B();\n\t\tSystem.out.println(a.f(\"A\") + a.g(\"C\"));\n\t}\n}\nDupă executarea programului, se va afişa:",
+    "answers": [
+      "AACD",
+      "ACCD",
+      "AACB",
+      "ACDC"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Un fir de executare în Java se poate defini:",
+    "answers": [
+      "printr-o instanță a clasei Runnable",
+      "printr-o instanță a clasei Object",
+      "printr-o instanță a clasei Thread",
+      "printr-o instanță a clasei Clone"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Ce se va afișa dupa executarea următorului program Java:\npublic class Test {\n\tpublic static void main(String[] args) {\n\t\tHashMap m = new HashMap();\n\t\tm.put(\"a\", null);\n\t\tm.put(\"b\", \"JavaSE\");\n\t\tm.put(\"c\", \"Python\");\n\t\tm.put(null, \"PHP\");\n\t\tm.put(null, null);\n\t\tSystem.out.println(m);\n\t}\n}",
+    "answers": [
+      "{null=null, a=null, b=JavaSE, c=Python}",
+      "{a=null, b=JavaSE, c=Python}",
+      "{null=PHP, a=null, b=JavaSE, c=Python}",
+      "Exepție la executare de tip NullPointerException"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Ce se va afișa dupa executarea următorului program Java:\npublic class Test {\n\tpublic static void main(String[] args) {\n\t\tTreeMap m = new TreeMap();\n\t\tm.put(\"a\", null);\n\t\tm.put(\"b\", \"JavaSE\");\n\t\tm.put(\"c\", \"Python\");\n\t\tm.put(null, \"PHP\");\n\t\tm.put(null, null);\n\t\tSystem.out.println(m);\n\t}\n}",
+    "answers": [
+      "{null=null, a=null, b=JavaSE, c=Python}",
+      "{a=null, b=JavaSE, c=Python}",
+      "{null=PHP, a=null, b=JavaSE, c=Python}",
+      "Exepție la executare de tip NullPointerException"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Fie următorul program Java:\nclass Persoana implements Serializable {\n\tString nume;\n\tint varsta;\n\tpublic Persoana(String nume, int varsta) {\n\t\tthis.nume = nume;\n\t\tthis.varsta = varsta;\n\t\tSystem.out.println(\"Constructor\");\n\t}\n}\npublic class Test {\n\tpublic static void main(String[] args) throws Exception {\n\t\tObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(\"persoana.ser\"));\n\t\tPersoana p = new Persoana(\"Popescu Ion\", 40), q = p;\n\t\toos.writeObject(q);\n\t\toos.close();\n\t\tObjectInputStream ois = new ObjectInputStream(new FileInputStream(\"persoana.ser\"));\n\t\tPersoana r = (Persoana)ois.readObject();\n\t\tois.close();\n\t}\n}\nDe câte ori va fi afișat mesajul Constructor, după executarea programului dat?",
+    "answers": [
+      "niciodată",
+      "o dată",
+      "de două ori",
+      "de trei ori"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Fie secvența următoare de cod (presupunem că în clasa Persoana sunt implementate corect metodele get și set pentru datele membre String nume și double salariu):\nlistaPersoane.stream()\n.filter(p -> p.getNume().startsWith(\"\"B\"\"))\n.filter(p -> p.getSalariu() > 2000)\n.map(Persoana::getNume)\n.sorted()\n.map(o -> o.toString())\n.collect(Collectors.joining(\"\",\"\"));\nCe va produce secvența de cod dată?",
+    "answers": [
+      "șirul de caractere obținut prin concatenarea listei sortate a salariilor mai mari decât 2000 ale persoanelor ale căror nume începe cu B",
+      "șirul de caractere obținut prin concatenarea listei sortate a numelor persoanelor care încep cu B și cu salarii mai mari decât 2000",
+      "lungimea șirului de caractere produs prin concatenarea numelor persoanelor care încep cu B și cu salarii mai mari decât 2000",
+      "lista formată din persoanele ale căror nume care încep cu B și au salarii mai mari decât 2000"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Fie următorul program Java:\nclass Super {\n\tpublic static void print() { System.out.println(\"Super \"); }\n}\nclass Sub extends Super { \n\tpublic static void print() { System.out.println(\"Sub\"); }\n}\npublic class Test {\n\tpublic static void main(String args[]) {\n\t\tSuper p = new Sub();\n\t\tSub q = new Sub();\n\t\tSuper r = new Super();\n\t\tp.print();\n\t\tq.print();\n\t\tr.print();\n\t}\n}\nDupă executarea programului se va afișa:",
+    "answers": [
+      "Sub\nSub\nSub",
+      "Sub\nSub\nSuper",
+      "Super\nSuper\nSuper",
+      "Super\nSub\nSuper"
+    ],
+    "correct_answer": 3
+  }
+]

@@ -1,0 +1,302 @@
+[
+  {
+    "question": "Inovarea reprezintă:",
+    "answers": [
+      "Procesul prin care o inovație (produs sau procedeu/tehnologie/proces), pornind de la o invenție sau o îmbunătățire semnificativă, ajunge să fie implementată în activitatea unei organizații sau valorificată pe piață.",
+      "Un produs a cărui culoare și formă au fost schimbate, fără nicio îmbunătățire semnificativă.",
+      "Procesul prin care o inovație (produs sau procedeu/tehnologie), pornind exclusiv de la o invenție, ajunge să fie implementată în activitatea unei organizații sau valorificată pe piață.",
+      "Procesul prin care o inovație (produs sau procedeu/tehnologie), pornind exclusiv de la o îmbunătățire semnificativă, ajunge să fie implementată în activitatea unei organizații sau valorificată pe piață."
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "În funcție de gradul de schimbare (intensitatea schimbării generate), inovarea se clasifică în:",
+    "answers": [
+      "Inovare nouă pentru o organizație și inovare nouă pentru o anumită piață.",
+      "Inovare radicală și inovare incrementală.",
+      "Inovare care schimbă structura pieței si inovare care creează noi piețe.",
+      "Inovare nouă pentru întreaga lume și inovare radicală."
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "In funcție de tip (obiect), inovarea se clasifică în:",
+    "answers": [
+      "Inovare radicală și inovare incrementală.",
+      "Inovare care schimbă structura pieței si inovare care crează noi piețe.",
+      "Inovare de produs și inovare de proces de afaceri.",
+      "Inovare nouă pentru o organizație și inovare nouă pentru întreaga lume."
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Produsul reprezintă:",
+    "answers": [
+      "Bun și/sau serviciu.",
+      "Bun nou.",
+      "Serviciu nou.",
+      "Bun și/sau tehnologie."
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Invenția privind linia de asamblare reprezintă un exemplu de:",
+    "answers": [
+      "Inovare de proces de afaceri.",
+      "Inovare de produs.",
+      "Inovare pentru o anumită piață.",
+      "Nu reprezintă inovare."
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Schimbarea culorii sau o schimbare minoră a formei unui produs:",
+    "answers": [
+      "Reprezintă îmbunătățiri semnificative, caracteristice unei inovații.",
+      "Nu reprezintă îmbunătățiri semnificative, caracteristice unei inovații.",
+      "Reprezintă invenții.",
+      "Reprezintă inovare de produs."
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Modelul de proces de inovare \"tehnologia care împinge\" (\"technology push\") reprezintă:",
+    "answers": [
+      "novare de proces de afaceri.",
+      "novare de produs.",
+      "Un model de proces de inovare, care presupune că inovațiile sunt generate de organizație și împinse către piață, fără a se ține cont de nevoile pieței.",
+      "Un model de proces de inovare care ține cont de nevoile pieței, respectiv care presupune orientarea activităților de cercetare-dezvoltare în funcție de cerințele pieței."
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Conform Manualului Frascati (2015), cele 5 criterii pe care trebuie să le îndeplinească activităților de cercetare-dezvoltare sunt:",
+    "answers": [
+      "Nou, creativ, se adresează unui rezultat incert, sistematic și transferabil sau reproductibil.",
+      "Fără noutate, necreativ, cu rezultat sigur, nesistematic și netransferabil.",
+      "Fără noutate, creativ, cu rezultat sigur, netransferabil și nereproductibil.",
+      "Activitățile de cercetare-dezvoltare nu necesită criterii pentru a fi definite."
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Activitățile de cercetare-dezvoltare se clasifică în:",
+    "answers": [
+      "Cercetare directă, cercetare indirectă, cercetare științifică și dezvoltare experimentală.",
+      "Cercetare științifică, cuprinzând cercetarea fundamentală și cercetarea aplicativă, și dezvoltare experimentală.",
+      "Cercetare din funduri publice și cercetare din fonduri private.",
+      "Cercetare fundamentală, cercetare aplicativă și cercetare din fonduri private."
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Transformarea digitală se referă la (are ca obiectiv):",
+    "answers": [
+      "Integrarea tehnologiilor digitale in procesele de bază ale organizației și înțelegerea impactului acestor tehnologii asupra societății.",
+      "Integrarea inovării in organizație.",
+      "Integrarea organizațiilor in clustere de inovare.",
+      "Integrarea tehnologiilor digitale în procesele secundare/suport ale organizației și înțelegerea impactului acestor tehnologii asupra societății."
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Fluxul logic de acțiuni obligatorii în procesul de transformare digitală este:",
+    "answers": [
+      "Digitalizare si inovare.",
+      "Digitizare, digitalizare și transformare digitală.",
+      "Transformare digitală și inovare.",
+      "Digitalizare, transformare digitală și inovare."
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Digitizarea reprezintă:",
+    "answers": [
+      "Procesul care integrează toate datele digitizate și procesele digitalizate în noi aplicații de afaceri.",
+      "Procesul prin care informația devine disponibilă și accesibilă în format analog.",
+      "Procesul prin care informația devine disponibilă și accesibilă în format digital.",
+      "Acțiunea de a face procesele să aibă un grad mai mare de automatizare prin folosirea instrumentelor digitale."
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Digitalizarea reprezintă:",
+    "answers": [
+      "Acțiunea de a face procesele să aibă un grad mai mare de automatizare prin folosirea instrumentelor digitale.",
+      "Procesul prin care informația devine disponibilă și accesibilă în format digital.",
+      "Procesul care integrează toate datele digitizate și procesele digitalizate în noi aplicații de afaceri.",
+      "Procesul prin care informația devine disponibilă și accesibilă în format analog."
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Transformarea digitală reprezintă:",
+    "answers": [
+      "Procesul prin care informația devine disponibilă și accesibilă în format analog.",
+      "Procesul care integrează toate datele digitizate și procesele digitalizate în noi aplicații de afaceri.",
+      "Procesul prin care informația devine disponibilă și accesibilă în format digital.",
+      "Integrarea inovării in organizație."
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Unul dintre beneficiile transformării digitale în organizații îl reprezintă:",
+    "answers": [
+      "Creșterea numărului de operațiuni.",
+      "Operațiunile autonome și de la distanță.",
+      "Creșterea numărului de angajați.",
+      "Creșterea costurilor de operare."
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Nivelul de digitalizare al economiilor statelor membre ale Uniunii Europene (UE) se măsoară prin:",
+    "answers": [
+      "Indicele compozit EIS (European Innovation Scoreboard).",
+      "Indicele compozit DESI (Digital Economy and Society Index).",
+      "Indicele compozit GII (Global Innovation Index).",
+      "Nu există indici compoziți care măsoară nivelul de digitalizare."
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Modelul de proces de inovare \"piața care trage\" (\"market pull\") reprezintă:",
+    "answers": [
+      "Inovare de produs.",
+      "Inovare de proces de afaceri.",
+      "Un model de proces de inovare care ține cont de nevoile pieței, respectiv care presupune orientarea activităților de cercetare-dezvoltare în funcție de cerințele pieței.",
+      "Un model de proces de inovare, care presupune că inovațiile sunt generate de organizație și împinse către piață, fără a se ține cont de nevoile pieței."
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Indicatorii de inovare trebuie să provină din sursele standard de colectare a datelor despre inovare, cele mai cunoscute fiind:",
+    "answers": [
+      "Cercetarea prin sondaj pe baza unui eșantion statistic sau recensământ; Datele raportate administrativ și date generate de activități comerciale; Datele referitoare la Proprietatea Intelectuală (brevete, mărci, etc.); Evaluări ale experților; Statisticile internaționale bilaterale (comerț, etc.); Datele privind cooperările și alianțele în domeniul tehnologiei.",
+      "Firmele care adoptă practici avansate generale sau de managementul inovării (% din total firme); Firmele care utilizează tehnologii avansate, tehnologii generice esențiale sau tehnologii emergente (% din total firme); Firmele care utilizează instrumente și metode digitale avansate (% din total firme); Firmele care utilizează platforme digitale pentru a vinde bunuri sau servicii (% din total firme)/Firmele care furnizează servicii de platforme digitale.",
+      "Influențele externe asupra inovării (inclusiv politicile publice) și condițiile cadru pentru inovare (inclusiv infrastructura de cunoaștere).",
+      "Rezultatele finale (outcomes) economice și sociale ale inovării."
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Activitățile de inovare în firmă reprezintă:",
+    "answers": [
+      "Exclusiv activitățile de dezvoltare (cercetare-dezvoltare) întreprinse de o firmă și care au scopul să sprijine realizarea unei inovații.",
+      "Toate activitățile de dezvoltare (cercetare-dezvoltare), financiare și comerciale întreprinse de o firmă și care au scopul să aibă ca rezultat o inovație.",
+      "Exclusiv activitățile de cercetare științifică (cercetarea fundamentală și cercetarea aplicativă) întreprinse de o firmă și care au scopul să sprijine realizarea unei inovații.",
+      "Exclusiv activitățile financiare și comerciale întreprinse de o firmă și care au scopul să sprijine realizarea unei inovații."
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "În funcție de gradul de noutate, inovarea se clasifică în:",
+    "answers": [
+      "Nouă pentru organizație și nouă pentru întreaga lume.",
+      "Nouă pentru organizație, nouă pentru o anumită piață și nouă pentru întreaga lume.",
+      "Nouă pentru o anumită piață și nouă pentru întreaga lume.",
+      "Nouă pentru organizație și nouă pentru o anumită piață."
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Inovarea de produs reprezintă:",
+    "answers": [
+      "Un bun sau un serviciu nou (invenție) sau care este semnificativ îmbunătățit față de bunurile sau serviciile anterioare ale întreprinderii și care a fost introdus pe piață.",
+      "Exclusiv un bun sau un serviciu nou (invenție) care a fost introdus pe piață.",
+      "Exclusiv un bun sau un serviciu care este semnificativ îmbunătățit față de bunurile sau serviciile anterioare ale întreprinderii și care a fost introdus pe piață.",
+      "Un proces de afaceri nou (invenție) sau care este semnificativ îmbunătățit față de procesele de afaceri anterioare ale întreprinderii (firmei) și care a fost introdus pe piață sau în activitatea întreprinderii."
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Inovarea de proces de afaceri reprezintă:",
+    "answers": [
+      "Un proces de afaceri nou (invenție) sau semnificativ îmbunătățit pentru una sau mai multe funcții de afacere/diferă semnificativ față de procesele de afaceri anterioare ale întreprinderii și care a fost introdus în utilizare (în activitate) de către întreprindere sau valorificat (introdus) pe piață.",
+      "Exclusiv un proces de afaceri nou (invenție) pentru una sau mai multe funcții de afacere și care a fost introdus în utilizare (în activitate) de către întreprindere sau valorificat (introdus) pe piață.",
+      "Exclusiv un proces de afaceri semnificativ îmbunătățit pentru una sau mai multe funcții de afacere/diferă semnificativ față de procesele de afaceri anterioare ale întreprinderii și care a fost introdus în utilizare (în activitate) de către întreprindere sau valorificat (introdus) pe piață.",
+      "Un bun sau un serviciu nou (invenție) sau care este semnificativ îmbunătățit/diferă semnificativ față de bunurile sau serviciile anterioare ale întreprinderii și care a fost introdus pe piață."
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Industry 4.0 reprezintă:",
+    "answers": [
+      "A 4-a revoluție industrială, care se bazează exclusiv pe producția robotizată.",
+      "A 4-a revoluție industrială, care se bazează exclusiv pe producția în masă, linia de asamblare și electricitatea.",
+      "A 4-a revoluție industrială, care se bazează exclusiv pe computer și automatizare.",
+      "A 4-a revoluție industrială, care se bazează pe (fără limitare la) sisteme cyber-fizice (Cyber Physical Systems), care sunt conectate prin intermediul internetului."
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Modelul de proces de inovare \"inovarea deschisă\" reprezintă:",
+    "answers": [
+      "Inovare de proces de afaceri.",
+      "Inovare de produs.",
+      "Un model de proces de inovare care presupune deschiderea procesului de inovare către orice abordare, configurare/reconfigurare, parte interesată (inclusiv autorități publice și clienți), resursă, sursă de cunoaștere, parteneriat, care ar putea aduce suport și aport la ajungerea unei inovații pe piață (in orice etapă a procesului de inovare, de la idee până la inovația ajunsă pe piață), implicând efort comun și împărțirea beneficiilor.",
+      "Un model de proces de inovare care presupune creșterea importanței tehnologiei în asistarea procesului de inovare prin utilizarea unor platforme comune de software pentru proiectarea și producția asistate pe calculator."
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Indicatorii de inovare reprezintă:",
+    "answers": [
+      "Informație specifică măsurată, într-un anumit moment, despre un fenomen al inovării (intrare, activitate, ieșire, rezultat final).",
+      "Capabilitățile de inovare într-o organizație.",
+      "Ieșirile/rezultatele imediate din activitățile de inovare.",
+      "Incidența inovării și caracteristicile acesteia (ex. tip, noutate)."
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Un exemplu de indicator de inovare la nivel de sistem de cercetare-dezvoltare-inovare (sistemul național) este următorul:",
+    "answers": [
+      "Influențele externe asupra inovării (inclusiv politicile publice) și condițiile cadru pentru inovare (inclusiv infrastructura de cunoaștere).",
+      "Firme care utilizează tehnologii avansate, tehnologii generice esențiale (Key Enabling Technologies) sau tehnologii emergente (% din total firme).",
+      "Un model de proces de inovare, care presupune că inovațiile sunt generate de organizație și împinse către piață, fără a se ține cont de nevoile pieței.",
+      "Un model de proces de inovare care ține cont de nevoile pieței, respectiv care presupune orientarea activităților de cercetare-dezvoltare în funcție de cerințele pieței."
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Un exemplu de indicator de inovare intern (la nivel de organizație) este următorul:",
+    "answers": [
+      "Cheltuieli de Cercetare-Dezvoltare (% in vânzări).",
+      "Firme care utilizează tehnologii avansate, tehnologii generice esențiale (Key Enabling Technologies) sau tehnologii emergente (% din total firme).",
+      "Un model de proces de inovare, care presupune că inovațiile sunt generate de organizație și împinse către piață, fără a se ține cont de nevoile pieței.",
+      "Un model de proces de inovare care ține cont de nevoile pieței, respectiv care presupune orientarea activităților de cercetare-dezvoltare în funcție de cerințele pieței."
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Performanța în inovare a statelor membre ale Uniunii Europene (UE) se măsoară prin:",
+    "answers": [
+      "Indicele compozit EIS (European Innovation Scoreboard/Tabloul de bord european al inovării).",
+      "Indicele compozit DESI (Digital Economy and Society Index).",
+      "Indicele compozit GII (Global Innovation Index).",
+      "Nu există indici compoziți care măsoară nivelul de digitalizare."
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Măsurarea cât mai corectă a inovării la nivel de organizație este necesară deoarece:",
+    "answers": [
+      "Susține creșterea numărului de operațiuni; susține creșterea numărului de angajați, facilitează operațiuni autonome și de la distanță.",
+      "Facilitează automatizarea proceselor de bază în organizație;",
+      "Furnizează, în general, o direcție strategică pentru activitățile inovatoare; ghidează alocarea de resurse pentru proiectele de inovare; facilitează diagnosticarea și îmbunătățirea performanței de inovare a unei organizații.",
+      "Susține un model de proces de inovare care ține cont de nevoile pieței, respectiv care presupune orientarea activităților de cercetare-dezvoltare în funcție de cerințele pieței."
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Industry 5.0 reprezintă:",
+    "answers": [
+      "A 5-a revoluție industrială, care se bazează exclusiv pe producția în masă.",
+      "A 5-a revoluție industrială care presupune că potențialul de progres se bazează pe Inteligența Artificială, colaborarea dintre oameni și mașini, țintind dincolo de eficiență și productivitate, către rolul și contribuția industriei la societate.",
+      "A 5-a revoluție industrială, care se bazează exclusiv pe digitizare și digitalizare.",
+      "A 5-a revoluție industrială, care se bazează exclusiv pe sisteme cyber-fizice (Cyber Physical Systems), care sunt conectate prin intermediul internetului."
+    ],
+    "correct_answer": 1
+  }
+]
