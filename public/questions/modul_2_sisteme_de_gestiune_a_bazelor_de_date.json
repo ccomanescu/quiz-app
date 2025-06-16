@@ -367,7 +367,7 @@
       "Se iese din procedura stocată cu valoarea de retur 0",
       "Se iese din procedura stocată fără o valoare de retur"
     ],
-    "correct_answer": 2
+    "correct_answer": 1
   },
   {
     "question": "Se poate folosi același nume pentru mai multe tabele dintr-un server de baze de date?",
