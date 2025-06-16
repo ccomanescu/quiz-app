@@ -35,7 +35,8 @@ export const modules = [
 
 export const loadQuestions = async (subjectName: string): Promise<Question[]> => {
   try {
-    const response = await fetch(`/questions/${subjectName}.json`);
+    const baseUrl = import.meta.env.VITE_BASE_URL || '/';
+    const response = await fetch(`${baseUrl}questions/${subjectName}.json`);
     if (!response.ok) {
       throw new Error(`Failed to load questions for ${subjectName}`);
     }
