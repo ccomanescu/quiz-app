@@ -1,0 +1,502 @@
+[
+  {
+    "question": "Care este rolul coderului de sursa?",
+    "answers": [
+      "Criptarea textului generat de sursa informațională",
+      "Compresia informației generate de sursa informațională",
+      "Codarea de linie a informației generate de sursa",
+      "Protejarea informației generate de sursa împotriva perturbațiilor"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Care este rolul coderului de canal?",
+    "answers": [
+      "Compresia informației generate de sursa informațională",
+      "Schimbarea formei de reprezentare a informației generate de sursă",
+      "Protejarea informației împotriva perturbațiilor din canalul de transmitere",
+      "Criptarea textului generat de sursa informațională"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Care este rolul blocului de criptare informațională?",
+    "answers": [
+      "Schimbarea formei de reprezentare a informației generate de sursa",
+      "Protejarea informației generate de sursa împotriva perturbațiilor",
+      "Prelucrarea informației in scopul păstrării confidențialității transmisiei",
+      "Compresia informației generate de sursa informațională"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Cheia criptografică este:",
+    "answers": [
+      "Subansamblu hardware utilizat pentru protecția software",
+      "Expresie matematică care reprezintă modul de funcționare al blocului de criptare și de decriptare",
+      "Parametrizare a funcției de codificare implementate în blocurile de compresie/decompresie",
+      "Șir parametric de valori statice sau dinamice care particularizează comportamentul funcției criptografice"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Un sistem criptografic pentru transmiterea/recepția informației se compune din:",
+    "answers": [
+      "Bloc de criptare si bloc de decriptare cu chei criptografice diferite",
+      "Bloc de criptare si bloc de decriptare fără chei criptografice",
+      "Bloc de criptare cu două chei criptografice identice",
+      "Bloc de criptare cu doua chei criptografice diferite"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Decriptarea reprezintă:",
+    "answers": [
+      "Operația efectuata de către un intrus pentru a descoperi mesajul clar dintr-un text criptat",
+      "Operația efectuată de către destinatar pentru a extrage mesajul clar dintr-un text criptat recepționat",
+      "Operația efectuată de către un intrus și/sau destinatar pentru a descoperi mesajul clar dintr-un text criptat",
+      "Operația efectuată de către un intrus pentru a descoperi mesajul criptat dintr-un text clar"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Domeniul de știință al criptologiei are următoarele laturi:",
+    "answers": [
+      "Criptografia și Criptanaliza",
+      "Steganografia și Criptanaliza",
+      "Compresia și Criptanaliza",
+      "Criptografia și Steganaliza"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Criptanaliza reprezintă:",
+    "answers": [
+      "Prelucrarea informației efectuata de către destinatar pentru a extrage mesajul clar dintr-un text criptat recepționat",
+      "Ansamblul de prelucrări matematice și statistice, efectuate la destinația mesajului criptat, pentru a extrage mesajul clar",
+      "Cumul de interpretări bazate pe analize empirice si/sau științifice efectuate de către un interceptor neautorizat pentru a descoperi mesajul clar dintr-un text criptat",
+      "Ansamblul de prelucrări empirice, efectuate de către orice destinatar pentru a descoperi mesajul clar dintr-un text criptat recepționat"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Tehnici criptografice recomandate de Claude Shannon pentru optimizarea algoritmilor moderni:",
+    "answers": [
+      "Tehnicile compresiei",
+      "Tehnica confuziei și tehnica difuziei",
+      "Tehnica impresiei și expresiei",
+      "Tehnicile propagării erorii criptografice"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "In funcție de complexitatea mașinilor criptografice acestea pot fi clasificate în:",
+    "answers": [
+      "Monoalfabetice și Polialfabetice",
+      "Polialfabetice simple, cu autocifrare și complexe",
+      "Polialfabetice și Multialfabetice",
+      "Monoalfabetice și Alfabetice"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Cel mai important parametru caracteristic pentru complexitatea mașinilor criptografice este:",
+    "answers": [
+      "Viteza de transfer a informației",
+      "Timpul de acoperire",
+      "Numărul de alfabete utilizate",
+      "Mărimea cheii criptografice"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Dimensiunea cheii criptografice determină:",
+    "answers": [
+      "Mulțimea cheilor neutilizabile posibile",
+      "Mulțimea atacurilor criptanalitice",
+      "Realizabilitatea sistemului criptografic",
+      "Timpul de acoperire al sistemului criptografic"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Reușita unui atac criptanalitic nu este influențată de:",
+    "answers": [
+      "Experiența criptanalistului",
+      "Lungimea canalului de transmitere a informației",
+      "Mijloacele tehnice de care dispune criptanalistul",
+      "Volumul de text cifrat aflat la dispoziția criptanalistului"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Cel mai vechi dispozitiv criptografic, datând din timpul războaielor spartane a fost:",
+    "answers": [
+      "Trifidul lui Delastelle",
+      "Skytala",
+      "Alfabetul lui Collon",
+      "Cilindrul Bazaries"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Mașina Enigma a fost o mașină criptografica:",
+    "answers": [
+      "Polialfabetică simpla",
+      "Polialfabetică cu autocifrare",
+      "Polialfabetică de tip complex",
+      "Polialfabetică cu autocheie"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Metoda de cifrare Vernam se bazează pe:",
+    "answers": [
+      "Funcții neliniare",
+      "Aplicarea principiilor de difuzie și confuzie",
+      "Sumarea modulo 2, bit cu bit, a textului în clar cu cheia de cifrare",
+      "Operații polialfabetice complexe"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Un adversar a obținut, în urma unei interceptări radio, următorul text cifrat \"WULPLWH DUPDWD\". În urma unui atac de criptanaliză prin forță brută, adversarul va obține următorul text clar:",
+    "answers": [
+      "ATACATI IN FLANC",
+      "FOLOSITI REZERVA",
+      "TRIMITE ARMATA",
+      "RETRAGE ARMATA"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Presupunem că Alice dorește să transmită lui Bob mesajul \"TRIMIT AJUTOR\", folosind un canal de comunicație nesigur. Atât ea cât și Bob au obținut printr-o metodă necunoscută o cheie de cifrare generată în mod aleator și anume: \"AFVKGHOPERTS\". Pentru a cifra mesajul Alice va utiliza cifrul VERNAM cu operații modulo 26. În urma operației de cifrare mesajul primit de Bob va fi:",
+    "answers": [
+      "KFDDSJSKLCBNDA",
+      "AWEDKFODOESOE",
+      "TWDWOAOYOKHJ",
+      "JCVSKFEOJNFEEFK"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Sistemul Jammet realizat de Jammet Onde Electrique în anul 1926, este:",
+    "answers": [
+      "Analog sistemului Vernam bazându-se pe alfabetul MORSE",
+      "Derivat din mașina de cifrat ENIGMA",
+      "Inspirat din sistemul Belin de cifrare a imaginilor",
+      "Este un sistem de codare"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Managementul cheilor de cifrare este un proces complex care constă în:",
+    "answers": [
+      "Generarea, distribuția, utilizarea și distrugerea cheilor de cifrare",
+      "Folosirea canalului nesigur pentru transmiterea cheilor de cifrare",
+      "Transmiterea pe INTERNET a cheilor de cifrare",
+      "Instalarea echipamentelor de cifrare"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Distribuția manuală a cheilor de cifrare presupune:",
+    "answers": [
+      "Transmiterea electronică în clar a acestora",
+      "Distribuția cheilor, sub formă tipărită, pe canale publice (dacă sunt cifrate) sau pe canale private (cu grad maxim de siguranță)",
+      "Folosirea serviciilor de e-mail publice",
+      "Compresarea acestora"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Într-un sistem de cifrare se poate utiliza, în principiu, o combinație complexă de chei de cifrare, astfel:",
+    "answers": [
+      "Cheie de cifrare elementară (de structură), cheie secundară (care particularizează algoritmul de cifrare) și cheie de lucru, toate generate de un generator aleator de zgomot",
+      "Nu se folosesc chei de cifrare",
+      "Cheile de cifrare sunt generate prin însumarea unor factori constanți cunoscuți",
+      "Cheile de cifrare sunt generate de algoritmul de cifrare"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Definiția dată de Shannon pentru un sistem de cifrare este:",
+    "answers": [
+      "Un sistem de cifrare realizează o compresie a sursei de date",
+      "Un sistem de cifrare folosește chei de cifrare pentru compresia sursei de date",
+      "Un sistem de cifrare este o familie T de transformări inversabile dintr-o mulțime de mesaje M într-o mulțime de criptograme C",
+      "Un sistem de cifrare folosește algoritmul Shannon-Fano pentru realizarea operațiunii de cifrare"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "În scopul evaluării securității unui sistem de cifrare, identificați care dintre următoarele enunțuri este o condiție fundamentală:",
+    "answers": [
+      "Criptanalistul are cunoștințe complete despre sistemul de cifrare, a acumulat un volum considerabil de text cifrat și are la dispoziție un anumit volum de text clar și echivalentul său cifrat",
+      "Criptanalistul cunoaște o parte din cheile de cifrare ale sistemului",
+      "Criptanalistul cunoaște modul de funcționare a mașinii de cifrat analizate",
+      "Criptanalistul cunoaște sistemul de cifrare și cheile utilizate"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Un sistem secret cu acoperire unică (cifru cu cheie unică sau cifru Vernam) se bazează:",
+    "answers": [
+      "pe tehnica \"confuziei\"",
+      "pe tehnica \"difuziei\"",
+      "pe tehnica \"confuziei\" și pe tehnica \"difuziei\"",
+      "pe utilizarea de funcții neliniare"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Care din următoarele enunțuri nu este principiu care să stea la baza construcției unui sistem de cifrare:",
+    "answers": [
+      "Mărimea cheii de cifrare",
+      "Simplitatea operațiunilor de cifrare și descifrare",
+      "Minimizarea cheii de cifrare",
+      "Cantitatea de secretizare oferită"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Un sistem de cifrare este strict ideal dacă:",
+    "answers": [
+      "H(X/C)>H(K)",
+      "H(X/C)<H(K)",
+      "H(X/C)<=H(K)",
+      "H(X/C)=H(K)"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Testul spectral se bazează pe:",
+    "answers": [
+      "testele de bit seriale",
+      "probabilitățile de apariție a unor secvențe constante",
+      "tehnica transformărilor Fourier aplicate funcţiilor de variabile întregi, transformări care permit scoaterea în evidență a caracterului aleator al unei secvențe de numere întregi",
+      "Analiza factorilor constanți din succesiunile pseudoaleatoare"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Dacă notăm cu n0 numărul de biți de \"0\" și cu n1 numărul de biți de \"1\" dintr-o succesiune de biți, atunci pentru a avea o succesiune aleatoare conform testului de frecvență biți este necesar ca:",
+    "answers": [
+      "n0 n1",
+      "n0 < n1",
+      "n0 > n1",
+      "n0 << n1"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "În teoria criptanalizei prin descifrarea unui sistem de cifrare S se înțelege:",
+    "answers": [
+      "evidențierea textelor clare pe baza analizelor criptogramelor realizate prin intermediul lui S, fără a avea cunoștințe despre cheia folosită dar cunoscând sistemul utilizat",
+      "evidențierea textelor clare pe baza analizelor criptogramelor realizate prin intermediul lui S, fără a avea cunoștințe despre sistemul utilizat și cheia folosită",
+      "evidențierea textelor clare pe baza analizelor criptogramelor realizate prin intermediul lui S, fără a avea cunoștințe despre sistemul utilizat dar cunoscând cheia folosită",
+      "evidențierea textelor clare pe baza analizelor criptogramelor realizate prin intermediul lui S, având cunoștințe despre sistemul utilizat şi cheia folosită"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Într-un sistem secret, informația este complet ascunsă atunci când:",
+    "answers": [
+      "𝐻(𝐶) > 𝑙𝑜𝑔 𝑛",
+      "𝐻(𝐶) < 𝑙𝑜𝑔 𝑛",
+      "𝐻(𝐶) = 𝑙𝑜𝑔 𝑛",
+      "𝐻(𝐶) > 0"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Prin tehnica \"confuziei\", utilizată la proiectarea algoritmilor de cifrare, se urmărește:",
+    "answers": [
+      "Corelarea cât mai complexă între criptogramă și cheie",
+      "Corelarea cât mai complexă între mesajul în clar și cheie",
+      "Corelarea cât mai complexă între cheia de criptare și cheia de decriptare",
+      "Corelarea cât mai complexă între mesajul în clar și criptogramă"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Care dintre afirmațiile de mai jos nu reprezintă un criteriu de aleatorism propus de Golomb:",
+    "answers": [
+      "Dacă p este par atunci secvența de lungime p va avea p/2 biți de valoare 0 şi p/2 biți de valoarea 1. Dacă p este impar, atunci numărul de zerouri si numărul de cifre unu diferă printr-o unitate",
+      "Într-o secvență de lungime p, jumătate din numărul seriilor va avea lungimea 1, 1/4 va avea lungimea 2,...,1/ 2k din numărul seriilor va avea lungimea k",
+      "Autocorelaţia defazată este constantă",
+      "Autocorelaţia defazată nu este constantă"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Pentru evaluarea caracteristicilor aleatoare a unui șir de numere, testul spectral se bazează pe:",
+    "answers": [
+      "Tehnica transformărilor Fourier",
+      "Tehnica evaluării numărului de apariții a biților de 0 și de 1",
+      "Tehnici statistice elementare",
+      "Tehnica transformărilor complexe"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "În criptanaliză, cuvintele probabile sunt:",
+    "answers": [
+      "Cuvinte sau expresii care pot fi întâlnite într-un mesaj ca urmare a faptului că sunt caracteristice pentru sursa respectivă",
+      "Litere și cifre care apar în mod pseudoaleator",
+      "Cuvinte formate din două sau trei silabe",
+      "Mesaje informaționale care au probabilitate de apariție de 0.5"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Testul SERIAL este utilizat pentru a determina dacă:",
+    "answers": [
+      "Seriile de câte una sau două simboluri din cadrul șirului sunt dependente de predecesoarele acestora",
+      "Probabilitățile de tranziție dintre două cifre binare succesive sunt aceleași sau foarte apropiate",
+      "Fiecare simbol nu este independent de predecesorul său",
+      "Seriile de câte două simboluri din cadrul șirului sunt independente de predecesoarele acestora"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "In cadrul sistemului Vernam codificarea cheilor și ale textului clar se realizează cu codul:",
+    "answers": [
+      "Baudot",
+      "Morse",
+      "Baudot și Morse",
+      "Baudot sau Morse"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Metodele de generare ale cheilor criptografice nu sunt:",
+    "answers": [
+      "Metode algebrice și aritmetice",
+      "Metode bazate pe teoria haosului",
+      "Metode empirice",
+      "Metode bazate pe experimente fizice"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Care dintre următoarele sisteme criptografice nu este sistem tomogramic:",
+    "answers": [
+      "Jammet",
+      "Belin",
+      "Bazaries",
+      "Vernam"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Sistemele software de generare a șirurilor pseudoaleatoare pot fi bazate pe:",
+    "answers": [
+      "Scheme secvențiale liniare",
+      "Registre de deplasare",
+      "Generatoare haotice",
+      "Scheme secvențiale neliniare"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Cifrurile tomogramice au la bază tehnici care urmăresc:",
+    "answers": [
+      "Fracționarea cuvintelor din textul clar",
+      "Fracționarea literelor din textul clar",
+      "Fracționarea literelor din textul criptat",
+      "Fracționarea textului clar în propoziții simple cu sens"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Care dintre următoarele tehnici de prelucrare informațională este cifru tomogramic:",
+    "answers": [
+      "Alfabetul Baudot",
+      "Sistemul Vernam",
+      "Cifrul lui Cezar",
+      "Codul Morse"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Semnătura digitală are la bază următoarele tehnici:",
+    "answers": [
+      "Criptarea asimetrică",
+      "Criptarea simetrică",
+      "Digitizarea semnăturii olografe",
+      "Reproducerea semnăturii olografe pe documentele electronice"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Care dintre următoarele enunțuri nu face parte din setul de condiții (principii) enunțate de Claude Shannon cu privire la realizarea sistemelor criptografice:",
+    "answers": [
+      "Cantitatea de secret conferită mesajului criptat",
+      "Nerepudierea mesajelor",
+      "Optimizarea mărimii cheilor criptografice",
+      "Evitarea propagării erorilor in textul criptat"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Metodele de criptare aplicate mesajelor nu pot fi:",
+    "answers": [
+      "Metode criptografice simetrice",
+      "Metode criptografice asimetrice",
+      "Metode criptografice bazate pe chei aleatoare",
+      "Metode criptografice bazate pe funcții de permutare"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Un sistem informațional binar echiprobabil are entropia egală cu:",
+    "answers": [
+      "1 bit / eveniment",
+      "0 bit / eveniment",
+      "2 bit / eveniment",
+      "1/2 bit / eveniment"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Entropia unui sistem informațional poate fi:",
+    "answers": [
+      "Strict negativă",
+      "Pozitivă",
+      "Strict pozitivă",
+      "Negativă"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Timpul de acoperire al unui sistem criptografic este:",
+    "answers": [
+      "Timpul de valabilitate al sistemului de chei",
+      "Timpul în care un sistem criptografic poate fi considerat sigur",
+      "Timpul necesar pentru a fi decriptat un mesaj",
+      "Timpul in care se realizează criptarea mesajelor"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Tehnica codificării redundante este:",
+    "answers": [
+      "Tehnică criptografică",
+      "Tehnică de compresie a surselor informaționale",
+      "Tehnică de protecție la erori a canalelor cu perturbații",
+      "Tehnică de protecție la erori a canalelor fără perturbații"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Codificarea neuniformă este utilizată ca:",
+    "answers": [
+      "Tehnică criptografică",
+      "Tehnică de compresie a surselor informaționale",
+      "Tehnică de protecție la erori a canalelor cu perturbații",
+      "Tehnică de protecție la erori a canalelor fără perturbații"
+    ],
+    "correct_answer": 1
+  }
+]

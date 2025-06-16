@@ -1,0 +1,502 @@
+[
+  {
+    "question": "Un SGBD distribuit este:",
+    "answers": [
+      "O mulțime de SGBD-uri locale, independente, ce se execută în același timp",
+      "Un software ce permite gestiunea unei BD distribuite și face distribuția transparentă utilizatorilor",
+      "O mulțime de aplicații locale și globale",
+      "O mulțime de aplicații globale"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "O tranzacție este:",
+    "answers": [
+      "O unitate de program ce realizează citiri și scrieri",
+      "O mulțime finită și ordonată de operații de citire, scriere și terminare",
+      "O mulțime finită de operații coerente, executate de un SGBD, care manipulează datele unei baze de date",
+      "O serie finită de operații de modificare a datelor dintr-o bază de date ORACLE"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Proprietatea de consistență a tranzacției constă din:",
+    "answers": [
+      "Eliminarea redundanțelor",
+      "Izolarea tranzacțiilor în execuție",
+      "Transformarea unei stări consistente într-o stare consistentă",
+      "Transparența"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "O bază de date distribuită se găsește implementată numai:",
+    "answers": [
+      "Pe un calculator performant",
+      "Pe un calculator client",
+      "Într-o rețea de calculatoare",
+      "Pe un laptop"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Un SGBD paralel este:",
+    "answers": [
+      "O mulțime de SGBD locale independente în execuție",
+      "Un SGBD ce execută in paralel operații de intrare / ieșire dintr-o bază de date",
+      "Un program ce operează pe baza algoritmilor paraleli",
+      "Un SGBD ce se execută pe calculatoare cu mai multe procesoare și medii de stocare, proiectate să execute o mulțime de operații în paralel, pentru o mare performanță"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Se dă tabelul STUDENT(CNP, Nume, Grupa, Adresa) și următoarea secvență ce reprezintă o tranzacție:<br><pre>CREATE table STUDENT_NOU ( CNP NUMBER, Nume VARCHAR(30))<br>INSERT INTO STUDENT_NOU SELECT CNP, Nume from STUDENT<br>Savepoint s1<br>UPDATE STUDENT_NOU SET Nume = UPPER(Nume)<br>Savepoint s2<br>DELETE FROM STUDENT_NOU<br>Rollback to s2<br>DELETE FROM STUDENT_NOU WHERE CNP=100<br>UPDATE STUDENT_NOU SET Nume = 'Ionescu'<br>Rollback to s2<br>UPDATE STUDENT_NOU SET Nume = 'Ionescu' WHERE CNP=100<br>Rollback</pre><br>Care este rezultatul acestei tranzacții pentru tabela STUDENT_NOU?",
+    "answers": [
+      "Avem un student cu numele 'Ionescu'",
+      "Nu avem linii în tabelă",
+      "Nu putem să facem Rollback mai mult de o dată pe un punct de reluare",
+      "Ultimul UPDATE eșuează deoarece studentul cu CNP-ul 100 a fost șters"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Când creați o bază de date Microsoft Sql Server, care sunt fișierele care trebuie create obligatoriu?",
+    "answers": [
+      "Un fișier de date primar",
+      "Un fișier de date primar și un fișier de log",
+      "Un fișier de date primar, un fișier de date secundar și un fișier de log",
+      "Un fișier de log primar"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Când se determină accesul utilizator la obiecte particulare ale unei baze de date, cum se aplică permisiunile?",
+    "answers": [
+      "User, fixed role, group role, fixed server",
+      "User, group role, fixed role, fixed server",
+      "Permisiunile sunt cumulative, exceptând DENY",
+      "Permisiunile se scad, exceptând permisiunile user specificate"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Care dintre următoarele afirmații nu este adevărată despre bazele de date Microsoft SQL Server?",
+    "answers": [
+      "Bazele de date sunt grupate în \"filegroups\"",
+      "Bazele de date trebuie să fie în același \"filegroup\"",
+      "Bazele de date pot crește automat cu un procent",
+      "Bazele de date pot avea dimensiuni restricționate"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Care grup de instrucțiuni se poate utiliza prin acordarea permisiunilor obiect?",
+    "answers": [
+      "SELECT, UPDATE, INSERT, CREATE",
+      "SELECT, EXECUTE, DELETE, INDEX",
+      "SELECT, UPDATE, INSERT, DELETE",
+      "SELECT, EXECUTE, DELETE,CREATE"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Ați planificat ca Microsoft SQL Server 2000 să facă backups ale unei baze de date astfel: full backup la ora 2:00 a.m.; differential backups din 4 în 4 ore; transaction log backups la fiecare 30'. Sistemul cade la 11:24 a.m. După ce se face un full backup restore, câte backups transaction logs și diferențiale (numărul minim) trebuie restaurate pentru a avea pierderi minime în baza de date?",
+    "answers": [
+      "1 differential, 2 log",
+      "1 differetial, 10 log",
+      "2 differential, 2 log",
+      "2 differential, 1 log"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Pentru a preveni problemele ținând de proprietarul obiectelor unei baze de date Microsoft SQL Server, ce rol ar trebui să fie asignat unui developer?",
+    "answers": [
+      "Db-owner",
+      "Db-creator",
+      "DBA",
+      "Db-manager"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Rolul Public este un rol special fixat la nivelul unei baze de date Sql Server. Care dintre următoarele afirmații este adevărată despre el?",
+    "answers": [
+      "Poate fi șters",
+      "E conținut în orice bază de date utilizator, inclusiv master, msdb, tempdb, model",
+      "E conținut numai în bazele de date utilizator",
+      "Poate avea utilizatori, grupuri sau roluri asignate"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Care dintre afirmațiile următoare sunt adevărate?",
+    "answers": [
+      "Numai un index cluster poate fi creat pentru un tabel",
+      "Întotdeauna creați indecșii non-cluster înaintea creării oricărui index cluster",
+      "Indecșii cluster sunt mai mari decât cei non-cluster",
+      "Paginile intermediare ale indexului cluster sunt paginile de date ale tabelului"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Trebuie să modificați un tabel din baza de date pe care ați creat-o; mai mulți utilizatori au primit permisiunile obiect SELECT, INSERT pentru acel tabel. Ce variantă ar trebui să executați pentru a modifica tabelul, fără a afecta permisiunile acordate?",
+    "answers": [
+      "DROP TABLE urmat de CREATE TABLE",
+      "CREATE TABLE, cu noua configurație",
+      "ALTER TABLE",
+      "MOD TABLE"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Când ștergeți un tabel, ce obiecte din baza de date se șterg de asemenea?",
+    "answers": [
+      "Vederile care-l au ca tabel de bază",
+      "Procedurile stocate care-l utilizează",
+      "Declanșatorii creați pentru el",
+      "Funcțiile care-l utilizează"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Care sunt caracteristicile unei chei primare?",
+    "answers": [
+      "Forțează integritatea referențială pentru o tabelă",
+      "Permite valori de tip null",
+      "Server-ul de baze de date permite mai multe chei primare pentru un tabel",
+      "La crearea ei, serverul construiește automat o constrângere de domeniu"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Care dintre următoarele afirmații sunt adevărate despre constrângeri?",
+    "answers": [
+      "Constrângerile la nivel de coloană se aplică pe anumite coloane sau combinații de coloane",
+      "Dacă nu se specifică un nume pentru constrângere, server-ul de baze de date oferă unul",
+      "Indecșii creați de constrângerile PRIMARY KEY și UNIQUE KEY pot fi șterși folosind instrucțiunea DROP INDEX",
+      "Constrângerile nu pot fi adăugate sau șterse dintr-o tabelă fără a afecta structura tabelei"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Puteți folosi o procedură stocată pentru a extrage informații din tabele de bază la care nu aveți permisiuni de acces?",
+    "answers": [
+      "Nu, pentru că nu aveți permisiunile cerute pe tabele",
+      "Nu, dacă nu sunteți membri sysadmin sau db-owner",
+      "Da, dacă aveți permisiunea EXECUTE pentru procedura stocată",
+      "Da, dacă ați creat declanșatori pentru fiecare tabel"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Dacă utilizatorul student crează o tabelă, cine poate interoga tabela?",
+    "answers": [
+      "Numai utilizatorul student",
+      "Numai administratorul bazei de date",
+      "Utilizatorii care au drept de SELECT pe tabelă",
+      "Toți utilizatorii"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Să se aleagă răspunsul corect:",
+    "answers": [
+      "Când o tabelă e ștearsă, toți indecșii asociați sunt șterși",
+      "Întotdeauna se construiește un index pe coloanele care se actualizează frecvent",
+      "Se poate crea un index ce conține câmpuri din mai multe tabele",
+      "Nu se recomandă crearea unui index pe coloanele folosite în joncțiuni"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Comanda DROP VIEW vedere are ca efect:",
+    "answers": [
+      "Șterge înregistrările din tabela virtuală",
+      "Șterge înregistrările din tabela de bază",
+      "Șterge tabela virtuală",
+      "Șterge tabela de bază"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Serverul Oracle/Microsoft de baze de date crează automat un index când:",
+    "answers": [
+      "Se definește o constrângere de tip PRIMARY KEY",
+      "Se definește o constrângere de tip NOT NULL",
+      "Se definește o constrângere de tip FOREIGN KEY",
+      "Se definește o constrângere de tip CHECK"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Se va crea un index pe o coloană când:",
+    "answers": [
+      "Coloana se utilizează frecvent în clauza WHERE sau într-un JOIN",
+      "Tabela este de dimensiuni mici",
+      "Coloana conține un număr foarte mare de valori egale",
+      "Tabela este actualizată frecvent"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Secvența de comenzi:<br><pre>SET AUTOCOMMIT OFF<br>DELETE FROM stoc<br>ROLLBACK</pre><br>are ca efect:",
+    "answers": [
+      "Nu execută nici o ștergere",
+      "Șterge toate înregistrările din tabela stoc",
+      "Șterge doar înregistrarea curentă din tabela stoc",
+      "Șterge fizic tabela stoc"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Care dintre următoarele instrucțiuni este necesară pentru a defini începutul unei tranzacții explicite în Microsoft Transact-SQL?",
+    "answers": [
+      "OPEN TRANSACTION",
+      "BEGIN TRANSACTION",
+      "INSERT TRANSACTION",
+      "END TRANSACTION"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Ce problemă de concurență apare când o tranzacție citește datele necomise de o altă tranzacție aflată în derulare?",
+    "answers": [
+      "Lost update",
+      "Dirty Read",
+      "Nonrepeatable Read",
+      "Phantom Read"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Care dintre următoarele constrângeri poate fi făcută disable?",
+    "answers": [
+      "DEFAULT",
+      "CHECK",
+      "PRIMARY KEY",
+      "UNIQUE"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Trebuie să modificați o procedură stocată și mai mulți utilizatori au primit permisiunea de execuție a ei. Ce instrucțiune ar trebui să utilizați pentru a o modifica, fără a afecta permisiunile existente?",
+    "answers": [
+      "DROP PROC",
+      "CREATE PROC",
+      "ALTER PROC",
+      "MOD PROC"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Care dintre următoarele enumerări reprezintă un tip de integritate a datelor implementată de o constrângere din serverele relaționale de baze de date?",
+    "answers": [
+      "Integritatea entității",
+      "Integritatea de atribut",
+      "Integritatea nereferențială",
+      "Integritatea tipurilor de date"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Ce caracteristică este utilizată pentru a preveni conflictele de actualizare, astfel încât utilizatorii să nu poată citi sau modifica datele când alți utilizatori le modifică?",
+    "answers": [
+      "Tranzacțiile",
+      "Blocările",
+      "Interogările de tip SQL",
+      "Permisiunile de tip UPDATE"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Ați creat o vedere folosind comanda:<br><pre>CREATE VIEW dbo.Employee<br>WITH ENCRYPTION<br>AS SELECT Name FROM dbo.HumanResources<br>WHERE isEmployee = 1<br>WITH CHECK OPTION</pre><br>Trebuie să împiedicați alți utilizatori să copieze vederea. Ce instrucțiune ar trebui să folosiți?",
+    "answers": [
+      "ALTER VIEW dbo.Employee<br>WITH ENCRYPTION<br>AS SELECT Name FROM dbo.HumanResources<br>WHERE isEmployee = 1",
+      "DENY ALL ON dbo.Employee TO public",
+      "ALTER VIEW dbo.Employee<br>AS SELECT Name FROM dbo.HumanResources<br>WHERE isEmployee = 1<br>WITH CHECK OPTION",
+      "ALTER VIEW dbo.Employee<br>WITH SCHEMABINDING<br>AS SELECT Name FROM dbo.HumanResources<br>WHERE isEmployee = 1"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Se dă secvența de cod următoare:<br><pre>CREATE TABLE dbo.tabel<br>(ID int NOT NULL PRIMARY KEY)<br>GO<br>BEGIN TRY<br>BEGIN TRAN<br>INSERT INTO dbo.tabel VALUES(1)<br>INSERT INTO dbo.tabel VALUES(2)<br>INSERT INTO dbo.tabel VALUES(1)<br>END TRY<br>BEGIN CATCH<br>PRINT ' Eroare în date!'<br>COMMIT TRAN<br>END CATCH<br>SELECT * FROM dbo.tabel</pre><br>Câte înregistrări ale dbo.tabel vor fi afișate de instrucțiunea SELECT?",
+    "answers": [
+      "O înregistrare",
+      "Două înregistrări",
+      "Trei înregistrări",
+      "Niciuna"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Un utilizator are permisiunile INSERT și UPDATE pe un tabel dintr-o bază de date, acordate prin rolul Public. El activează un rol aplicație pentru acea bază de date, care permite numai permisiunea SELECT pe acel tabel. Ce permisiuni va avea utilizatorul pe tabel?",
+    "answers": [
+      "SELECT, INSERT, UPDATE",
+      "SELECT",
+      "INSERT, UPDATE",
+      "Nu are permisiuni"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Funcțiile definite de utilizator pot returna:",
+    "answers": [
+      "O valoare numerică",
+      "O valoare de tip caracter",
+      "Un set de înregistrări (de tip tabel)",
+      "Toate tipurile de date din celelalte opțiuni"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Să se aleagă afirmația corectă:",
+    "answers": [
+      "Când se șterge o tabelă, indecșii asociați rămân până se șterge și baza de date",
+      "Pentru a obține date ordonate dintr-o tabelă se pot folosi indecși",
+      "Întotdeauna se construiește un index pe atributele care se actualizează în mod frecvent",
+      "Se poate construi un index care conține câmpuri din mai multe tabele"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Considerăm următorul fragment de cod SQL dintr-o procedură stocată. Ce se întâmplă dacă apare o eroare în timpul execuției instrucțiunii INSERT?<br><pre>...<br>INSERT INTO Tabela (Col1) VALUES (@Val)<br>PRINT @Val<br>IF @@error = 0<br>RETURN 1<br>ELSE<br>RETURN 0<br>... Bloc i-ni SQL ...</pre>",
+    "answers": [
+      "Procedura stocată continuă cu execuția 'Bloc i-ni SQL'",
+      "Se iese din procedura stocată cu valoarea de retur 1",
+      "Se iese din procedura stocată cu valoarea de retur 0",
+      "Se iese din procedura stocată fără o valoare de retur"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Se poate folosi același nume pentru mai multe tabele dintr-un server de baze de date?",
+    "answers": [
+      "Nu",
+      "Da, dacă nu aparțin aceleași baze de date",
+      "Da, dacă aparțin aceleași scheme dintr-o bază de date",
+      "Nu, dacă aparțin unor instanțe diferite"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Dacă utilizatorul \"stud\" crează o vedere, cine poate face interogări pe acea vedere?",
+    "answers": [
+      "Administratorul bazei de date",
+      "Utilizatorii care au permisiunea SELECT pe tabela din care extrage vederea datele",
+      "Numai utilizatorul \"stud\"",
+      "Numai utilizatorii care au permisiunea SELECT pe vedere"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Un index Microsoft SQL/Oracle Server poate fi șters de:",
+    "answers": [
+      "Proprietarul tabelei",
+      "Numai de proprietarul tabelei",
+      "Numai de administratorul bazei de date",
+      "Numai de administratorul de sistem gazda"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Un administrator de bază de date poate:",
+    "answers": [
+      "Crea un utilizator de bază de date",
+      "Șterge un utilizator al sistemului(pe care rulează serverul de baze de date)",
+      "Șterge orice tabelă sistem",
+      "Șterge orice index creat pe o tabelă sistem"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Secvența de comenzi Microsoft SQL Server:<br><pre>SET IMPLICIT_TRANSACTIONS OFF<br>BEGIN TRANSACTION<br>DELETE FROM Tabel_sursa<br>ROLLBACK</pre><br>are ca efect:",
+    "answers": [
+      "Șterge toate înregistrările din tabela \"Tabel_sursa\"",
+      "Șterge doar înregistrarea curentă din \"Tabel_sursa\"",
+      "Nu efectuează nicio ștergere",
+      "Șterge toți indecșii asociați tabelei \"Tabel_sursa\""
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Compania dumneavoastră utilizează o procedură stocată numită webAnalysis pentru a analiza informația de pe un Web site. Procedura întoarce 1 dacă analiza a avut loc cu succes și 0 dacă a existat o problemă. Dumneavoastră creați o interogare care execută un grup de operații de întreținere zilnice, incluzând procedura webAnalysis. Trebuie să comiteți modificările făcute de procedură, dacă analiza a înregistrat succes, fără să afectați execuția altor task-uri executate de interogare. Care set de instrucțiuni ar trebui să folosiți?",
+    "answers": [
+      "BEGIN TRANSACTION;<br>DECLARE @success int;<br>EXEC @success = webAnalysis;<br>IF @success = 0<br>ROLLBACK;<br>ELSE<br>COMMIT;",
+      "BEGIN TRANSACTION;<br>DECLARE @success int;<br>EXEC @success = webAnalysis;<br>IF @success = 0<br>ROLLBACK;",
+      "BEGIN TRANSACTION;<br>DECLARE @success int;<br>EXEC @success = webAnalysis;<br>COMMIT;<br>IF @success = 0<br>ROLLBACK;",
+      "DECLARE @success int;<br>EXEC @success = webAnalysis;<br>IF @success = 0<br>ROLLBACK;<br>ELSE<br>COMMIT;"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Dacă doriți să returnați o valoare dintr-o procedură stocată într-un parametru, care tip de apel trebuie folosit?",
+    "answers": [
+      "EXECUTE sp_nume 5",
+      "EXECUTE sp_nume 5 OUTPU",
+      "EXECUTE sp_nume @val OUTPUT",
+      "EXECUTE sp_nume @val"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Dacă o linie dintr-un tabel s-a modificat de mai multe ori de la ultimul backup full al bazei de date, fișierul transaction log backup conține numai ultimul set de valori pentru acea linie?",
+    "answers": [
+      "Nu, întotdeauna (indiferent de modelul de recovery ales)",
+      "Nu, dacă modelul de recovery este Full",
+      "Nu, dacă modelul de recovery este Simple",
+      "Da, dacă modelul de recovery este Full"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Baza de date folosită de dumneavoastră conține o tabelă numită Employees, care are o coloană de tip nvarchar(MAX) numită lastName.Aveți deja un index clustered numit id_index pe coloana id a tabelei. Unul dintre utilizatorii dumneavoastră reclamă timpii de interogare lungi obținuți când folosește coloana lastName în clauza WHERE a instrucțiunii SELECT. Ce instrucțiune ar trebui să folosiți?",
+    "answers": [
+      "ALTER INDEX id_index<br>ON Employees (id, lastName);",
+      "CREATE INDEX id_name_index<br>ON Employees (id)<br>INCLUDE (lastName);",
+      "CREATE CLUSTERED INDEX name_index<br>ON Employees (lastName);",
+      "CREATE INDEX name_index<br>ON Employees (lastName);"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "O bază de date folosită de dumneavoastră include o tabelă numită Contractors. Aplicațiile folosesc frecvent următoarea instrucțiune pentru a accesa înregistrările actualizate după 1 ianuarie 2024:<br><pre>SELECT id, name FROM Contractors<br>WHERE expertise = @searchWord<br>AND lastUpdated > '20240101';</pre><br>Trebuie să reduceți timpul necesar execuției acestei instrucțiuni. Care este soluția optimă pentru a obține acest deziderat?",
+    "answers": [
+      "CREATE INDEX expertise_index<br>ON Contractors (lastUpdated, expertise);",
+      "CREATE INDEX expertise_index<br>ON Contractors(lastUpdated)<br>INCLUDE (expertise);",
+      "CREATE INDEX expertise_index<br>ON Contractors (expertise)<br>WHERE lastUpdated > '20240101';",
+      "CREATE INDEX expertise_index<br>ON Constractors (expertise, lastUpdated);"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Ocazional doriți să limitați permisiunile unui user sau rol interzicând permisiunile la acel cont de securitate. Ce face interzicerea permisiunilor pe un anumit cont de securitate?",
+    "answers": [
+      "Asigură că un user sau rol moștenește permisiunile din oricare alt rol pe viitor",
+      "Dezactivează permisiunile dacă sunt moștenite din alt rol",
+      "Activează permisiunile dacă sunt moștenite din alt rol",
+      "Permisiunile nu sunt cumulative pentru un user sau un rol"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Ați creat o vedere folosind comanda:<br><pre>CREATE VIEW dbo.AngajatiNoi<br>AS SELECT<br>Nume,<br>SalariuLunar,<br>(SalariuLunar * 12) AS SalariuAnual,<br>Data_Ang<br>FROM dbo.ResurseUmane<br>WHERE Nume IS NOT NULL<br>AND Data_Ang > '1/1/2024'<br>WITH CHECK OPTION;</pre><br>Trebuie să inserați o linie folosind această vedere. Ce instrucțiune ar trebui să folosiți?",
+    "answers": [
+      "INSERT INTO dbo. AngajatiNoi (Nume, SalariuAnual, Data_Ang) VALUES ('Popa Ion', 50000, '3/12/2024');",
+      "INSERT INTO dbo. AngajatiNoi (Nume, SalariuLunar, Data_Ang) VALUES ('Mihnea George', 4000, '5/13/2024');",
+      "INSERT INTO dbo. AngajatiNoi (Nume, SalariuLunar, Data_Ang) VALUES ('Stan Remus', 2500, '11/5/2020');",
+      "INSERT INTO dbo. AngajatiNoi (Nume) VALUES ('Tonoiu Petre');"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Ați creat o tabelă folosind instrucțiunea:<br><pre>CREATE TABLE dbo.Products (ID int IDENTITY(1,1) NOT NULL,<br>Name nvarchar(60) NOT NULL, Cost decimal(10,2),<br>SalePrice decimal(10,2), CurrentStock bigint, NumberSold bigint)</pre><br>Un utilizator necesită următoarele tipuri de acces:<br>- SELECT pe coloanele Name și SalePrice;<br>- SELECT pe stocul disponibil(diferența dintre CurrentStock și NumberSold );<br>- ALTER pe coloanele Name și SalePrice.<br>Trebuie să acordați permisiuni pentru a satisface aceste cerințe, fără a da permisiuni suplimentare sau a restricționa accesul. Ce ar trebui să faceți?",
+    "answers": [
+      "Acordați utilizatorului permisiunile SELECT și ALTER pe vederea definită de instrucțiunea: CREATE VIEW dbo.CustomerProduct AS SELECT Name, SalePrice, (CurrentStock - NumberSold) AS AvailableStock FROM dbo.Products.",
+      "Acordați utilizatorului permisiunea SELECT pe coloanele Name, SalePrice, CurrentStock și NumberSold și permisiunea ALTER pe coloanele Name și SalePrice din tabela Products.",
+      "Acordați utilizatorului permisiunea ALTER pe vederea definită de instrucțiunea: CREATE VIEW dbo.CustomerProductSelect AS SELECT Name, SalePrice, (CurrentStock - NumberSold) AS AvailableStock FROM dbo.Products.",
+      "Acordați rolului Public permisiunea SELECT pe coloanele Name, SalePrice, CurrentStock și NumberSold și permisiunea ALTER pe coloanele Name și SalePrice din tabela Products."
+    ],
+    "correct_answer": 0
+  }
+]

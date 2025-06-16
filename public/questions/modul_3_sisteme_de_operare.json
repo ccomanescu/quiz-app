@@ -1,0 +1,502 @@
+[
+  {
+    "question": "Ce fișier este utilizat pentru a seta numele gazdei (hostname) pe un sistem Linux?",
+    "answers": [
+      "/etc/hostname",
+      "/etc/hosts",
+      "/etc/resolv.conf",
+      "/etc/network/interfaces"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Cum afișezi spațiul liber pe disc într-un sistem Linux?",
+    "answers": [
+      "df -h",
+      "du -sh",
+      "lsblk",
+      "free -m"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Cum adaugi un utilizator în Linux?",
+    "answers": [
+      "useradd username",
+      "adduser username",
+      "sudo useradd username",
+      "toate cele de mai sus"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Ce face comanda echo \"export PATH=/usr/local/bin:\\$PATH\" >> ~/.bashrc?",
+    "answers": [
+      "Adaugă /usr/local/bin la variabila PATH pentru sesiunea curentă.",
+      "Modifică permanent variabila PATH pentru utilizatorul curent.",
+      "Resetează PATH la valoarea implicită.",
+      "Afișează valoarea curentă a variabilei PATH."
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Cum setezi permisiunea de executare pentru toate fișierele dintr-un director?",
+    "answers": [
+      "chmod +x *",
+      "chmod -R +x .",
+      "chmod u+x *",
+      "find . -type f -exec chmod +x {} \\;"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Ce face comanda grep -rl \"text\" /var/log?",
+    "answers": [
+      "Afișează liniile care conțin \"text\" din fișierele din /var/log.",
+      "Caută și afișează doar numele fișierelor care conțin \"text\".",
+      "Caută recursiv \"text\" în directorul /var/log și afișează conținutul.",
+      "Șterge fișierele care conțin \"text\"."
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Cum ștergi toate fișierele mai vechi de 7 zile dintr-un director?",
+    "answers": [
+      "rm -rf * --older-than 7",
+      "find /cale/director -type f -mtime +7 -delete",
+      "find /cale/director -type f -name \"*.old\" -exec rm {} \\;",
+      "ls -l | grep \"7 days ago\" | xargs rm"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Ce face comanda alias ll=\"ls -l\"?",
+    "answers": [
+      "Creează o copie a comenzii ls -l.",
+      "Definește un alias pentru a rula comanda ls -l.",
+      "Creează un fișier numit ll care conține comanda ls -l.",
+      "Afișează toate aliasurile definite."
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Cum listezi toate procesele care aparțin unui anumit utilizator?",
+    "answers": [
+      "ps -u username",
+      "top -u username",
+      "pgrep -u username",
+      "toate cele de mai sus"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Ce face comanda tar -czf backup.tar.gz /home/user?",
+    "answers": [
+      "Creează o arhivă comprimată a directorului /home/user.",
+      "Extrage fișierele din arhiva backup.tar.gz.",
+      "Creează un backup necomprimat al directorului /home/user.",
+      "Șterge conținutul directorului /home/user."
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Care este comanda pentru a afișa tabela de rutare?",
+    "answers": [
+      "route",
+      "ip route",
+      "netstat -r",
+      "toate cele de mai sus"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Cum adaugi un cron job care să ruleze zilnic la ora 12:00?",
+    "answers": [
+      "0 12 * * * /cale/comanda.sh",
+      "12 0 * * * /cale/comanda.sh",
+      "0 0 12 * * /cale/comanda.sh",
+      "* * 12 * * /cale/comanda.sh"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Ce face comanda sed 's/Linux/UNIX/g' file.txt?",
+    "answers": [
+      "Înlocuiește primul cuvânt \"Linux\" din fiecare linie cu \"UNIX\".",
+      "Înlocuiește toate instanțele de \"Linux\" cu \"UNIX\" în fișierul file.txt.",
+      "Afișează conținutul fișierului file.txt fără modificări.",
+      "Șterge toate liniile care conțin \"Linux\"."
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Cum compilezi un program C folosind mai multe fișiere sursă?",
+    "answers": [
+      "gcc -o program file1.c file2.c",
+      "gcc -c file1.c file2.c",
+      "gcc -shared file1.c file2.c -o program",
+      "make file1.c file2.c"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Ce face comanda ping -c 4 google.com?",
+    "answers": [
+      "Ping continuu către google.com.",
+      "Trimite 4 pachete ICMP către google.com.",
+      "Verifică dacă portul 4 este deschis pe google.com.",
+      "Testează viteza conexiunii către google.com."
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Cum afișezi toate variabilele de mediu?",
+    "answers": [
+      "env",
+      "printenv",
+      "export -p",
+      "toate cele de mai sus"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Cum execuți un script Bash în fundal?",
+    "answers": [
+      "bash script.sh &",
+      "nohup bash script.sh",
+      "./script.sh &",
+      "toate cele de mai sus"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Cum verifici utilizarea memoriei pe un sistem Linux?",
+    "answers": [
+      "free -h",
+      "top",
+      "vmstat",
+      "toate cele de mai sus"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Ce face comanda #!/bin/bash plasată în prima linie a unui script?",
+    "answers": [
+      "Definește directorul curent de lucru pentru script.",
+      "Specifică shell-ul care va interpreta scriptul.",
+      "Face scriptul executabil automat.",
+      "Afișează versiunea curentă de Bash."
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Cum setezi o variabilă în Bash?",
+    "answers": [
+      "var=\"valoare\"",
+      "var = \"valoare\"",
+      "set var=\"valoare\"",
+      "export var \"valoare\""
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Ce face următorul script?\nfor file in *.txt; do\nmv \"$file\" \"${file%.txt}.bak\"\ndone",
+    "answers": [
+      "Copiază toate fișierele .txt într-un nou director.",
+      "Renumește toate fișierele .txt în .bak.",
+      "Șterge toate fișierele .txt.",
+      "Afișează doar fișierele .txt."
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Ce face comanda read -p \"Introdu numele: \" nume?",
+    "answers": [
+      "Afișează \"Introdu numele: \" și salvează răspunsul în variabila nume.",
+      "Scrie \"Introdu numele: \" într-un fișier numit nume.",
+      "Afișează conținutul fișierului nume.",
+      "Caută numele în variabilele de mediu."
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Ce face următorul script?\nif [[ $1 -gt 10 ]]; then\necho \"Mai mare decât 10\"\nelse\necho \"Mai mic sau egal cu 10\"\nfi",
+    "answers": [
+      "Compară dacă $1 este mai mare decât 10.",
+      "Compară dacă $1 este egal cu 10.",
+      "Afișează un mesaj de eroare.",
+      "Este un script care verifică doar fișiere."
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Cum verifici dacă un fișier există într-un script Bash?",
+    "answers": [
+      "[ -e fișier ]",
+      "[ -f fișier ]",
+      "[ -d fișier ]",
+      "a) și b)"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Ce face comanda while true; do echo \"Rulez\"; done?",
+    "answers": [
+      "Afișează \"Rulez\" o singură dată.",
+      "Rulează un ciclu infinit care afișează \"Rulez\".",
+      "Nu face nimic.",
+      "Închide terminalul."
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Cum execuți un script și redirecționezi atât ieșirea standard, cât și erorile într-un fișier?",
+    "answers": [
+      "./script.sh > output.log 2>&1",
+      "./script.sh > output.log",
+      "./script.sh 2> output.log",
+      "./script.sh &> output.log"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Ce face comanda chmod 750 script.sh?",
+    "answers": [
+      "Atribuie permisiuni complete pentru toți utilizatorii.",
+      "Permite proprietarului să citească, să scrie și să execute fișierul, grupului doar să-l execute, iar altora niciun acces.",
+      "Permite proprietarului să citească, să scrie și să execute fișierul, grupului doar să-l citească, iar altora să-l execute.",
+      "Permite tuturor utilizatorilor să execute fișierul."
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Cum afișezi primele 10 linii dintr-un fișier?",
+    "answers": [
+      "head -10 file.txt",
+      "tail -10 file.txt",
+      "cat -n10 file.txt",
+      "less -10 file.txt"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Ce face comanda ln -s /etc/passwd ~/passwd-link?",
+    "answers": [
+      "Copiază fișierul /etc/passwd în directorul utilizatorului.",
+      "Creează un link simbolic către /etc/passwd numit passwd-link în directorul utilizatorului.",
+      "Șterge fișierul /etc/passwd.",
+      "Renumește fișierul /etc/passwd în passwd-link."
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Cum verifici spațiul liber pe partiții?",
+    "answers": [
+      "df -h",
+      "du -h",
+      "lsblk",
+      "mount"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Ce face următorul script?\n#!/bin/bash\nfor i in {1..3}; do\necho \"Linia $i\"\ndone",
+    "answers": [
+      "Afișează doar \"Linia 1\".",
+      "Rulează un ciclu infinit.",
+      "Afișează \"Linia 1\", \"Linia 2\" și \"Linia 3\".",
+      "Nu face nimic, deoarece sintaxa este greșită."
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Cum verifici ce utilizatori sunt conectați în prezent?",
+    "answers": [
+      "who",
+      "w",
+      "users",
+      "toate cele de mai sus"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Cum verifici ce pachete sunt instalate pe un sistem bazat pe Debian?",
+    "answers": [
+      "rpm -qa",
+      "dpkg --get-selections",
+      "apt list --installed",
+      "b) și c)"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Cum afișezi procesele care utilizează cel mai mult CPU pe un sistem Linux?",
+    "answers": [
+      "top",
+      "ps aux --sort=-%cpu",
+      "htop",
+      "toate cele de mai sus"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Cum verifici permisiunile unui fișier?",
+    "answers": [
+      "ls -l",
+      "chmod file",
+      "stat file",
+      "a) și c)"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Ce face comanda kill -9 <PID>?",
+    "answers": [
+      "Trimite un semnal de terminare soft către proces.",
+      "Trimite un semnal de oprire imediată către proces.",
+      "Repornește procesul.",
+      "Suspendă procesul."
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Ce face următorul script?\n#!/bin/bash\nn=1\nwhile [ $n -le 5 ]; do\necho \"Număr: $n\"\n((n++))\ndone",
+    "answers": [
+      "Rulează un ciclu infinit.",
+      "Afișează \"Număr: 1\" o singură dată.",
+      "Afișează \"Număr: 1\" până la \"Număr: 5\".",
+      "Nu face nimic, deoarece sintaxa este greșită."
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Ce face comanda find /home -type f -name \"*.log\"?",
+    "answers": [
+      "Găsește directoarele care conțin fișiere .log.",
+      "Găsește toate fișierele cu extensia .log din /home.",
+      "Șterge fișierele .log din /home.",
+      "Listează doar directoarele din /home."
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Ce fișier conține informații despre parolele utilizatorilor?",
+    "answers": [
+      "/etc/shadow",
+      "/etc/passwd",
+      "/etc/group",
+      "/etc/login.defs"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Cum creezi un fișier gol folosind comanda touch?",
+    "answers": [
+      "touch <fișier>",
+      "create <fișier>",
+      "echo \"\" > <fișier>",
+      "createfile <fișier>"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Cum ștergi un fișier numit file1.txt?",
+    "answers": [
+      "rm file1.txt",
+      "delete file1.txt",
+      "remove file1.txt",
+      "erase file1.txt"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Cum faci ca un fișier să fie doar citibil pentru toți utilizatorii?",
+    "answers": [
+      "chmod 444 file.txt",
+      "chmod 777 file.txt",
+      "chmod 555 file.txt",
+      "chmod 4444 file.txt"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Cum copiezi un fișier numit file1.txt într-un alt director?",
+    "answers": [
+      "cp file1.txt /path/to/directory/",
+      "move file1.txt /path/to/directory/",
+      "copy file1.txt /path/to/directory/",
+      "cp /path/to/directory/ file1.txt"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Cum vizualizezi primele 10 linii ale unui fișier denumit logfile.log?",
+    "answers": [
+      "head logfile.log",
+      "tail logfile.log",
+      "cat logfile.log | head",
+      "a) și c)"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Cum poți să vizualizezi ultima linie dintr-un fișier în timp real?",
+    "answers": [
+      "tail -f logfile.log",
+      "head -f logfile.log",
+      "cat logfile.log | tail",
+      "tail -n 1 logfile.log"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Ce face comanda cp -r source_dir target_dir?",
+    "answers": [
+      "Copiază fișierul source_dir într-un alt director.",
+      "Copiază directorul și tot conținutul acestuia în target_dir.",
+      "Mărește dimensiunea directorului source_dir.",
+      "Creează un link simbolic către source_dir în target_dir."
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Cum afișezi conținutul unui fișier fără a-l deschide efectiv?",
+    "answers": [
+      "cat file.txt",
+      "open file.txt",
+      "less file.txt",
+      "vi file.txt"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Cum folosești comanda tar pentru a crea un fișier arhivă?",
+    "answers": [
+      "tar -xvf archive.tar file1.txt",
+      "tar -cvf archive.tar file1.txt",
+      "tar -xvf file1.txt archive.tar",
+      "tar -cf archive.tar file1.txt"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Cum adaugi text într-un fișier existent folosind comanda echo?",
+    "answers": [
+      "echo \"text\" >> file.txt",
+      "echo \"text\" > file.txt",
+      "echo \"text\" file.txt",
+      "echo file.txt >> \"text\""
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Cum schimbi proprietarul fișierului file.txt în utilizatorul user1?",
+    "answers": [
+      "chown user1 file.txt",
+      "chmod user1 file.txt",
+      "chgrp user1 file.txt",
+      "chown file.txt user1"
+    ],
+    "correct_answer": 0
+  }
+]

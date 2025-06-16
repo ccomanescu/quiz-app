@@ -1,0 +1,17 @@
+/* Custom styles for quiz app */
+.ant-radio-wrapper {
+  display: flex !important;
+  align-items: flex-start !important;
+}
+
+.ant-radio {
+  margin-top: 4px;
+}
+
+.ant-card {
+  transition: box-shadow 0.3s ease;
+}
+
+.ant-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}

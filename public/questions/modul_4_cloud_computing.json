@@ -1,0 +1,201 @@
+[
+  {
+    "question": "Produsul NoSQL oferit de AWS este:",
+    "answers": [
+      "DynamoDB",
+      "MongoDB",
+      "RDS",
+      "CloudWatch"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Serviciul DNS oferit de AWS este denumit:",
+    "answers": [
+      "Cloud DNS",
+      "Cloud Front",
+      "Cloud Trial",
+      "Route53"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "In mod implicit, intr-un AWS VPC nou creat, toate instantele EC2 au asignate 2 adrese IP. Care sunt aceste adrese IP?",
+    "answers": [
+      "O adresa de tip Elastic IP si o adresa IP publica",
+      "O adresa IP privata si o adresa IPv4 publica",
+      "O adresa publica IP si o adresa secreta IP pentru a asigura securitatea",
+      "AWS VPC nu asigneaza adrese IP la creare"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Care sunt modelele standard de servicii funizate \"cloud computing\":",
+    "answers": [
+      "IaaS, PaaS, XaaS",
+      "SaaS, XaaS, MaaS",
+      "PaaS, SaaS, MaaS",
+      "Iaas, PaaS, SaaS"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Care sunt modelele de arhitectura de \"cloud computing\":",
+    "answers": [
+      "Public cloud, Internet cloud, Colective cloud, Teams cloud",
+      "Public cloud, Community cloud, Hybrid cloud, Private cloud",
+      "Private cloud, Public cloud, Private cloud, Colectiv cloud"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Care sunt pricipalele servicii furnizate de AWS:",
+    "answers": [
+      "Amazon VPC",
+      "Amazon EC2",
+      "AWS IAM",
+      "toate"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Autentificarea multifactor se poate face in AWS folosind:",
+    "answers": [
+      "RDS",
+      "IAM",
+      "DynamoDB",
+      "Accout Settings"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "AWS S3 reprezinta:",
+    "answers": [
+      "Object Base Storage",
+      "Block Base Storage",
+      "A Data Warehouse Solution",
+      "Suitable for Data Archival"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Fiecare utilizator creat in AWS IAM are implicit:",
+    "answers": [
+      "Full Permission",
+      "Partial Permissions",
+      "No Permissions",
+      "Dedicated Permissions"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "In AWS S3 durabilitatea fisierelor este de:",
+    "answers": [
+      "99,99 %",
+      "99,999999999 %",
+      "100 %",
+      "99 %"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Serviciul de CloudFormation permite:",
+    "answers": [
+      "Stop, Terminate, Reboot sau Recover a unei instante EC2",
+      "Lansa, configura si conecta resurse AWS cu template JavaScript Object Notation (JSON)",
+      "Monitoriza si comanda o instanta EC2",
+      "Trimite mesaje de tip AWS Simple Notification Services (SNS)"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Instantele AWS EC2 sunt provizionate:",
+    "answers": [
+      "In Regiuni",
+      "Global",
+      "In Zonele de Disponibilitate",
+      "In Centrele de Date"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Baza de date SQL proprietara pentru platforma AWS este:",
+    "answers": [
+      "Aurora",
+      "MangoDB",
+      "MySQL",
+      "DynamoDB"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "AWS Simple Notification Service (SNS) permite sa:",
+    "answers": [
+      "Ofere subscriptii de tipul: email, HTTP/HTTPS, SMS text, SQS Queries, functii Lamba",
+      "Seta, opera si transmite notificari catre serviciile utilizate in diferite aplicatii",
+      "Monitoriza si comanda o instanta EC2",
+      "Functioneaza impreuna cu serviciul ColudWatch"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Serviciul Elastic Cloud Computing – EC2 asigura:",
+    "answers": [
+      "Crea, salve si reutiliza instante (Amazon Machine Images)",
+      "Lansarea unei instante sau a unei flote de instante",
+      "Folosirea de diferite tipuri de CPU, memorie, storage, grafica, retele",
+      "Toate"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Ce baze de date RDS sunt disponibile in AWS:",
+    "answers": [
+      "Aurora, MySQL, SQL, Cassandra",
+      "PostGres, Cassandra, MangoDB, Aurora",
+      "Oracle, SQL, MySQL, Cassandra",
+      "Oracle, SQL, MySQL, PostGres"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Care sunt modalitatile de plata pentru instantele AWS EC2:",
+    "answers": [
+      "On-Demand, Savings Plans, Reserved Instances, Spot Instances",
+      "Savings Plans, Reserved Instances, Spot Instances",
+      "Reserved Instances, Spot Instances",
+      "Spot Instances, Savings Plans, Reserved Instances"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Alarmele din serviciul CloudWatch indeplinesc urmatoarele actiuni:",
+    "answers": [
+      "Reboot sau Recover a unei baze de date NoSQL",
+      "Scala un AutoScaling grup In sau Out de VPC",
+      "Monitoriza si comanda resursele si serviciile din AWS",
+      "Trimite mesaje SMS"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Cum se monitorizeaza resursele oferite AWS:",
+    "answers": [
+      "AWS CloudWatch",
+      "Unelte furnizate de Terte-Parti",
+      "Dashboard EC2",
+      "Configurarea de notificari cand orice eveniment semnificativ se intampla"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Care este cel mai mare furnizor de coud computing din lume?",
+    "answers": [
+      "Google Cloud",
+      "Amazon Web Services",
+      "Microsoft Azure",
+      "Alibaba"
+    ],
+    "correct_answer": 1
+  }
+]

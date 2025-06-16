@@ -1,0 +1,542 @@
+[
+  {
+    "question": "Primul fişier imagine încărcat într-o pagină html poate fi schimbat cu un alt fişier daca se utilizează:",
+    "answers": [
+      "window.images[1].src=\"image.jpg\";",
+      "document.status.images[1].src=\"image.jpg\";",
+      "document.images[1].src=\"poza.jpg\";",
+      "document.images[0].src=\"poza.jpg\";"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Care dintre următoarele coduri nu este corect pentru setarea imaginii de fundal a unei pagini Web?",
+    "answers": [
+      "<img background=\"p.gif\">;",
+      "<body background=\"image/imagine.gif\">;",
+      "<body bgcolor=\"#FFFFFF\">;",
+      "<body style=\"background-image: url('image/imagine.gif');\">;"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Dimensionarea unei imagini se realizează folosind urmatoarele atribute ale tag-ului <img>?",
+    "answers": [
+      "width si align;",
+      "align si height;",
+      "width si height;",
+      "width si size;"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Care dintre următoarele afirmații este adevărată?",
+    "answers": [
+      "Atributul href se poate asocia etichetelor <a> și <img>;",
+      "Atributul cellpadding aparține marcajului <div> și setează distanța dintre celule;",
+      "&nbsp; introduce un spațiu;",
+      "Atributul method al marcajului <form> specifică URL-ul de la care sunt trimise datele completate în formular."
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Care este rolul tagului <keygen> din HTML 5?",
+    "answers": [
+      "marchează text evidenţiat;",
+      "marchează un grup de elemente care au legatura unul cu celălalt;",
+      "marchează un cod generat automat într-un formular;",
+      "marchează diferite tipuri de rezultate ale unui script oarecare;"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Care sunt atribute pentru tagul input din HTML 5?",
+    "answers": [
+      "accept;",
+      "auto-complete;",
+      "day_time;",
+      "form_action;"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Atributul name este utilizat pentru tagurile?",
+    "answers": [
+      "link, textarea, select;",
+      "form, input, map, a, img;",
+      "input, div a, iframe;",
+      "radio, checkbox, style;"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Care din următoarele taguri sunt definite correct?",
+    "answers": [
+      "<link rel=\"stylesheet\" type=\"text/css\" href=\"exemplu.css\" />;",
+      "<?xml-stylesheet style=\"exemplu.css\" type=\"text/css\"?>;",
+      "<area shape=\"polygon\" coords=''50,350,150,350,100,250,300\" \"href=test.html\" >;",
+      "<area shape=\"circle_radius\" coords=\"100,100,30\" href=\"cv.html\" target=\"_windows\">;"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Transmiterea datelor dintr-un formular către un fişier de pe server, se realizează?",
+    "answers": [
+      "<input type=\"reset\" value=\"trimite\">;",
+      "<input type=\"button\" value=\"trimite\">;",
+      "<input type=\"submit\" value=\"apasa\">;",
+      "<input name=\"submit\" value=\"transmite\">;"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Pentru a trimite valoarea \"html\" cu ajutorul unei casete de validare checkbox se foloseşte:",
+    "answers": [
+      "<input type=\"checkbox\" name=\"c\" />html;",
+      "<input type=\"checkbox\" value=\"html\" name=\"c\" checked />trimite;",
+      "<input value=\"html\"/>html;",
+      "<input type=\"checkbox\" value=\" value_html\" name=\"html\" checked />html;"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Care din următoarele afirmaţii sunt adevărate?",
+    "answers": [
+      "indexOf() returnează pozitia primei aparitii a unui subsir intr-un sir sau valoarea -1 dacă şirul căutat nu există;",
+      "strike() returnează un şir taiat cu două linii orizontale;",
+      "fromCodeChar() este metoda care transformă valoarea unicode în caracter;",
+      "toCaselower() – converteşte un şir în litere mici;"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "În JavaScript obiectul Date se creează?",
+    "answers": [
+      "data = new Array();",
+      "data = new Object();",
+      "data = new Date();",
+      "Date= new data();"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "În Javascript numărul zilei din lună se extrage apelând metoda?",
+    "answers": [
+      "getDate()",
+      "getDay()",
+      "getMonth()",
+      "setDay()"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Metodele şi proprietăţile obiectului String sunt:",
+    "answers": [
+      "sub_str()",
+      "replace()",
+      "len",
+      "char_CodeAt()"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Ce afișează secventa de cod: anul este: <span id=\"demo\"></span> <script> const d = new Date(); document.getElementById(\"demo\").innerHTML = d.getFullYear(); </script>",
+    "answers": [
+      "anul este:2024",
+      "anul este:2025",
+      "anul este: 25",
+      "anul este:anul curent"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Care din următoarele nu sunt metodele şi proprietăţile pentru obiectul window din Javascript?",
+    "answers": [
+      "open()",
+      "status",
+      "alert()",
+      "write()"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "O clasă de stiluri se apelează prin?",
+    "answers": [
+      "<div id=\"nume_clasa\">",
+      "<div class=\"nume_clasa\">",
+      "<DIV STYLE=\"nume-clasa\">",
+      "clasa_stil {….....}"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Cum se defineşte un stil care afişează textul de mărime 10pt şi culoare albă?",
+    "answers": [
+      ".stil {font-size:10pct; color: white;}",
+      "# stil {text-size:10px; color: green;}",
+      "# stil {font-size:10pt; color: #FFFFFF;}",
+      ". stil {font-size:10px; color: #000000;}"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Care afirmaţii sunt adevărate?",
+    "answers": [
+      "Un script JavaScript poate fi introdus în interiorul marcajelor <noscript><noscript>",
+      "Functiile JavaScript definite de utilizator pot fi și într-un fişier cu extensia .css",
+      "O clasa de stiluri este definita corect astfel: #clasa { color:#ab1121;background-image:url(\"poza.gif\");text-decoration:overline;}",
+      "<link rel=\"stylesheet\" type=\"text/css\" href=\"exemplu.css\" />"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Care este rezultatul urmatoarei secvenţe din JavaScript \"1\" + 2 + 4 ?",
+    "answers": [
+      "124",
+      "\"124\"",
+      "\"1\" si 24",
+      "\"1\" si 6"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Un document XML",
+    "answers": [
+      "este o colecţie de taguri html;",
+      "trebuie să fie construit corect;",
+      "nu este colecţie de date;",
+      "un este sensibil la tipul literelor;"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Ce definește un DTD (Document Type Definition) într-un document XML?",
+    "answers": [
+      "Numele efectiv al elementelor.",
+      "Regulile utilizate pentru a determina care elemente se pot îmbina în alte elemente.",
+      "Alte informații importante pentru prelucrarea și redarea documentului.",
+      "Codificările de limbă utilizate în document."
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Cum se generează o schemă XML dintr-o schemă relațională?",
+    "answers": [
+      "Pentru fiecare tabelă se generează un tip de element.",
+      "Pentru fiecare coloană se adaugă la model un atribut la tipul elementului sau un element descendent ce conține numai PCDATA.",
+      "Pentru fiecare element se atașează o bază de date.",
+      "Schemele XML pot fi definite doar dacă se utilizează PHP."
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Ce rol are argumnetul secure (sigur) pentru funcţia setcookie() din PHP?",
+    "answers": [
+      "indică dacă o variabilă cookie trebuie trimisă prin intermediul unei conexiuni HTTP;",
+      "indică dacă o variabilă cookie trebuie trimisă prin intermediul unei conexiuni sigure (HTTPS);",
+      "permite identificarea numelui de domeniu asociat, daca conexiunea nu este sigura;",
+      "variabila cookie este disponibilă indiferent de tipul de conexiune utilizată;"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Care din următoarele afirmaţii nu este adevărată?",
+    "answers": [
+      "$GLOBALS cuprinde referinţe spre orice variabilă globală care este accesibilă scriptului PHP curent;",
+      "$_SERVER conţine o serie de variabile ale căror valori sunt setate de server-ul web.",
+      "$_COOKIE conţine valorile variabilelor care cuprind informaţii referitoare la cookie-urile păstrate pe calculatorul utilizatorului care accesează pagina web.",
+      "$_SESSION cuprinde variabile disponibile prin intermediul oricărui tip de mecanism cu ajutorul căruia utilizatorul poate introduce date."
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Ca va afisa scriptul PHP? <?php $i = 5.7; echo $i.\"<br />\"; $i = sprintf(\"%05.2f\", $i); echo '<br />'. $i; ?>",
+    "answers": [
+      "5.7;05.70",
+      "5.7\n05.70",
+      "5.70\n05.7",
+      "5.7 05.7"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Care funcţii PHP nu acţionează asupra fişierelor?",
+    "answers": [
+      "fgetc;",
+      "is_file;",
+      "filesize;",
+      "is_close;"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Care dintre următoarele metode nu fac parte din obiectul String în JavaScript?",
+    "answers": [
+      "toLowerCase();",
+      "setTimeout();",
+      "strike();",
+      "toUpperCase();"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Cum se defineşte o constanta în PHP?",
+    "answers": [
+      "prin directiva define();",
+      "cu ajutorul cuvantului cheie const;",
+      "cu ajutorul cuvintelor cheie var const;",
+      "cu ajutorul cuvantului static;"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Ce rol are functia include() în PHP?",
+    "answers": [
+      "include în scriptul curent conţinutul unui fişier html o singura data;",
+      "include în scriptul curent conţinutul unui fişier html cu verificarea faptului ca acesta a fost introdus o singura dată;",
+      "permite includerea fişierului html specificat, de mai multe ori;",
+      "este echivalenta cu functia require();"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Care este sintaxa unei reguli CSS?",
+    "answers": [
+      "selector {proprietate : valoare;}",
+      "selector(proprietate, valoare)",
+      "selector.proprietate = valoare;",
+      "selector(proprietate) = valoare;"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Ce se afiseaza intr-un browser care suporta SVG, dupa incarcarea codului? <!DOCTYPE html><html><body><svg width=\"400\" height=\"180\"><rect x=\"50\" y=\"50\" width=\"100\" height=\"100\" rx=\"10\" ry=\"10\" style=\"fill:red;opacity:1\" />Sorry, your browser does not support inline SVG.</svg></body></html>",
+    "answers": [
+      "un dreptunghi cu dimensiunea laturilor 50 px si colturi rotunjite;",
+      "un dreptunghi cu laturile 100 px si colturi nerotunjite;",
+      "un patrat de culoare rosie cu latura 100 px si colturi rotunjite;",
+      "un dreptunghi cu dimensiunea laturilor 100 px, cu laturile de culoare rosie."
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Care este secventa corecta pentru a ne conecta la o bază de date MySQL cu functiile PHP?",
+    "answers": [
+      "$mysqli = connect-mysqli($host, $user, $pass, $database_stud);",
+      "$mysqli = new mysqli($host, $user, $pass, $database_stud); if ($mysqli->connect_errno) {echo \"Failed to connect to MySQL: \" . $mysqli->connect_error;}",
+      "mysqli-connect($host, $user, $pass, $database_stud);",
+      "connect-mysqli (\"localhost\");"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Care este sintaxa corectă Javascript pentru a scrie \"Hello World\"?",
+    "answers": [
+      "document.status(\"Hello World \");",
+      "alert.write(\"Hello World\");",
+      "window.write(\"hello world\");",
+      "document.write(a=\" Hello World \");"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Cum se scrie \"Hello World\" într-o fereastra alert?",
+    "answers": [
+      "alertBox=\"Hello World\";",
+      "alert=(\"Hello World\");",
+      "msgBox(\"Hello World\");",
+      "alert(\"Hello World\");"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Cum se scrie \"Hello World\" în PHP?",
+    "answers": [
+      "Document.Write(\"Hello World\");",
+      "document.write(\"Hello World\");",
+      "fprint \"Hello World\";",
+      "$mes=\"Hello World\";echo $mes;"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Variabilele în PHP încep cu:",
+    "answers": [
+      "$",
+      "&",
+      "!",
+      "?php"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Care este modul corect de a adăuga 1 la varibila $numara?",
+    "answers": [
+      "$numara =+1;",
+      "++numara;",
+      "$numara++;",
+      "numara++;"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Alegeţi varianta corectă pentru definirea unei funcţii Javascript:",
+    "answers": [
+      "function suma nr() {….}",
+      "function suma_nr(){….}",
+      "suma_nr();",
+      "function suma_nr { ... };"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Care din urmatoarele afirmaţii este adevarată pentru sintaxa marcajului XML?",
+    "answers": [
+      "Pentru delimitatoarele sectiune CDATA se foloseste <![CDATA[ informatii cdata]]>;",
+      "Declaraţia XML se realizează cu <?Idprocesor date?>;",
+      "Eticheta pentru definirea unui element vid este...</numeElement>;",
+      "Referinţa unui caracter se realizează <!—referinta -->;"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Care afirmatii nu sunt adevarate?",
+    "answers": [
+      "XML-ul nu este un limbaj de programare;",
+      "Sunt compilatoare XML care sa citeasca un document XML;",
+      "XML nu este un protocol pentru transmiterea datelor in retea;",
+      "Un document XML poate fi citit/scris de orice parser;"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Conţinutul unui câmp de text dintr-un formular poate fi accesat?",
+    "answers": [
+      "nume_formular.nume_camp.value",
+      "nume_camp.nume_formular.value",
+      "value.nume_formular.nume_camp",
+      "value.nume_camp.nume_formular"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Pentru a introduce un fişier RSS în paginile unui site trebuie specificat în partea de HEAD a documentului web o linie de forma:",
+    "answers": [
+      "<link rel=\"alternate\" type=\"application/rss+xml\" title=\"RSS\" href=http://cale...>",
+      "<link rel=\"\" type=\"text/rss\" href=\"exemplu.css\" />",
+      "<?xml-stylesheet href=\"exemplu.css\" type=\"text/css\"? />",
+      "<link rel=\" stylesheet \" type=\"application/rss+xml\" title=\"RSS\" href=http://cale.. .>"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Un fişier \"script.js\" este folosit într-un document html astfel:",
+    "answers": [
+      "<script type=\"text/javascript\" src=\"script.js\"></script>",
+      "<script href=\"text/javascript\" src=\"script.js\"></script>",
+      "<script type=\"text/javascript\" link=\"script.js\"></script>",
+      "< script rel=\"text/javascript\" src=\"script.js\"></script>"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Ce rol are functia explode($separator, $şir) în PHP?",
+    "answers": [
+      "preia valorile din variabila $sir în care aceatea sunt delimitate prin variabila $separator şi le plasează într-un tablou/vector;",
+      "preia valorile dintr-un vector şi le reuneşte într-un şir;",
+      "afiseaza de cate ori apare variabila $separator in variabila $sir;",
+      "Concateneaza variabilele $separator si $şir;"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Care este rolul butonului \"submit\" pentru codul de mai jos? <form action=\"test.php\" method=\"POST\"> Introduceti numele : <input type=\"text\" name=\"n\"><br> <input type=\"submit\" value=\"Trimite\"> </form>",
+    "answers": [
+      "Transmite la server variabila n din formular;",
+      "Transmite la fisierul test.php de pe server continutul variabilei n;",
+      "Transmite cu metoda POST, la fisierul test.php de pe server conţinutul variabilei n şi readuce formularul la starea initiala;",
+      "Transmite cu metoda implicita POST, la fisierul test.php de pe server conţinutul variabilei n şi readuce formularul la starea initiala;"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Proprietatea checked ataşat unui element radio dintr-un formular are ca efect?",
+    "answers": [
+      "Bifarea implicită a respectivului element radio;",
+      "Nu există acest atribut;",
+      "Trebuie ataşat obligatoriu la toate elementele radio din acelaşi grup;",
+      "Se foloseşte doar pentru elemente de tip checkbox;"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Cum se pot selecta toate elementele <p> de pe o pagină web utilizând jQuery?",
+    "answers": [
+      "$(\"#p\")",
+      "$(\"p\")",
+      "$(\".\\p\")",
+      "$(\"p#all\")"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "În contextul Flask, care este portul default utilizat de aplicație?",
+    "answers": [
+      "80",
+      "3000",
+      "5000",
+      "8080"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Ce face secțiunea if __name__ == '__main__': într-o aplicație Python?",
+    "answers": [
+      "Permite rularea aplicației doar dacă există un server extern.",
+      "Asigură că aplicația rulează numai dacă fișierul Python este executat direct.",
+      "Inițializează variabilele de mediu pentru aplicație.",
+      "Este folosită doar pentru importarea modulelor."
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Care este rolul fișierului package.json în cadrul unui proiect Node.js?",
+    "answers": [
+      "Să gestioneze dependențele și să ofere informații despre proiect.",
+      "Să definească toate scripturile HTML utilizate.",
+      "Să creeze conexiuni de rețea pentru aplicație.",
+      "Să conțină codul principal al aplicației."
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Ce face comanda npm install express –save?",
+    "answers": [
+      "Instalează Express ca dependență și îl salvează automat în package.json.",
+      "Instalează Express, dar nu îl salvează în package.json.",
+      "Creează un server HTTP în Node.js.",
+      "Rulează aplicația Express local pe portul 8080."
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Ce metodă oferită de Express definește o rută GET pentru ruta rădăcină (/)?",
+    "answers": [
+      "app.create(\"/\")",
+      "app.listen(\"/\")",
+      "app.get(\"/\")",
+      "app.route(\"/\")"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Ce este Socket.IO în contextul Node.js?",
+    "answers": [
+      "Un framework pentru crearea aplicațiilor web RESTful.",
+      "O bibliotecă utilizată pentru comunicare în timp real între client și server.",
+      "Un modul folosit pentru gestionarea dependențelor în Node.js.",
+      "Un parser JSON pentru comunicare între aplicații."
+    ],
+    "correct_answer": 1
+  }
+]

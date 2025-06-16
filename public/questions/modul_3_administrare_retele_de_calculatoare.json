@@ -1,0 +1,582 @@
+[
+  {
+    "question": "Ce algoritmi matematici se pot folosi pentru a calcula distanța minimă dintre noduri într-o rețea?",
+    "answers": [
+      "algoritmul inundării",
+      "despicarea orizontului",
+      "algoritmul lui Dijkstra",
+      "algoritmi pe bază de flux"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Rutarea este:",
+    "answers": [
+      "Procesul prin care un ruter trimite pachetele IP spre rețeaua destinatie pe baza adresei IP destinație și a tabelei de rutare.",
+      "procesul de transfer al datelor într-un segment de rețea (LAN) de la o sursă la o destinație",
+      "procesul de actualizare a tabelei de rutare",
+      "procesul de configurare a unui protocol de rutare pe un ruter"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Care dintre următoarele entități nu poate fi un câmp în tabela de rutare:",
+    "answers": [
+      "adresa destinație",
+      "masca de rețea",
+      "interfața (adresa) următorului salt",
+      "protocolul de rutare"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Un ruter dirijează pachetele IP pe baza:",
+    "answers": [
+      "adresei sursă si adresei destinație",
+      "adresei de rețea destinație si tabelei de rutare",
+      "adresei fizice",
+      "adresei destinație si protocolului DNS"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Ce port este folosit pentru configurarea inițială a unui ruter direct de la un calculator, fără a necesita autentificare?",
+    "answers": [
+      "auxiliar",
+      "consolă",
+      "serial",
+      "Ethernet"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Ce comandă data pe un ruter CISCO afisează tabela de rutare?",
+    "answers": [
+      "ping",
+      "show ip route",
+      "show interface",
+      "show running config"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Care este un dezavantaj al rutării dinamice?",
+    "answers": [
+      "administrare greoaie",
+      "necesită reconfigurare la fiecare schimbare de topologie de rețea",
+      "nu poate ocoli defecțiunile apărute în rețea",
+      "încarcă suplimentar traficul din rețea"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Prin ce identifică un ruter rețeaua de destinație a unui pachet?",
+    "answers": [
+      "prin adresa MAC",
+      "prin adresa portului de destinație",
+      "prin adresa IP destinație si masca de rețea",
+      "prin adresa de nivel transport (port TCP sau UDP)"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Care este rolul unei adrese de broadcast?",
+    "answers": [
+      "de a transmite un pachet către o singură rețea destinație",
+      "de a trimite un pachet către o listă de destinație",
+      "de a trimite un mesaj către toate ruterele dintr-o rețea",
+      "de a trimite un mesaj către toate gazdele dintr-o rețea/subrețea"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Ce protocol (serviciu) face conversia unei adrese fizice (MAC) într-o adresă IP în cadrul unui LAN Ethernet?",
+    "answers": [
+      "ARP",
+      "RARP",
+      "ICMP",
+      "DNS"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Care dintre următoarele este o adresă multicast în IPv4?",
+    "answers": [
+      "111.111.111.111",
+      "255.255.255.255",
+      "225.1.1.1",
+      "224.0.0.2"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Următoarea adresă IPv6 2023:0000:34FA:0000:0000:09C1:4322:AA43 se mai poate scrie corect astfel:",
+    "answers": [
+      "2023::0:34FA::09C1:4322:AA43",
+      "2023:0000:34FA::9C1:4322:AA43",
+      "2023::34FA::9C1:4322:AA43",
+      "2023::34FA::09C1:4322:AA43"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Interoperabilitatea IPv4 cu IPv6 se poate face prin:",
+    "answers": [
+      "Stiva duală",
+      "Translație de adresă (NAT) sau de port (PAT)",
+      "Folosirea unor tabele de rutare duală",
+      "Protocoalele sunt interoperabile nativ"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Ce câmpuri obligatorii are antetul unui cadru Ethernet?",
+    "answers": [
+      "Adresele IP sursă si destinație",
+      "Controlul erorilor (CRC)",
+      "Durata de viață a cadrului",
+      "Numărul de secvență"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Rolul unui server DNS într-o rețea de calculatoare este:",
+    "answers": [
+      "Să stabilească nume de domenii și să le administreze",
+      "Să facă rezoluția adresă fizică ↔ adresă IP",
+      "Să facă rezoluția nume de domeniu ↔adresa IP",
+      "Să atribuie adrese IP echipamentelor din rețea"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Care dintre următoarele variante nu este un nume de domeniu DNS de prim nivel în Internet?",
+    "answers": [
+      ".arp",
+      ".com",
+      ".edu",
+      ".ro"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Ce comandă este mai des folosită pentru a afla informații despre configurarea IP în sistemele de operare Windows 11?",
+    "answers": [
+      "PING",
+      "WINCONFIG",
+      "IPCONFIG",
+      "IP_CONF"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Ce aplicație din sistemul de operare Windows Server 2022 administrează conturile utilizatorilor?",
+    "answers": [
+      "Domain Controller-ul",
+      "DHCP",
+      "DNS",
+      "IIS (Internet Information Server)"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Ce model de rețea este acela în care serviciile asigurate utilizatorilor la cererea acestora sunt găzduite de aplicații dedicate care rulează pe masini fizice sau virtuale?",
+    "answers": [
+      "Model bazat pe organizație",
+      "Model bazat pe resurse",
+      "Model client-server",
+      "Model bazat pe calcul distribuit"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Ce comandă se poate folosi pentru a afla numele și adresa serverului DNS dintr-o rețea?",
+    "answers": [
+      "Winword",
+      "NSLOOKUP",
+      "PING",
+      "NETSTAT"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Câte adrese IP trebuie să aibă configurate un ruter pentru a face serviciul de rutare?",
+    "answers": [
+      "Cel puțin una",
+      "Una sau mai multe indifferent de rețea",
+      "Două în aceeași rețea",
+      "Cel puțin două in rețele diferite"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Care este rolul unui ruter într-o rețea?",
+    "answers": [
+      "Să găzduiască tabelele de rutare și să forwardeze spre destinație pachetele IP sosite",
+      "Să facă rezoluția adresă IP adresă MAC",
+      "Să creeze topologia rețelei",
+      "Să descopere toate echipamentele destinație din rețea"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Care dintre protocoalele de mai jos permite monitorizarea stării funcționale a resurselor de rețea?",
+    "answers": [
+      "HTTP",
+      "IMAP",
+      "SNMP",
+      "SMTP"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Standardul IEEE 802.11 se referă la:",
+    "answers": [
+      "Rețele locale de calculatoare necablate",
+      "Rețele de arie largă de calculatoare necablate",
+      "Rețele de transport de date",
+      "Rețele care folosesc mediul de comunicație optic"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "O rețea din Internet are masca de subrețea 255.255.225.224. Care este numărul maxim de gazde din subrețea?",
+    "answers": [
+      "16",
+      "30",
+      "64",
+      "32"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Care dintre următoarele variante este o mască validă de subrețea fără clasă?",
+    "answers": [
+      "255.0.0.0",
+      "255.255.255.0",
+      "255.255.255.230",
+      "255.255.255.240"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Comanda Router(config)#hostname permite:",
+    "answers": [
+      "aflarea numelui ruterului",
+      "stabilirea numelui ruterului din modul configurare globală",
+      "accesul la configurarea ruterului",
+      "stabilirea numelui si a parolei ruterului"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Ce afirmații referitoare la tehnologia MPLS sunt adevărate:",
+    "answers": [
+      "Este un mecanism de incapsulare suplimentar între nivelurile 3 si 4 din arhitectura TCP/IP",
+      "Inlocuieste complet adresele IP dintr-o rețea",
+      "Foloseste comutarea fluxurilor de date pe bază de etichete",
+      "Eticheta este un înlocuitor de adrese MAC din LAN-uri Ethernet"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Tehnicile de transmisie cu spectru împrăștiat se folosesc cu preponderență:",
+    "answers": [
+      "In rețelele Ethernet",
+      "In rețelele de transport",
+      "In rețelele FDDI",
+      "In rețelele wireless"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Se dă adresa IP 140.20.37.133 si masca de subrețea 255.255.255.192. Să se precizeze adresa de subrețea din care face parte această adresă IP si adresa de difuzare în subrețea.",
+    "answers": [
+      "140.20.37.120 si 140.20.37.255",
+      "140.20.37.128 si 140.20.37.191",
+      "140.20.37.0 si 140.20.37.255",
+      "140.20.37.128 si 140.20.37.120"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Metrica (costul) unei rute poate fi:",
+    "answers": [
+      "Un număr intre 0 si 255 asociat unui protocol de rutare pentru ierarhizarea acestuia",
+      "Un criteriu sau un set de criterii de apreciere a calității acesteia",
+      "Un număr care exprimă gradul de încredere al unei rute stabilită prin rularea unor protocoare de rutare",
+      "Sistem de priorități de transmitere a pachetelor de către un ruter"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "RIP este un protocol de rutare care:",
+    "answers": [
+      "Foloseste ca metrică întârzierea minimă în rețea",
+      "Se bazează pe starea legăturilor",
+      "Este folosit pentru rutare interdomeniu",
+      "Are numărul maxim de salturi egal cu 15"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Care este metrica folosită de RIP pentru determinarea căii optime?",
+    "answers": [
+      "Numărul minim de salturi pană la destinație",
+      "Lățimea de bandă maximă pană la destinație",
+      "Timpul minim pană la destinație",
+      "Rata de eroare minimă până la destinație"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Timpul de convergență al unui protocol de rutare reprezintă:",
+    "answers": [
+      "Timpul dus-întors maxim în care un pachet poate parcurge oricare pereche sursă-destinație din rețea",
+      "Timpul în care toate ruterele din rețea și-au configurat tabela de rutare",
+      "Timpul mediu de prelucrare a pachetelor de către un protocol de rețea",
+      "Timpul de viață al unui pachet în rețea"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Serviciul de postă electronică funcționează pe baza următoarelor protocoale mai cunoscute:",
+    "answers": [
+      "SNMP, RTP, DNS",
+      "POP3, IMAP, SMTP",
+      "IMAP, HTTP, SNMP",
+      "UDP, SNMP, SMTP"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Citirea postei electronice se poarte face cu ajutorul următoarelor protocoale:",
+    "answers": [
+      "SMTP, POP3",
+      "IMAP, SMNP",
+      "POP3, IMAP",
+      "SMTP, SNMP"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "DHCP (Dynamic Host Configuration Protocol) este o aplicație client-server prin care:",
+    "answers": [
+      "Serverul furnizează stației client numele de domeniu si adresa IP necesare funcționării în rețea",
+      "Se determină adresa IP corespunzătoare unui unei stații cu nume de domeniu cunoscut",
+      "Se atribuie adrese fizice stațiilor dintr-o rețea",
+      "Se face configurare IP dinamică stațiilor dintr-o rețea"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Comanda următoare: Router(config)#router ospf 10 dată pe un ruter Cisco are ca efect:",
+    "answers": [
+      "Validarea procesului OSPF pe acel ruter",
+      "Identificarea ruterului care rulează OSPF",
+      "Definirea ariei 10 pe ruter",
+      "Validarea procesului OSPF si definirea ariei"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Următoarea comandă de configurare a unui ruter Router(config-router)#network 192.168.0.0 0.0 255.255 area 10 are ca effect:",
+    "answers": [
+      "Activarea procesului OSPF pe acel ruter",
+      "Defineste o rețea conectată la ruter care participă la procesul OSPF precum și aria în care se află acea rețea",
+      "Defineste aria procesului OSPF",
+      "Defineste aria și numărul procesului OSPF"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Care dintre următoarele protocoale suportă rutarea ierarhică (adrese de rețea cu mască variabilă)?",
+    "answers": [
+      "RIPv1 si OSPF",
+      "RIPv1 si RIPv2",
+      "OSPF si RIPv2",
+      "RIPv1 si IGRP"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Un obiect administrat prin SNMP este:",
+    "answers": [
+      "Un echipament fizic de rețea care rulează SMTP și permite monitorizarea stării sale de funcționare",
+      "O entitate logică sau fizică de rețea definită în MIB, a cărei stare de funcționare este monitorizată prin SNMP",
+      "partea server a aplicației SMTP",
+      "partea client a aplicației SNMP"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Următoarea adresă IPv6 FE80::200:CFF:FE3A:8B18 este:",
+    "answers": [
+      "Adresă multicast",
+      "Adresă link local",
+      "Adresă site local",
+      "Adresa broadcast"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Adresele IPv6 unicast agregabile globale:",
+    "answers": [
+      "Au formatul de adresă 001/3",
+      "Au structură plată",
+      "Au lungimea totală de 64 biți",
+      "Nu sunt rutabile in Internet"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Protocolul ICMP este folosit de rețelele IPv4 pentru:",
+    "answers": [
+      "Rutare în Internet",
+      "Descoperirea gazdelor conectate în rețea",
+      "Configurarea tabelelor de rutare",
+      "Raporta problemelor legate de livrarea pachetelor IP în rețea"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Care dintre afirmațiile următoare despre un agent SNMP sunt adevărate:",
+    "answers": [
+      "Solicită informații de management de la statia de management",
+      "Răspunde interogărilor de management primite de la sistemul de management",
+      "Este un protocol de nivel rețea",
+      "Comunică cu toate echipamentele din rețea pentru a actualiza starea de funcționare curentă"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "O comunitate SNMP este:",
+    "answers": [
+      "Totalitatea elementelor de rețea administrate prin SNMP",
+      "Un mecanism de securitate pentru comunicația dintre sistemul de management si agentul de management",
+      "O rețea în care este instalată aplicația SNMP",
+      "Totalitatea obiectelor administrate prin SNMP"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Algoritmul Spanning Tree este folosit pentru:",
+    "answers": [
+      "crearea de topologii logice de rețea fără bucle",
+      "calcularea distanței optime între oricare două noduri de rețea",
+      "calcularea fluxului minim de date în rețea",
+      "calcularea întîrzierii minime a pachetelor în rețea"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Comanda Ping este parte din protocolul:",
+    "answers": [
+      "UDP",
+      "TCP",
+      "ICMP",
+      "DNS"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "Ce reprezinta o topologie a unei retele de calculatoare?",
+    "answers": [
+      "Topologia reprezinta modul în care comunica un grup de servere.",
+      "Topologia reprezinta structura de vecinătăți folosita pentru a interconecta dispozitivele din retea.",
+      "Topologia reprezinta un set de reguli stabilit prin care utilizatorii pot schimba informatii.",
+      "Topologia reprezinta setul de protocoale folosit în retea."
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Protocoalele specifice folosite în rețele virtuale private (VPN) sunt:",
+    "answers": [
+      "LDAP, BGP, ICMP",
+      "L2TP, Dijkstra, IPsec",
+      "IPsec, OpenVPN, SSH",
+      "HTTPS, DHCP, OpenVPN"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "VLAN-ul reprezintă:",
+    "answers": [
+      "O metoda de a subnetiza reteaua.",
+      "Este subreteaua de broadcast.",
+      "Un concept de clasificare a conexiunilor UDP.",
+      "O metoda de a crea rețele virtuale distincte peste o rețea fizică locală"
+    ],
+    "correct_answer": 3
+  },
+  {
+    "question": "Ce tipuri de protectie trebuie sa ofere un VPN?",
+    "answers": [
+      "Confidentialitate, integritate, autentificarea clientilor, protectia la replicare si controlul accesului",
+      "Controlul accesului, identificare biometrica, monitorizarea traficului, acord parental",
+      "Confidentialitate, integritate, accesul la internet si accesul pe deep web",
+      "Protectia la replicare, scanarea retelei, criptarea cu OpenVAS, pritectie antispam"
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "VLAN-ul folosește două tipuri de porturi pentru a transporta traficul:",
+    "answers": [
+      "Porturi ethernet si porturi locale.",
+      "Porturi ethernet si porturide consolă.",
+      "Porturi trunk si porturi de acces.",
+      "Poturi auxiliare si porturi de consolă."
+    ],
+    "correct_answer": 2
+  },
+  {
+    "question": "OpenVPN foloseste doua canale virtuale pentru a comunica intre client si server:",
+    "answers": [
+      "Un canal de control TLS pentru schimbul de informatii si un canal de date.",
+      "Authentication Header (AH) si Encapsulating Security Payload (ESP).",
+      "Un canal de control TLS pentru schimbul de informatii si Internet Key Exchange (IKE) protocol.",
+      "Encapsulating Security Payload (ESP) si Internet Key Exchange (IKE) protocol."
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Serverul DHCP are rolul:",
+    "answers": [
+      "De a oferi configuratii valide clientilor din retelele de calulatoare.",
+      "Are rolul de a ruta traficul intre sisteme autonome.",
+      "De a asigura un anumit nivel de calitate a serviciului (QoS) de transport al datelor.",
+      "De a oferi o alternativa la DNS-ul dinamic."
+    ],
+    "correct_answer": 0
+  },
+  {
+    "question": "Antetul unei datagrame UDP conține:",
+    "answers": [
+      "Adresa IP sursă, adresa IP destinație, portul sursă, portul desinație",
+      "Portul sursă, portul destinație, lungime totală, sumă de control",
+      "Portul sursă, portul destinație, lungimea datagramei, numărul de secvență",
+      "Portul sursă, portul destinație, control erori, număr de secvență"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Subnetizarea este procesul prin care:",
+    "answers": [
+      "Se unesc mai multe retele publice cu cele private prin o adresa de tipul 255.255.255.0.",
+      "Se sparge o retea in doua sau mai multe retele (sau subretele). Un subnet este o sub-divizare logica a unui IP.",
+      "Se folosesc clasele private în cadrul Internetului public prin adaugarea unor numere aleatorii la adresa sau adresele existente.",
+      "O rețea cu adresă IP publică este divizată în mai multe subrețele prin folosirea unor adrese IP private"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "question": "Fereastra glisanta a protocolului TCP are urmatoarele proprietati:",
+    "answers": [
+      "Imparte fluxul de date pe pachete cu dimensiuni fixe si seteaza antentul.",
+      "Reseteaza conexiunile în cazul apariției congestiei în rețea.",
+      "Se redimensioneaza pentru a încerca să limiteze numărul de erori de retransmisie dar încercand să păstreze cel mai mare flux de date.",
+      "Nici un raspuns nu este valid."
+    ],
+    "correct_answer": 2
+  }
+]
