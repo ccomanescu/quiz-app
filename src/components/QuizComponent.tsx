@@ -28,6 +28,7 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ mode, onBackToHome }) => 
     isReviewMode: false,
     mode
   });
+  const baseUrl = import.meta.env.VITE_BASE_URL || '';
 
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [showFeedback, setShowFeedback] = useState(false);
@@ -297,7 +298,7 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ mode, onBackToHome }) => 
                 {currentQuestion.image && (
                   <div style={{ textAlign: 'center', margin: '16px 0' }}>
                     <img 
-                      src={`/${currentQuestion.image}`}
+                      src={`${baseUrl}${currentQuestion.image.replace(/^\//, '')}`}
                       alt="Imaginea întrebării"
                       style={{ 
                         maxWidth: '100%', 
