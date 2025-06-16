@@ -347,44 +347,14 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ mode, onBackToHome }) => 
                     >
                       <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                         <div style={{ flex: 1 }}>
-                          {typeof answer === 'string' ? (
-                            answer.split('\n').map((line, lineIndex) => (
+                          {answer.split('\n').map((line, lineIndex) => (
                               <div key={lineIndex} style={{ marginBottom: line.trim() ? '4px' : '2px' }}>
                                 <span style={{ color: '#000000', whiteSpace: 'pre-wrap', fontFamily: line.includes('#include') || line.includes('{') || line.includes('}') || line.includes('printf') || line.includes('scanf') ? 'monospace' : 'inherit' }}>
                                   {line.replace(/\t/g, '    ') || '\u00A0'}
                                 </span>
                               </div>
                             ))
-                          ) : (
-                            <>
-                              {answer.text && answer.text.split('\n').map((line, lineIndex) => (
-                                <div key={lineIndex} style={{ marginBottom: line.trim() ? '4px' : '2px' }}>
-                                  <span style={{ color: '#000000', whiteSpace: 'pre-wrap', fontFamily: line.includes('#include') || line.includes('{') || line.includes('}') || line.includes('printf') || line.includes('scanf') ? 'monospace' : 'inherit' }}>
-                                    {line.replace(/\t/g, '    ') || '\u00A0'}
-                                  </span>
-                                </div>
-                              ))}
-                              {answer.image && (
-                                <div style={{ textAlign: 'center', marginTop: '8px' }}>
-                                  <img 
-                                    src={`${baseUrl}${answer.image.replace(/^\//, '')}`}
-                                    alt={`Imaginea răspunsului ${index + 1}`}
-                                    style={{ 
-                                      maxWidth: '200px', 
-                                      height: 'auto',
-                                      border: '1px solid #d9d9d9',
-                                      borderRadius: '4px'
-                                    }}
-                                    onError={(e) => {
-                                      const target = e.target as HTMLImageElement;
-                                      target.style.display = 'none';
-                                      console.warn(`Imaginea răspunsului nu a putut fi încărcată: ${answer.image}`);
-                                    }}
-                                  />
-                                </div>
-                              )}
-                            </>
-                          )}
+                          }
                         </div>
                         {showFeedback && index === currentQuestion.correct_answer && (
                           <CheckCircleOutlined style={{ color: '#52c41a' }} />
