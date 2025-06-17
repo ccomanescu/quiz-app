@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { Layout, Typography, Card, Radio, Button, Progress, Space, Alert, Statistic, Row, Col } from 'antd';
-import { ArrowLeftOutlined, CheckCircleOutlined, CloseCircleOutlined } from '@ant-design/icons';
+import { ArrowLeftOutlined, CheckCircleOutlined, CloseCircleOutlined, ClockCircleOutlined } from '@ant-design/icons';
 import type { Question, QuizResult, QuizMode, QuizState } from '../types';
 import { 
   loadAllQuestions, 
@@ -37,6 +37,23 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ mode, onBackToHome }) => 
   // Adaugă state pentru răspunsurile randomizate
   const [shuffledAnswers, setShuffledAnswers] = useState<{answer: string, originalIndex: number}[]>([]);
 
+  // Adaugă state pentru timer
+  const [elapsedTime, setElapsedTime] = useState(0);
+
+  // Effect pentru timer
+  useEffect(() => {
+    if (quizState.questions.length > 0 && !quizState.isCompleted) {
+      const interval = setInterval(() => {
+        const now = Date.now();
+        if (quizState.startTime) {
+          setElapsedTime(Math.floor((now - quizState.startTime) / 1000));
+        }
+      }, 1000);
+
+      return () => clearInterval(interval);
+    }
+  }, [quizState.questions.length, quizState.isCompleted, quizState.startTime]);
+
   const loadQuizQuestions = useCallback(async () => {
     setLoading(true);
     let questions: Question[] = [];
@@ -69,7 +86,8 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ mode, onBackToHome }) => 
         results: [],
         wrongAnswers: [],
         isCompleted: false,
-        isReviewMode: false
+        isReviewMode: false,
+        startTime: Date.now() // Setează timpul de start
       }));
     } catch (error) {
       console.error('Error loading questions:', error);
@@ -134,15 +152,38 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ mode, onBackToHome }) => 
 
     if (quizState.currentQuestionIndex + 1 >= quizState.questions.length) {
       // Quiz completed
-      setQuizState(prev => ({ ...prev, isCompleted: true }));
+      setQuizState(prev => ({ 
+        ...prev, 
+        isCompleted: true,
+        endTime: Date.now() // Setează timpul de sfârșit
+      }));
     } else {
       // Move to next question
       setQuizState(prev => ({
         ...prev,
         currentQuestionIndex: prev.currentQuestionIndex + 1
       }));
-      // Răspunsurile vor fi re-randomizate prin useEffect
     }
+  };
+
+  // Funcție pentru formatarea timpului
+  const formatTime = (seconds: number) => {
+    const hours = Math.floor(seconds / 3600);
+    const minutes = Math.floor((seconds % 3600) / 60);
+    const secs = seconds % 60;
+    
+    if (hours > 0) {
+      return `${hours}:${minutes.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+    }
+    return `${minutes}:${secs.toString().padStart(2, '0')}`;
+  };
+
+  // Funcție pentru calcularea timpului total
+  const getTotalTime = () => {
+    if (quizState.startTime && quizState.endTime) {
+      return Math.floor((quizState.endTime - quizState.startTime) / 1000);
+    }
+    return 0;
   };
 
   const getQuizTitle = () => {
@@ -223,7 +264,7 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ mode, onBackToHome }) => 
               <Title level={2}>🎉 Quiz completat!</Title>
               
               <Row gutter={16} style={{ width: '100%' }}>
-                <Col span={8}>
+                <Col span={6}>
                   <Statistic
                     title="Răspunsuri corecte"
                     value={getCorrectAnswersCount()}
@@ -231,7 +272,7 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ mode, onBackToHome }) => 
                     valueStyle={{ color: '#3f8600' }}
                   />
                 </Col>
-                <Col span={8}>
+                <Col span={6}>
                   <Statistic
                     title="Scor"
                     value={getScorePercentage()}
@@ -239,18 +280,26 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ mode, onBackToHome }) => 
                     valueStyle={{ color: getScorePercentage() >= 70 ? '#3f8600' : '#cf1322' }}
                   />
                 </Col>
-                <Col span={8}>
+                <Col span={6}>
                   <Statistic
                     title="Total întrebări"
                     value={quizState.results.length}
                     valueStyle={{ color: '#1890ff' }}
                   />
                 </Col>
+                <Col span={6}>
+                  <Statistic
+                    title="Timp total"
+                    value={formatTime(getTotalTime())}
+                    prefix={<ClockCircleOutlined />}
+                    valueStyle={{ color: '#722ed1' }}
+                  />
+                </Col>
               </Row>
 
               {mode.type === 'random' && (
                 <Alert
-                  message={`Scor final: ${getCorrectAnswersCount()}/${quizState.results.length} (${getScorePercentage()}%)`}
+                  message={`Scor final: ${getCorrectAnswersCount()}/${quizState.results.length} (${getScorePercentage()}%) în ${formatTime(getTotalTime())}`}
                   type={getScorePercentage() >= 70 ? 'success' : 'warning'}
                   showIcon
                 />
@@ -296,11 +345,19 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ mode, onBackToHome }) => 
                 <Text strong>
                   Întrebarea {quizState.currentQuestionIndex + 1} din {quizState.questions.length}
                 </Text>
-                {mode.type !== 'random' && (
-                  <Text type="secondary">
-                    Corecte: {getCorrectAnswersCount()}/{quizState.results.length}
-                  </Text>
-                )}
+                <Space>
+                    <ClockCircleOutlined style={{ color: '#722ed1' }} />
+                    <Text strong style={{ color: '#722ed1' }}>
+                      {formatTime(elapsedTime)}
+                    </Text>
+                  </Space>
+                <Space>
+                  {mode.type !== 'random' && (
+                    <Text type="secondary">
+                      Corecte: {getCorrectAnswersCount()}/{quizState.results.length}
+                    </Text>
+                  )}
+                </Space>
               </div>
               <Progress percent={progress} showInfo={false} />
             </Space>

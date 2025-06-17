@@ -33,4 +33,6 @@ export interface QuizState {
   isCompleted: boolean;
   isReviewMode: boolean;
   mode: QuizMode;
+  startTime?: number; // Adaugă timpul de start
+  endTime?: number;   // Adaugă timpul de sfârșit
 }
