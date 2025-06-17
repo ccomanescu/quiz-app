@@ -34,6 +34,9 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ mode, onBackToHome }) => 
   const [showFeedback, setShowFeedback] = useState(false);
   const [loading, setLoading] = useState(true);
 
+  // Adaugă state pentru răspunsurile randomizate
+  const [shuffledAnswers, setShuffledAnswers] = useState<{answer: string, originalIndex: number}[]>([]);
+
   const loadQuizQuestions = useCallback(async () => {
     setLoading(true);
     let questions: Question[] = [];
@@ -79,6 +82,24 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ mode, onBackToHome }) => 
     loadQuizQuestions();
   }, [loadQuizQuestions]);
 
+  // Funcție pentru randomizarea răspunsurilor
+  const getShuffledAnswers = useCallback((question: Question) => {
+    if (!mode.randomizeAnswers) {
+      return question.answers.map((answer, index) => ({ answer, originalIndex: index }));
+    }
+
+    const answersWithIndex = question.answers.map((answer, index) => ({ answer, originalIndex: index }));
+    return answersWithIndex.sort(() => Math.random() - 0.5);
+  }, [mode.randomizeAnswers]);
+
+  // Effect pentru a actualiza răspunsurile randomizate când se schimbă întrebarea
+  useEffect(() => {
+    if (quizState.questions.length > 0) {
+      const currentQuestion = quizState.questions[quizState.currentQuestionIndex];
+      setShuffledAnswers(getShuffledAnswers(currentQuestion));
+    }
+  }, [quizState.currentQuestionIndex, quizState.questions, getShuffledAnswers]);
+
   const handleAnswerSelect = (value: number) => {
     setSelectedAnswer(value);
   };
@@ -108,17 +129,19 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ mode, onBackToHome }) => 
   };
 
   const handleContinue = () => {
-    const nextIndex = quizState.currentQuestionIndex + 1;
-    
-    if (nextIndex >= quizState.questions.length) {
+    setShowFeedback(false);
+    setSelectedAnswer(null);
+
+    if (quizState.currentQuestionIndex + 1 >= quizState.questions.length) {
+      // Quiz completed
       setQuizState(prev => ({ ...prev, isCompleted: true }));
     } else {
+      // Move to next question
       setQuizState(prev => ({
         ...prev,
-        currentQuestionIndex: nextIndex
+        currentQuestionIndex: prev.currentQuestionIndex + 1
       }));
-      setSelectedAnswer(null);
-      setShowFeedback(false);
+      // Răspunsurile vor fi re-randomizate prin useEffect
     }
   };
 
@@ -324,23 +347,23 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ mode, onBackToHome }) => 
                 disabled={showFeedback}
               >
                 <Space direction="vertical" size="middle" style={{ width: '100%' }}>
-                  {currentQuestion.answers.map((answer, index) => (
+                  {shuffledAnswers.map(({ answer, originalIndex }) => (
                     <Radio 
-                      key={index} 
-                      value={index}
+                      key={`${quizState.currentQuestionIndex}-${originalIndex}`} // Key unic pentru fiecare întrebare
+                      value={originalIndex} // Folosește indexul original pentru valoare
                       style={{
                         width: '100%',
                         padding: '12px',
                         border: showFeedback 
-                          ? (index === currentQuestion.correct_answer 
+                          ? (originalIndex === currentQuestion.correct_answer 
                               ? '2px solid #52c41a' 
-                              : (index === selectedAnswer ? '2px solid #ff4d4f' : '1px solid #d9d9d9'))
+                              : (originalIndex === selectedAnswer ? '2px solid #ff4d4f' : '1px solid #d9d9d9'))
                           : '1px solid #d9d9d9',
                         borderRadius: '6px',
                         backgroundColor: showFeedback 
-                          ? (index === currentQuestion.correct_answer 
+                          ? (originalIndex === currentQuestion.correct_answer 
                               ? '#f6ffed' 
-                              : (index === selectedAnswer ? '#fff1f0' : 'white'))
+                              : (originalIndex === selectedAnswer ? '#fff1f0' : 'white'))
                           : 'white',
                         marginBottom: '8px'
                       }}
@@ -348,18 +371,21 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ mode, onBackToHome }) => 
                       <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                         <div style={{ flex: 1 }}>
                           {answer.split('\n').map((line, lineIndex) => (
-                              <div key={lineIndex} style={{ marginBottom: line.trim() ? '4px' : '2px' }}>
-                                <span style={{ color: '#000000', whiteSpace: 'pre-wrap', fontFamily: line.includes('#include') || line.includes('{') || line.includes('}') || line.includes('printf') || line.includes('scanf') ? 'monospace' : 'inherit' }}>
-                                  {line.replace(/\t/g, '    ') || '\u00A0'}
-                                </span>
-                              </div>
-                            ))
-                          }
+                            <div key={lineIndex} style={{ marginBottom: line.trim() ? '4px' : '2px' }}>
+                              <span style={{ 
+                                color: '#000000', 
+                                whiteSpace: 'pre-wrap', 
+                                fontFamily: line.includes('#include') || line.includes('{') || line.includes('}') || line.includes('printf') || line.includes('scanf') ? 'monospace' : 'inherit' 
+                              }}>
+                                {line.replace(/\t/g, '    ') || '\u00A0'}
+                              </span>
+                            </div>
+                          ))}
                         </div>
-                        {showFeedback && index === currentQuestion.correct_answer && (
+                        {showFeedback && originalIndex === currentQuestion.correct_answer && (
                           <CheckCircleOutlined style={{ color: '#52c41a' }} />
                         )}
-                        {showFeedback && index === selectedAnswer && index !== currentQuestion.correct_answer && (
+                        {showFeedback && originalIndex === selectedAnswer && originalIndex !== currentQuestion.correct_answer && (
                           <CloseCircleOutlined style={{ color: '#ff4d4f' }} />
                         )}
                       </div>

@@ -22,6 +22,7 @@ export interface QuizMode {
   type: 'all' | 'module' | 'subject' | 'random';
   moduleNumber?: number;
   subjectName?: string;
+  randomizeAnswers?: boolean; // Adaugă această opțiune
 }
 
 export interface QuizState {

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Layout, Typography, Row, Col, Card, Button, Space, Divider, Collapse } from 'antd';
+import { Layout, Typography, Row, Col, Card, Button, Space, Divider, Collapse, Switch } from 'antd';
 import { BookOutlined, SwapOutlined, DatabaseOutlined } from '@ant-design/icons';
 import { modules } from '../utils/questionLoader';
 import type { QuizMode } from '../types';
@@ -14,9 +14,17 @@ interface HomePageProps {
 
 const HomePage: React.FC<HomePageProps> = ({ onStartQuiz }) => {
   const [expandedModules, setExpandedModules] = useState<string[]>([]);
+  const [randomizeAnswers, setRandomizeAnswers] = useState(false);
 
   const handleModuleExpand = (key: string | string[]) => {
     setExpandedModules(Array.isArray(key) ? key : [key]);
+  };
+
+  const handleStartQuiz = (mode: QuizMode) => {
+    onStartQuiz({
+      ...mode,
+      randomizeAnswers
+    });
   };
 
   return (
@@ -27,8 +35,8 @@ const HomePage: React.FC<HomePageProps> = ({ onStartQuiz }) => {
         </Title>
       </Header>
       
-      <Content style={{ padding: '24px', maxWidth: '800px', margin: '0 auto', width: '100%' }}>
-        <Space direction="vertical" size="large" style={{ width: '100%' }}>
+      <Content style={{ padding: '24px', maxWidth: '800px', margin: '0 auto' }}>
+        <div style={{ textAlign: 'center', marginBottom: '48px' }}>
           {/* Quiz-uri generale */}
           <Card title="Quiz-uri Generale" style={{ marginBottom: '24px' }}>
             <Row gutter={[16, 16]}>
@@ -37,7 +45,7 @@ const HomePage: React.FC<HomePageProps> = ({ onStartQuiz }) => {
                   hoverable 
                   style={{ textAlign: 'center', height: '100%', cursor: 'pointer' }}
                   bodyStyle={{ padding: '20px 16px' }}
-                  onClick={() => onStartQuiz({ type: 'all' })}
+                  onClick={() => handleStartQuiz({ type: 'all' })}
                 >
                   <Space direction="vertical" size="small" style={{ width: '100%' }}>
                     <BookOutlined style={{ fontSize: '24px', color: '#1890ff', marginBottom: '8px' }} />
@@ -51,7 +59,7 @@ const HomePage: React.FC<HomePageProps> = ({ onStartQuiz }) => {
                   hoverable 
                   style={{ textAlign: 'center', height: '100%', cursor: 'pointer' }}
                   bodyStyle={{ padding: '20px 16px' }}
-                  onClick={() => onStartQuiz({ type: 'random' })}
+                  onClick={() => handleStartQuiz({ type: 'random' })}
                 >
                   <Space direction="vertical" size="small" style={{ width: '100%' }}>
                     <SwapOutlined style={{ fontSize: '24px', color: '#52c41a', marginBottom: '8px' }} />
@@ -90,7 +98,7 @@ const HomePage: React.FC<HomePageProps> = ({ onStartQuiz }) => {
                         size="small"
                         onClick={(e) => {
                           e.stopPropagation();
-                          onStartQuiz({ type: 'module', moduleNumber: module.number });
+                          handleStartQuiz({ type: 'module', moduleNumber: module.number });
                         }}
                         style={{ marginRight: '8px' }}
                       >
@@ -125,7 +133,7 @@ const HomePage: React.FC<HomePageProps> = ({ onStartQuiz }) => {
                             e.currentTarget.style.backgroundColor = '#fafafa';
                             e.currentTarget.style.borderColor = '#f0f0f0';
                           }}
-                          onClick={() => onStartQuiz({ type: 'subject', subjectName: subject.name })}
+                          onClick={() => handleStartQuiz({ type: 'subject', subjectName: subject.name })}
                           >
                             <Text strong style={{ fontSize: '14px' }}>
                               {subject.displayName}
@@ -140,6 +148,19 @@ const HomePage: React.FC<HomePageProps> = ({ onStartQuiz }) => {
             </Card>
           ))}
 
+          {/* Adaugă opțiunea pentru randomizarea răspunsurilor */}
+          <Card style={{ marginBottom: '24px' }}>
+            <Space>
+              <Text>Randomizează ordinea răspunsurilor:</Text>
+              <Switch 
+                checked={randomizeAnswers}
+                onChange={setRandomizeAnswers}
+                checkedChildren="DA"
+                unCheckedChildren="NU"
+              />
+            </Space>
+          </Card>
+
           {/* Footer info */}
           <Card style={{ textAlign: 'center', marginTop: '24px' }}>
             <Text type="secondary">
@@ -147,7 +168,7 @@ const HomePage: React.FC<HomePageProps> = ({ onStartQuiz }) => {
               Întrebările greșite vor fi repetate la sfârșitul quiz-ului.
             </Text>
           </Card>
-        </Space>
+        </div>
       </Content>
     </Layout>
   );

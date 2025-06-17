@@ -270,7 +270,7 @@
     "correct_answer": 0
   },
   {
-"question": "Fie programul C++:\n#include<iostream.h>\nclass c1{ int a;};\nclass c2:public c1{\npublic:\nint b;\nvoid scrie_a( ) { cout<<a; }\n};\nint main(){\nc2 ob; ob.scrie_a();\nreturn 0;\n}\nSelectaţi afirmaţia corectă:",
+    "question": "Fie programul C++:\n#include<iostream.h>\nclass c1{ int a;};\nclass c2:public c1{\npublic:\nint b;\nvoid scrie_a( ) { cout<<a; }\n};\nint main(){\nc2 ob; ob.scrie_a();\nreturn 0;\n}\nSelectaţi afirmaţia corectă:",
     "answers": [
       "funcția scrie_a( ) nu are acces asupra unui membru privat;",
       "programul afișează valoarea lui a;",
@@ -370,7 +370,7 @@
     "correct_answer": 0
   },
   {
-"question": "Fie următorul program C++:\n#include<iostream.h>\nclass B{\n\tint x;\npublic:\n\tB(int i=10) { x=i; }\n\tint get_x() { return x; }\n};\nclass D: public B{\npublic:\n\tD(int i):B(i) {}\n\tD operator+(const D& a) {return x+a.x; }\n};\nint main()\n{\n\tD ob1(7), ob2(-12);\n\tcout<<(ob1+ob2).get_x();\n\treturn 0;\n}\nIndicați ce se va afișa pe ecran în urma executării programului:",
+    "question": "Fie următorul program C++:\n#include<iostream.h>\nclass B{\n\tint x;\npublic:\n\tB(int i=10) { x=i; }\n\tint get_x() { return x; }\n};\nclass D: public B{\npublic:\n\tD(int i):B(i) {}\n\tD operator+(const D& a) {return x+a.x; }\n};\nint main()\n{\n\tD ob1(7), ob2(-12);\n\tcout<<(ob1+ob2).get_x();\n\treturn 0;\n}\nIndicați ce se va afișa pe ecran în urma executării programului:",
     "answers": [
       "-5",
       "-4",
