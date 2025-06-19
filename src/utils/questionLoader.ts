@@ -1,4 +1,6 @@
-import type { Question, Subject } from '../types';
+import type { Question, CustomQuizSettings, Subject } from '../types';
+
+
 
 export const subjects: Subject[] = [
   // Module 1 (base module - no prefix) - în ordinea cerută
@@ -33,77 +35,89 @@ export const modules = [
   { number: 4, name: 'Tehnologii Moderne', subjects: subjects.filter(s => s.module === 4) },
 ];
 
+
+// Funcția de bază pentru încărcarea întrebărilor
 export const loadQuestions = async (subjectName: string): Promise<Question[]> => {
-  try {
+	 try {
     const baseUrl = import.meta.env.VITE_BASE_URL || '/';
     const response = await fetch(`${baseUrl}questions/${subjectName}.json`);
     if (!response.ok) {
       throw new Error(`Failed to load questions for ${subjectName}`);
     }
-    return await response.json();
+		const data = await response.json();
+		return data;
   } catch (error) {
     console.error(`Error loading questions for ${subjectName}:`, error);
     return [];
   }
 };
 
+// Funcție pentru a adăuga ID-uri unice la întrebări
+const addQuestionIds = (questions: Question[], prefix: string): Question[] => {
+	return questions.map((question, index) => ({
+		...question,
+		id: `${prefix}_${index}`,
+	}));
+};
+
+// Încarcă toate întrebările folosind loadQuestions
 export const loadAllQuestions = async (): Promise<Question[]> => {
-  const allQuestions: Question[] = [];
-  
-  for (const subject of subjects) {
-    const questions = await loadQuestions(subject.name);
-    allQuestions.push(...questions);
-  }
-  
-  return allQuestions;
+	const allQuestions: Question[] = [];
+
+	for (const module of modules) {
+		for (const subject of module.subjects) {
+			const questions = await loadQuestions(subject.name);
+			allQuestions.push(...questions);
+		}
+	}
+
+	return allQuestions;
 };
 
+// Încarcă întrebările unui modul folosind loadQuestions
 export const loadModuleQuestions = async (moduleNumber: number): Promise<Question[]> => {
-  const moduleSubjects = subjects.filter(s => s.module === moduleNumber);
-  const allQuestions: Question[] = [];
-  
-  for (const subject of moduleSubjects) {
-    const questions = await loadQuestions(subject.name);
-    allQuestions.push(...questions);
-  }
-  
-  return allQuestions;
+	const module = modules.find(m => m.number === moduleNumber);
+	if (!module) return [];
+
+	const moduleQuestions: Question[] = [];
+
+	for (const subject of module.subjects) {
+		const questions = await loadQuestions(subject.name);
+		moduleQuestions.push(...questions);
+	}
+
+	return moduleQuestions;
 };
 
+// Încarcă 36 întrebări aleatorii folosind loadAllQuestions
 export const loadRandomQuestions = async (): Promise<Question[]> => {
-  const randomQuestions: Question[] = [];
-  
-  // Get 2 questions from each subject (16 subjects × 2 = 32 questions)
-  for (const subject of subjects) {
-    const questions = await loadQuestions(subject.name);
-    if (questions.length >= 2) {
-      // Shuffle and take first 2
-      const shuffled = [...questions].sort(() => Math.random() - 0.5);
-      randomQuestions.push(...shuffled.slice(0, 2));
-    } else {
-      // If less than 2 questions, take all
-      randomQuestions.push(...questions);
-    }
-  }
-  
-  // Add 4 more random questions from any subject to reach 36 total
-  const allQuestions = await loadAllQuestions();
-  const remainingQuestions = allQuestions.filter(q => 
-    !randomQuestions.some(rq => rq.question === q.question)
-  );
-  
-  const shuffledRemaining = remainingQuestions.sort(() => Math.random() - 0.5);
-  randomQuestions.push(...shuffledRemaining.slice(0, 4));
-  
-  // Final shuffle
-  return randomQuestions.sort(() => Math.random() - 0.5);
+	const allQuestions = await loadAllQuestions();
+	const shuffled = allQuestions.sort(() => Math.random() - 0.5);
+	return shuffled.slice(0, 36);
 };
 
-export const shuffleArray = <T>(array: T[]): T[] => {
-  const shuffled = [...array];
-  for (let i = shuffled.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-  }
-  return shuffled;
+// Încarcă toate întrebările cu ID-uri pentru interfața de selecție
+export const loadAllQuestionsWithIds = async (): Promise<Question[]> => {
+	const allQuestions: Question[] = [];
+
+	for (const module of modules) {
+		for (const subject of module.subjects) {
+			const questions = await loadQuestions(subject.name);
+			const questionsWithIds = addQuestionIds(questions, subject.name);
+			allQuestions.push(...questionsWithIds);
+		}
+	}
+
+	return allQuestions;
+};
+
+// Încarcă întrebările personalizate
+export const loadCustomQuestions = async (settings: CustomQuizSettings): Promise<Question[]> => {
+	const allQuestionsWithIds = await loadAllQuestionsWithIds();
+	const selectedQuestions = allQuestionsWithIds.filter(question =>
+		settings.selectedQuestionIds.includes(question.id || '')
+	);
+
+	// Remove IDs before returning to keep consistency with other quiz types
+	return selectedQuestions.map(({ ...question }) => question);
 };

@@ -7,6 +7,7 @@ import {
   loadModuleQuestions, 
   loadQuestions, 
   loadRandomQuestions,
+  loadCustomQuestions, // Adaugă doar această funcție nouă
   subjects 
 } from '../utils/questionLoader';
 
@@ -62,6 +63,8 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ mode, onBackToHome }) => 
       switch (mode.type) {
         case 'all':
           questions = await loadAllQuestions();
+          // Remove IDs to keep original behavior
+          questions = questions.map(({...question}) => question);
           break;
         case 'module':
           if (mode.moduleNumber) {
@@ -77,17 +80,22 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ mode, onBackToHome }) => 
         case 'random':
           questions = await loadRandomQuestions();
           break;
+        case 'custom':
+          if (mode.customSettings) {
+            questions = await loadCustomQuestions(mode.customSettings);
+          }
+          break;
       }
 
       setQuizState(prev => ({
         ...prev,
-        questions: questions.sort(() => Math.random() - 0.5), // Shuffle questions
+        questions: questions.sort(() => Math.random() - 0.5),
         currentQuestionIndex: 0,
         results: [],
         wrongAnswers: [],
         isCompleted: false,
         isReviewMode: false,
-        startTime: Date.now() // Setează timpul de start
+        startTime: Date.now()
       }));
     } catch (error) {
       console.error('Error loading questions:', error);

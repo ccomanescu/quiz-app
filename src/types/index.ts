@@ -3,6 +3,7 @@ export interface Question {
   answers: string[];
   correct_answer: number;
   image?: string;
+  id?: string; // Adaugă ID unic pentru fiecare întrebare
 }
 
 export interface QuizResult {
@@ -18,11 +19,16 @@ export interface Subject {
   module: number;
 }
 
+export interface CustomQuizSettings {
+  selectedQuestionIds: string[]; // Array cu ID-urile întrebărilor selectate
+}
+
 export interface QuizMode {
-  type: 'all' | 'module' | 'subject' | 'random';
+  type: 'all' | 'module' | 'subject' | 'random' | 'custom';
   moduleNumber?: number;
   subjectName?: string;
-  randomizeAnswers?: boolean; // Adaugă această opțiune
+  randomizeAnswers?: boolean;
+  customSettings?: CustomQuizSettings;
 }
 
 export interface QuizState {
